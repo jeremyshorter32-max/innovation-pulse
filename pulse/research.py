@@ -10,6 +10,9 @@ notes; the script records every web address Claude actually opened or was shown.
 second call turns the notes into structured data, and any link that did not come from
 the first stage is dropped, so the page never shows a made-up source.
 
+It runs once for the whole company and, when research.per_vertical is on, once for each
+business area (scope), with that area's focus and fewer searches.
+
 Needs ANTHROPIC_API_KEY, and web search enabled for the organisation in the Claude
 Console. If anything fails, the edition is published without these sections.
 """
@@ -25,8 +28,9 @@ CHECKS = ["available", "corroborated", "deployed", "scaled", "gcc"]
 CRITERIA = ["funding", "customers", "scale", "partners", "gcc"]
 
 
-def log(msg: str) -> None:
-    print(msg, file=sys.stderr, flush=True)
+def _log(msg: str) -> None:
+    sys.stderr.write(msg + "\n")  # one write per line, so parallel runs do not mix lines
+    sys.stderr.flush()
 
 
 def _norm(url: str) -> str:
@@ -54,8 +58,10 @@ def challenger_verdict(scores: dict) -> tuple[int, str]:
 
 
 def run_research(config: dict, headlines: list[str], previous: dict | None,
-                 window: tuple[str, str]) -> dict | None:
+                 window: tuple[str, str], scope: dict | None = None) -> dict | None:
     settings = config.get("research", {})
+    tag = f"[{scope['label']}] " if scope else ""
+    log = lambda msg: _log(tag + msg)
     if not settings.get("enabled", True):
         log("Research step is switched off in config.json.")
         return None
@@ -74,9 +80,19 @@ def run_research(config: dict, headlines: list[str], previous: dict | None,
         prev_ch = ", ".join(c["name"] for c in previous.get("challengers", []))
         if prev_ch:
             prev = f"\nStartups already reported in recent weeks (update them only if there is news): {prev_ch}\n"
+    if scope:
+        who = (f"the leadership team of {scope['label']} at Aldar Properties, a real estate developer and asset "
+               f"manager in Abu Dhabi. About this business: {scope['focus']}")
+        focus = (f"\nThis is the {scope['label']} edition: every finding must matter to this business. Look for "
+                 f"what it could adopt, pilot, partner with or must prepare for.\n")
+        fit_to = f"Aldar's {scope['label']} business"
+        searches, fetches = settings.get("vertical_max_searches", 10), settings.get("vertical_max_fetches", 5)
+    else:
+        who, focus, fit_to = config["audience"], "", "Aldar's business"
+        searches, fetches = settings.get("max_searches", 15), settings.get("max_fetches", 8)
     brief = (
-        f"You are the research analyst behind a weekly innovation briefing for {config['audience']}.\n"
-        f"This week runs from {window[0]} to {window[1]}.\n\n"
+        f"You are the research analyst behind a weekly innovation briefing for {who}.\n"
+        f"This week runs from {window[0]} to {window[1]}.\n" + focus + "\n"
         f"Innovation categories we track:\n{cats}\n\n"
         "Stories already in this week's news feed (do not repeat them as research findings):\n"
         + "\n".join(f"- {h}" for h in headlines[:40]) + "\n" + prev +
@@ -91,8 +107,8 @@ def run_research(config: dict, headlines: list[str], previous: dict | None,
         "still a demo or a promise), and a yes / no / unknown answer for: available today (people can buy or "
         "use it now), independently confirmed, in commercial use with named customers, proven at scale, fits "
         "the GCC (climate, regulation, market). Then a verdict: hype (attention far ahead of evidence), watch, "
-        "or real (real potential), the fit for Aldar (low, medium, high), where it would fit in Aldar's "
-        "business (for example communities, malls, offices, hotels, schools, construction or operations), an "
+        f"or real (real potential), the fit for {fit_to} (low, medium, high), where it would fit in {fit_to} "
+        "(for example a site, service, team or customer journey), an "
         "action (act, watch, ignore), and one plain sentence an executive could say if asked about it. Say "
         "what the assessment is based on.\n\n"
         "2. STARTUPS TO WATCH. Find up to four young companies with news in the last 30 days, in the "
@@ -101,14 +117,14 @@ def run_research(config: dict, headlines: list[str], previous: dict | None,
         "units or sites), credible partners, and a route to the GCC. Give one sentence on what it does, one on "
         "why it matters to us, and one source.\n\n"
         "3. CATEGORY MAP. For each category we track, judge on a 0 to 100 scale: market readiness (evidence of "
-        "commercial use at scale), relevance to Aldar's business, hype (attention) and substance (verified "
+        f"commercial use at scale), relevance to {fit_to}, hype (attention) and substance (verified "
         "evidence). One short reason each. These are judgements; say what they rest on.\n\n"
         "Rules: report only what sources say; date every claim; label company press releases as such; when "
         "unsure, say unknown. Keep searches focused; you have a limited number."
     )
     tools = [
-        {"type": "web_search_20260209", "name": "web_search", "max_uses": settings.get("max_searches", 15)},
-        {"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": settings.get("max_fetches", 8)},
+        {"type": "web_search_20260209", "name": "web_search", "max_uses": searches},
+        {"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": fetches},
     ]
     client = anthropic.Anthropic(timeout=900)
     messages = [{"role": "user", "content": brief}]
@@ -150,13 +166,13 @@ def run_research(config: dict, headlines: list[str], previous: dict | None,
     log(f"  {searches} searches, {len(sources)} sources seen.")
     allowed = {_norm(u) for u in sources}
 
-    result = _structure(client, anthropic, config, notes, sorted(sources))
+    result = _structure(client, anthropic, config, notes, sorted(sources), log)
     if result is None:
         return None
-    return _validate(result, allowed, notes, config, searches, len(sources))
+    return _validate(result, allowed, notes, config, searches, len(sources), log)
 
 
-def _structure(client, anthropic, config, notes: str, sources: list[str]) -> dict | None:
+def _structure(client, anthropic, config, notes: str, sources: list[str], log=_log) -> dict | None:
     cat_ids = [c["id"] for c in config["categories"]]
     yn = {"type": "string", "enum": ["yes", "no", "unknown"]}
     link = {"type": "object", "properties": {"label": {"type": "string"}, "url": {"type": "string"}},
@@ -227,7 +243,7 @@ def _structure(client, anthropic, config, notes: str, sources: list[str]) -> dic
 
 
 def _validate(result: dict, allowed: set[str], notes: str, config: dict,
-              searches: int, n_sources: int) -> dict:
+              searches: int, n_sources: int, log=_log) -> dict:
     """Keep only sourced, well-formed findings."""
     ok = lambda u: bool(u) and u.startswith("https://") and _norm(u) in allowed
     in_notes = lambda u: bool(u) and u.startswith("https://") and u in notes

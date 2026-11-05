@@ -4,6 +4,21 @@ A weekly, social-feed style innovation briefing for Aldar's executive management
 
 It is a copy of the Robotics Market Pulse page (`intel.html` in [Robotics-App](https://github.com/jeremyshorter32-max/Robotics-App)), widened from robotics to innovation in general. The robotics vendor tracking is left out.
 
+## Business areas (verticals)
+A row of tabs across the top lets each part of the business open its own weekly pulse: **All Aldar** (the company-wide briefing, shown first), then **Development**, **Communities**, **Hospitality**, **Education**, **Investments** and **Infrastructure**, following the business structure.
+
+Each vertical gets its own tailored report every week:
+- **its own news searches**, global and GCC (`queries`, `gcc_queries` under `verticals` in `pulse/config.json`);
+- **its own story picks**, from stories those searches found or that name the vertical's `keywords`, plus a big general shift when it clearly affects that business;
+- **its own takeaways, trend radar and "Why it matters for [vertical]" lines**, written by Claude from the vertical's `focus` line (what that business does);
+- **its own research tabs**: Big moves, Startups to watch and a category map scored for that vertical.
+
+The page remembers the last vertical each reader chose. Links open straight on one: add `?v=` with `development`, `communities`, `hospitality`, `education`, `investments` or `infrastructure` (for example `https://innopulse.netlify.app/?v=education`). The **Copy brief** button copies the vertical's brief with its link.
+
+Editions published before the verticals were added only have the All Aldar view; their vertical tabs say the report starts with the next edition.
+
+To change a vertical, edit its `focus`, `queries`, `gcc_queries` or `keywords` in `pulse/config.json`. To add one, add an entry there with a new `id` and `label`; it appears as a tab after the next run. Per-vertical research is on by default (`research.per_vertical`); with it off, verticals still get their own stories, takeaways and trends, but the research tabs show only on All Aldar. `vertical_max_searches` and `vertical_max_fetches` set how much web research each vertical gets, and `parallel` how many reports are written at once.
+
 ## Subject areas
 | Id | Category |
 |---|---|
@@ -21,7 +36,7 @@ It is a copy of the Robotics Market Pulse page (`intel.html` in [Robotics-App](h
 ## Where things live
 | Path | What it is |
 |---|---|
-| `index.html` | The page (works on desktop and phone). |
+| `index.html` | The page (works on desktop and phone), with the business-area tabs across the top. |
 | `data/pulse-feed.json`, `data/pulse-feed.js` | The editions. Written by the weekly job; don't edit by hand. |
 | `pulse/innovation_pulse.py` | The weekly job: collects news, picks stories, writes the edition. |
 | `pulse/research.py` | Claude's weekly web research (Big moves, Startups to watch, Category map). |
@@ -30,7 +45,7 @@ It is a copy of the Robotics Market Pulse page (`intel.html` in [Robotics-App](h
 | `netlify.toml` | Netlify settings (no build step). |
 
 ## How it updates
-Every Monday at 10:00 Abu Dhabi time a GitHub Action runs `pulse/innovation_pulse.py`. It collects the last 7 days of news from Google News searches (several per category, plus GCC-focused searches) and trade-press feeds, merges stories covered by several outlets, picks the most important ones and commits the new edition to `data/`. Netlify then redeploys. If the run fails or GitHub delays it, it retries every hour through Tuesday afternoon; once the week's edition exists, the retries do nothing. The last 12 weeks stay available in the edition picker.
+Every Monday at 10:00 Abu Dhabi time a GitHub Action runs `pulse/innovation_pulse.py`. A full run, with all seven reports and their research, takes about 30 to 45 minutes. It collects the last 7 days of news from Google News searches (several per category, plus GCC-focused searches) and trade-press feeds, merges stories covered by several outlets, picks the most important ones and commits the new edition to `data/`. Netlify then redeploys. If the run fails or GitHub delays it, it retries every hour through Tuesday afternoon; once the week's edition exists, the retries do nothing. The last 12 weeks stay available in the edition picker.
 
 The briefing is kept broad: at most 4 stories per category (`max_per_category`), up to 30 stories in all (`max_posts`), and at least 8 GCC stories when there are that many worth reading (`gcc_min_posts`).
 

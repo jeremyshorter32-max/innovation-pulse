@@ -1,5 +1,5 @@
 {
-  "_readme": "Settings for pulse/innovation_pulse.py. Edit categories here: label, colours and search terms. 'queries' are Google News searches (global, last 7 days). 'keywords' decide which category a story belongs to. 'gcc_queries' are extra Gulf-focused searches; 'gcc_min_posts' is how many GCC stories each edition tries to include. 'research' controls the weekly web research by Claude (big moves, startups to watch, category map); it only runs when ANTHROPIC_API_KEY is set.",
+  "_readme": "Settings for pulse/innovation_pulse.py. Edit categories here: label, colours and search terms. 'queries' are Google News searches (global, last 7 days). 'keywords' decide which category a story belongs to. 'gcc_queries' are extra Gulf-focused searches; 'gcc_min_posts' is how many GCC stories each edition tries to include. 'research' controls the weekly web research by Claude (big moves, startups to watch, category map); it only runs when ANTHROPIC_API_KEY is set. 'verticals' are Aldar's business areas: each gets its own tailored report every week, built from its own news searches ('queries', 'gcc_queries'), the 'keywords' that tag a story as relevant to it, and the 'focus' line that tells Claude what that business does.",
   "timezone": "Asia/Dubai",
   "lookback_days": 7,
   "max_posts": 30,
@@ -12,7 +12,11 @@
     "enabled": true,
     "max_searches": 18,
     "max_fetches": 8,
-    "effort": "high"
+    "effort": "high",
+    "per_vertical": true,
+    "vertical_max_searches": 10,
+    "vertical_max_fetches": 5,
+    "parallel": 4
   },
   "audience": "the executive management team of Aldar Properties, a real estate developer and asset manager in Abu Dhabi with residential communities, malls, offices, hotels, schools and construction projects across the UAE",
   "categories": [
@@ -28,7 +32,23 @@
         "building management system AI OR IoT",
         "digital twin building OR real estate"
       ],
-      "keywords": ["proptech", "prop tech", "smart building", "smart home", "building management", "facility management", "facilities management", "digital twin", "iot", "property management", "tenant experience", "access control", "hvac", "real estate tech", "home automation"]
+      "keywords": [
+        "proptech",
+        "prop tech",
+        "smart building",
+        "smart home",
+        "building management",
+        "facility management",
+        "facilities management",
+        "digital twin",
+        "iot",
+        "property management",
+        "tenant experience",
+        "access control",
+        "hvac",
+        "real estate tech",
+        "home automation"
+      ]
     },
     {
       "id": "ai",
@@ -42,7 +62,27 @@
         "AI startup raises",
         "AI regulation"
       ],
-      "keywords": [" ai ", "artificial intelligence", "generative", "genai", "llm", "language model", "chatbot", "ai agent", "agentic", "machine learning", "openai", "anthropic", "gemini", "copilot", "software", "saas", "cybersecurity", "data centre", "data center"]
+      "keywords": [
+        " ai ",
+        "artificial intelligence",
+        "generative",
+        "genai",
+        "llm",
+        "language model",
+        "chatbot",
+        "ai agent",
+        "agentic",
+        "machine learning",
+        "openai",
+        "anthropic",
+        "gemini",
+        "copilot",
+        "software",
+        "saas",
+        "cybersecurity",
+        "data centre",
+        "data center"
+      ]
     },
     {
       "id": "sustainability",
@@ -57,7 +97,29 @@
         "climate tech startup funding",
         "water technology desalination innovation"
       ],
-      "keywords": ["sustainab", "net zero", "net-zero", "carbon", "decarbon", "emission", "solar", "battery", "energy storage", "renewable", "hydrogen", "climate", "green building", "leed", "esg", "cooling", "water", "desalination", "circular", "recycl", "waste"]
+      "keywords": [
+        "sustainab",
+        "net zero",
+        "net-zero",
+        "carbon",
+        "decarbon",
+        "emission",
+        "solar",
+        "battery",
+        "energy storage",
+        "renewable",
+        "hydrogen",
+        "climate",
+        "green building",
+        "leed",
+        "esg",
+        "cooling",
+        "water",
+        "desalination",
+        "circular",
+        "recycl",
+        "waste"
+      ]
     },
     {
       "id": "construction",
@@ -72,7 +134,24 @@
         "low carbon concrete OR mass timber",
         "BIM construction AI"
       ],
-      "keywords": ["construction", "contech", "jobsite", "job site", "modular", "prefab", "3d print", "concrete", "cement", "mass timber", "steel", "bim", "building materials", "homebuild", "contractor", "infrastructure project"]
+      "keywords": [
+        "construction",
+        "contech",
+        "jobsite",
+        "job site",
+        "modular",
+        "prefab",
+        "3d print",
+        "concrete",
+        "cement",
+        "mass timber",
+        "steel",
+        "bim",
+        "building materials",
+        "homebuild",
+        "contractor",
+        "infrastructure project"
+      ]
     },
     {
       "id": "mobility",
@@ -86,7 +165,26 @@
         "eVTOL OR air taxi",
         "urban mobility startup"
       ],
-      "keywords": ["smart city", "smart cities", "mobility", "robotaxi", "autonomous vehicle", "self-driving", "electric vehicle", " ev ", "charging", "evtol", "air taxi", "flying taxi", "micromobility", "scooter", "public transport", "transit", "parking", "urban"]
+      "keywords": [
+        "smart city",
+        "smart cities",
+        "mobility",
+        "robotaxi",
+        "autonomous vehicle",
+        "self-driving",
+        "electric vehicle",
+        " ev ",
+        "charging",
+        "evtol",
+        "air taxi",
+        "flying taxi",
+        "micromobility",
+        "scooter",
+        "public transport",
+        "transit",
+        "parking",
+        "urban"
+      ]
     },
     {
       "id": "robotics",
@@ -99,7 +197,17 @@
         "robotics startup raises",
         "drone delivery OR inspection drone"
       ],
-      "keywords": ["robot", "robotic", "humanoid", "drone", "automation", "autonomous", "cobot", "physical ai", "warehouse automation"]
+      "keywords": [
+        "robot",
+        "robotic",
+        "humanoid",
+        "drone",
+        "automation",
+        "autonomous",
+        "cobot",
+        "physical ai",
+        "warehouse automation"
+      ]
     },
     {
       "id": "retail",
@@ -113,7 +221,27 @@
         "customer experience AI retail",
         "retail media OR cashierless store"
       ],
-      "keywords": ["retail", "retailer", "shopping", "mall", "store", "e-commerce", "ecommerce", "shopper", "consumer", "customer experience", "loyalty", "hospitality", "hotel", "guest", "restaurant", "checkout", "cashierless", "omnichannel", "entertainment"]
+      "keywords": [
+        "retail",
+        "retailer",
+        "shopping",
+        "mall",
+        "store",
+        "e-commerce",
+        "ecommerce",
+        "shopper",
+        "consumer",
+        "customer experience",
+        "loyalty",
+        "hospitality",
+        "hotel",
+        "guest",
+        "restaurant",
+        "checkout",
+        "cashierless",
+        "omnichannel",
+        "entertainment"
+      ]
     },
     {
       "id": "fintech",
@@ -127,7 +255,25 @@
         "real estate investment technology platform",
         "digital payments innovation"
       ],
-      "keywords": ["fintech", "tokeniz", "tokenis", "blockchain", "crypto", "stablecoin", "mortgage", "lending", "payment", "banking", "digital bank", "insurtech", "fractional", "reit", "real estate investment", "wealth", "neobank"]
+      "keywords": [
+        "fintech",
+        "tokeniz",
+        "tokenis",
+        "blockchain",
+        "crypto",
+        "stablecoin",
+        "mortgage",
+        "lending",
+        "payment",
+        "banking",
+        "digital bank",
+        "insurtech",
+        "fractional",
+        "reit",
+        "real estate investment",
+        "wealth",
+        "neobank"
+      ]
     },
     {
       "id": "frontier",
@@ -141,7 +287,26 @@
         "advanced materials breakthrough",
         "fusion energy OR nuclear SMR"
       ],
-      "keywords": ["quantum", "qubit", "space", "satellite", "orbit", "rocket", "biotech", "gene", "crispr", "synthetic biology", "materials", "graphene", "superconduct", "semiconductor", "chip", "fusion", "nuclear", "smr"]
+      "keywords": [
+        "quantum",
+        "qubit",
+        "space",
+        "satellite",
+        "orbit",
+        "rocket",
+        "biotech",
+        "gene",
+        "crispr",
+        "synthetic biology",
+        "materials",
+        "graphene",
+        "superconduct",
+        "semiconductor",
+        "chip",
+        "fusion",
+        "nuclear",
+        "smr"
+      ]
     },
     {
       "id": "work_edu",
@@ -155,7 +320,28 @@
         "AI in education schools",
         "hybrid work office occupancy"
       ],
-      "keywords": ["workplace", "future of work", "hybrid work", "remote work", "office", "coworking", "co-working", "employee", "workforce", "hiring", "skills", "upskill", "edtech", "education", "school", "student", "teacher", "university", "learning", "classroom"]
+      "keywords": [
+        "workplace",
+        "future of work",
+        "hybrid work",
+        "remote work",
+        "office",
+        "coworking",
+        "co-working",
+        "employee",
+        "workforce",
+        "hiring",
+        "skills",
+        "upskill",
+        "edtech",
+        "education",
+        "school",
+        "student",
+        "teacher",
+        "university",
+        "learning",
+        "classroom"
+      ]
     }
   ],
   "general_queries": [
@@ -176,13 +362,292 @@
     "real estate technology Gulf OR Qatar OR Kuwait OR Oman"
   ],
   "feeds": [
-    { "name": "TechCrunch", "url": "https://techcrunch.com/feed/" },
-    { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/" },
-    { "name": "The Verge", "url": "https://www.theverge.com/rss/index.xml" },
-    { "name": "Wired", "url": "https://www.wired.com/feed/rss" },
-    { "name": "Construction Dive", "url": "https://www.constructiondive.com/feeds/news/" },
-    { "name": "Canary Media", "url": "https://www.canarymedia.com/rss.rss" },
-    { "name": "Retail Dive", "url": "https://www.retaildive.com/feeds/news/" },
-    { "name": "The Robot Report", "url": "https://www.therobotreport.com/feed/" }
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/"
+    },
+    {
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed/"
+    },
+    {
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml"
+    },
+    {
+      "name": "Wired",
+      "url": "https://www.wired.com/feed/rss"
+    },
+    {
+      "name": "Construction Dive",
+      "url": "https://www.constructiondive.com/feeds/news/"
+    },
+    {
+      "name": "Canary Media",
+      "url": "https://www.canarymedia.com/rss.rss"
+    },
+    {
+      "name": "Retail Dive",
+      "url": "https://www.retaildive.com/feeds/news/"
+    },
+    {
+      "name": "The Robot Report",
+      "url": "https://www.therobotreport.com/feed/"
+    }
+  ],
+  "vertical_max_posts": 16,
+  "vertical_gcc_min_posts": 4,
+  "verticals": [
+    {
+      "id": "development",
+      "label": "Development",
+      "focus": "Aldar Development builds masterplanned communities in the UAE: land and masterplanning, design, construction delivery, off-plan sales, handover and the home-buyer experience",
+      "queries": [
+        "real estate development technology",
+        "homebuilder technology innovation",
+        "property sales technology AI OR virtual tour",
+        "smart home new build developer",
+        "construction productivity AI",
+        "sustainable masterplanned community"
+      ],
+      "gcc_queries": [
+        "real estate developer UAE technology",
+        "off-plan sales Dubai OR \"Abu Dhabi\" digital",
+        "masterplan community Saudi OR UAE sustainability"
+      ],
+      "keywords": [
+        "developer",
+        "development",
+        "homebuild",
+        "masterplan",
+        "master plan",
+        "off-plan",
+        "off plan",
+        "home buyer",
+        "homebuyer",
+        "new home",
+        "housing",
+        "residential project",
+        "construction",
+        "modular",
+        "prefab",
+        "3d print",
+        "bim",
+        "design",
+        "architect",
+        "smart home",
+        "handover",
+        "sales"
+      ]
+    },
+    {
+      "id": "communities",
+      "label": "Communities",
+      "focus": "Aldar Estates manages Aldar's communities: facility management, property and community management for about 155,000 homes, and integrated services such as cleaning, security, landscaping and maintenance",
+      "queries": [
+        "facility management technology",
+        "property management software AI",
+        "resident app community management",
+        "predictive maintenance buildings AI",
+        "cleaning OR security robots facilities",
+        "integrated facilities services innovation"
+      ],
+      "gcc_queries": [
+        "facility management UAE OR Saudi technology",
+        "community management Dubai OR \"Abu Dhabi\" app",
+        "district cooling OR smart meters UAE"
+      ],
+      "keywords": [
+        "facility management",
+        "facilities management",
+        "facility services",
+        "property management",
+        "community management",
+        "resident",
+        "tenant",
+        "maintenance",
+        "predictive maintenance",
+        "hvac",
+        "cleaning",
+        "security",
+        "landscaping",
+        "pest",
+        "smart meter",
+        "energy management",
+        "building management",
+        "iot",
+        "access control",
+        "waste",
+        "cooling",
+        "concierge",
+        "service charge"
+      ]
+    },
+    {
+      "id": "hospitality",
+      "label": "Hospitality",
+      "focus": "Aldar Hospitality and Leisure runs 12 hotels and 8 beach clubs, marinas and golf courses in Abu Dhabi",
+      "queries": [
+        "hotel technology innovation",
+        "hospitality AI guest experience",
+        "golf technology innovation",
+        "smart marina OR marina technology",
+        "resort OR beach club guest experience technology",
+        "travel tech startup raises"
+      ],
+      "gcc_queries": [
+        "hotel technology UAE OR Saudi",
+        "tourism innovation \"Abu Dhabi\" OR Dubai",
+        "hospitality AI Gulf OR Saudi"
+      ],
+      "keywords": [
+        "hotel",
+        "hospitality",
+        "guest",
+        "resort",
+        "travel",
+        "tourism",
+        "booking",
+        "golf",
+        "marina",
+        "yacht",
+        "beach",
+        "leisure",
+        "restaurant",
+        "dining",
+        "spa",
+        "events",
+        "airline",
+        "concierge",
+        "loyalty"
+      ]
+    },
+    {
+      "id": "education",
+      "label": "Education",
+      "focus": "Aldar Education operates and manages 27 schools in the UAE with about 36,000 students, their teachers, parents and campuses",
+      "queries": [
+        "edtech",
+        "AI in schools",
+        "K-12 education technology",
+        "AI tools for teachers",
+        "school campus safety technology",
+        "edtech startup funding"
+      ],
+      "gcc_queries": [
+        "education technology UAE OR Saudi",
+        "schools AI UAE OR \"Abu Dhabi\" OR Dubai",
+        "edtech Gulf OR Saudi startup"
+      ],
+      "keywords": [
+        "edtech",
+        "education",
+        "school",
+        "schools",
+        "student",
+        "pupil",
+        "teacher",
+        "classroom",
+        "curriculum",
+        "learning",
+        "tutor",
+        "k-12",
+        "exam",
+        "university",
+        "campus",
+        "parents",
+        "skills",
+        "literacy"
+      ]
+    },
+    {
+      "id": "investments",
+      "label": "Investments",
+      "focus": "Aldar Investment owns and runs a recurring-income portfolio: offices, retail malls, residential leasing, and industrial and logistics assets",
+      "queries": [
+        "office building technology tenant experience",
+        "shopping mall innovation",
+        "retail real estate technology",
+        "build to rent technology",
+        "logistics warehouse real estate automation",
+        "commercial real estate AI"
+      ],
+      "gcc_queries": [
+        "mall OR retail technology UAE OR Saudi",
+        "office market technology Dubai OR \"Abu Dhabi\"",
+        "logistics park OR warehouse UAE OR Saudi"
+      ],
+      "keywords": [
+        "office",
+        "workplace",
+        "tenant",
+        "leasing",
+        "landlord",
+        "commercial real estate",
+        "real estate investment",
+        "reit",
+        "mall",
+        "shopping",
+        "retail",
+        "retailer",
+        "shopper",
+        "store",
+        "logistics",
+        "warehouse",
+        "industrial",
+        "data centre",
+        "data center",
+        "build-to-rent",
+        "build to rent",
+        "rental",
+        "occupancy",
+        "asset management",
+        "proptech",
+        "tokeniz"
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure",
+      "focus": "Aldar Projects delivers government infrastructure and community projects in Abu Dhabi: roads, cycle tracks, villas and community facilities such as schools, mosques and parks",
+      "queries": [
+        "infrastructure technology innovation",
+        "road construction technology",
+        "smart infrastructure sensors",
+        "cycling infrastructure innovation",
+        "public works digital twin",
+        "infrastructure project delivery AI"
+      ],
+      "gcc_queries": [
+        "infrastructure project UAE OR Saudi technology",
+        "roads OR transport \"Abu Dhabi\" smart",
+        "public works Gulf digital twin OR AI"
+      ],
+      "keywords": [
+        "infrastructure",
+        "road",
+        "roads",
+        "highway",
+        "bridge",
+        "tunnel",
+        "cycle track",
+        "cycling",
+        "bike lane",
+        "utility",
+        "utilities",
+        "public works",
+        "civil engineering",
+        "asphalt",
+        "paving",
+        "drainage",
+        "street",
+        "transport",
+        "smart city",
+        "digital twin",
+        "sensor",
+        "government project",
+        "public-private"
+      ]
+    }
   ]
 }

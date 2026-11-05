@@ -37,6 +37,7 @@ a{color:inherit}
 button,select{font-family:inherit;font-size:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+[hidden]{display:none!important}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* ---------- Header ---------- */
@@ -55,6 +56,20 @@ button,select{font-family:inherit;font-size:inherit}
 .sel select{appearance:none;-webkit-appearance:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);color:#fff;font-size:12px;font-weight:500;padding:8px 32px 8px 12px;cursor:pointer;max-width:56vw;text-overflow:ellipsis}
 .sel select option{color:#12102A}
 .sel svg{position:absolute;right:11px;top:50%;transform:translateY(-50%);pointer-events:none}
+
+/* ---------- Business areas (verticals) ---------- */
+.vbar{background:var(--navy-2);border-bottom:1px solid rgba(118,156,210,0.16)}
+.vbar-in{max-width:1200px;margin:0 auto;padding:16px 24px 0}
+.vguide{margin:0 0 12px;font-size:13px;line-height:1.5;color:rgba(255,255,255,0.72)}
+.vguide b{color:#fff;font-weight:500}
+.vtabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:14px}
+.vtabs::-webkit-scrollbar{display:none}
+.vtabs button{flex:none;border:1px solid rgba(255,255,255,0.22);background:transparent;color:rgba(255,255,255,0.82);padding:9px 15px;font-size:11.5px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;white-space:nowrap}
+.vtabs button:hover{border-color:var(--accent);color:#fff}
+.vtabs button[aria-selected="true"]{background:#fff;border-color:#fff;color:var(--navy)}
+.vtabs .all{letter-spacing:0.12em}
+.vfocus{margin:0;padding:0 0 14px;font-size:12.5px;color:var(--accent-soft);line-height:1.5;max-width:860px}
+.vfocus:empty{display:none}
 
 /* ---------- Edition hero ---------- */
 .hero{background:linear-gradient(180deg,var(--navy-2) 0%,#15133A 100%);color:#fff;border-bottom:1px solid rgba(118,156,210,0.16)}
@@ -77,6 +92,7 @@ button.stat[aria-pressed="true"] b{color:var(--accent-soft)}
 /* ---------- Layout ---------- */
 .wrap{max-width:1200px;margin:0 auto;padding:28px 24px 8px;display:grid;grid-template-columns:330px minmax(0,1fr);gap:28px;align-items:start}
 .wrap > *{min-width:0}
+.wrap.solo{grid-template-columns:minmax(0,1fr)}
 .side{position:sticky;top:calc(var(--header-h) + 20px);display:flex;flex-direction:column;gap:16px;max-height:calc(100vh - var(--header-h) - 40px);overflow:auto;scrollbar-width:thin}
 .card{background:var(--card);box-shadow:var(--shadow);border:1px solid var(--line)}
 .card-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:18px 20px 4px}
@@ -287,6 +303,10 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
 }
 @media (max-width: 640px){
   :root{--header-h:53px}
+  .vbar-in{padding:12px 16px 0}
+  .vguide{font-size:12.5px;margin-bottom:10px}
+  .vtabs{margin:0 -16px;padding:0 16px 12px}
+  .vtabs button{padding:8px 12px;font-size:11px;letter-spacing:0.1em}
   .tabs{overflow-x:auto;scrollbar-width:none}
   .tabs button{padding:10px 10px 11px}
   .vright{padding:16px}
@@ -324,6 +344,14 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
     </label>
   </div>
 </header>
+
+<nav class="vbar" aria-label="Business area">
+  <div class="vbar-in">
+    <p class="vguide"><b>Choose your business area</b> to see this week&rsquo;s innovation news, trends and startups picked for it. Then filter by region, story type or topic, and use <b>Copy brief</b> to share it.</p>
+    <div class="vtabs" id="vtabs" role="tablist" aria-label="Business area"></div>
+    <p class="vfocus" id="vfocus"></p>
+  </div>
+</nav>
 
 <section class="hero" aria-labelledby="headline">
   <div class="hero-in">
@@ -368,7 +396,7 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
         <div class="frow scroll" id="cats" role="group" aria-label="Category"></div>
       </div>
     </div>
-    <div class="feedhead">
+    <div class="feedhead" id="feedhead">
       <span><b id="feedTitle">All stories</b> · <span id="feedCount"></span></span>
       <button class="clear" id="clear" type="button" hidden>Clear filters</button>
     </div>
@@ -449,6 +477,49 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
   function plural(n, one, many) { return n + " " + (n === 1 ? one : many); }
 
   function edition() { return FEED.editions[state.ed]; }
+
+  /* Business areas. "all" is the company-wide pulse; each vertical has its own tailored report. */
+  var VERTS = (FEED.meta.verticals && FEED.meta.verticals.length ? FEED.meta.verticals : [
+    { id: "development", label: "Development" }, { id: "communities", label: "Communities" }, { id: "hospitality", label: "Hospitality" },
+    { id: "education", label: "Education" }, { id: "investments", label: "Investments" }, { id: "infrastructure", label: "Infrastructure" }]);
+  var VERT = {}; VERTS.forEach(function (v) { VERT[v.id] = v; });
+  function pickVertical() {
+    var q = null;
+    try { q = new URLSearchParams(location.search).get("v"); } catch (err) {}
+    if (q && (q === "all" || VERT[q])) return q;
+    try { var saved = localStorage.getItem("ipulse.vertical"); if (saved && (saved === "all" || VERT[saved])) return saved; } catch (err) {}
+    return "all";
+  }
+  state.v = pickVertical();
+  function vLabel() { return state.v === "all" ? "Aldar" : VERT[state.v].label; }
+  /* The report on screen: the company-wide edition, or the chosen vertical's report inside it. */
+  function view() {
+    var e = edition(); if (!e) return null;
+    if (state.v === "all") return e;
+    var base = { id: e.id, label: e.label, period: e.period, published_at: e.published_at, stories_scanned: e.stories_scanned };
+    var r = (e.verticals || {})[state.v];
+    if (!r) return Object.assign(base, { missing: true, posts: [], takeaways: [],
+      headline: state.ed === 0 ? VERT[state.v].label + " report starts with the next weekly edition" : "No " + VERT[state.v].label + " report in this edition" });
+    return Object.assign({}, r, base);  // the edition's own id, label and dates win over the report's
+  }
+  function renderVerticals() {
+    $("vtabs").innerHTML = [{ id: "all", label: "All Aldar" }].concat(VERTS).map(function (v) {
+      return '<button type="button" role="tab" data-v="' + esc(v.id) + '" aria-selected="' + (state.v === v.id) + '"' + (v.id === "all" ? ' class="all"' : "") + ">" + esc(v.label) + "</button>";
+    }).join("");
+    var f = state.v === "all" ? "" : (VERT[state.v].focus || "");
+    $("vfocus").textContent = f ? "Picked for " + VERT[state.v].label + ": " + f.replace(/^Aldar [A-Za-z ]+? (builds|manages|runs|operates|owns|delivers)/, function (m, verb) { return verb.charAt(0).toUpperCase() + verb.slice(1); }) + "." : "";
+    var sel = $("vtabs").querySelector('[aria-selected="true"]');
+    if (sel && sel.scrollIntoView) try { sel.scrollIntoView({ block: "nearest", inline: "nearest" }); } catch (err) {}
+  }
+  function setVertical(v) {
+    state.v = v; state.cat = "all"; state.type = "all";
+    try { localStorage.setItem("ipulse.vertical", v); } catch (err) {}
+    try {
+      var q = new URLSearchParams(location.search); if (v === "all") q.delete("v"); else q.set("v", v);
+      var qs = q.toString(); history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash);
+    } catch (err) {}
+    renderVerticals(); render();
+  }
   function filtering() { return state.cat !== "all" || state.type !== "all" || state.region !== "all"; }
 
   function renderEditionPicker() {
@@ -465,11 +536,12 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
     var inv = posts.filter(function (p) { return p.type === "investment"; });
     var total = inv.reduce(function (s, p) { return s + (p.amount_usd_m || 0); }, 0);
     var gcc = posts.filter(function (p) { return p.region === "GCC"; }).length;
-    $("edLabel").textContent = (state.ed === 0 ? "Latest edition · " : "Archive · ") + (e.label || e.id);
+    $("edLabel").textContent = (state.ed === 0 ? "Latest edition · " : "Archive · ") + (state.v === "all" ? "" : vLabel() + " · ") + (e.label || e.id);
     $("headline").textContent = e.headline || "";
     var bits = [];
     if (e.period) bits.push(fmtDate(e.period.from) + " – " + fmtDate(e.period.to));
-    if (e.stories_scanned) bits.push(e.stories_scanned + " articles read" + (e.distinct_events ? ", " + e.distinct_events + " distinct stories" : ""));
+    if (state.v !== "all" && e.relevant_stories) bits.push(e.relevant_stories + " stories relevant to " + vLabel() + (e.stories_scanned ? ", from " + e.stories_scanned + " articles read" : ""));
+    else if (e.stories_scanned) bits.push(e.stories_scanned + " articles read" + (e.distinct_events ? ", " + e.distinct_events + " distinct stories" : ""));
     $("period").textContent = bits.join(" · ");
     var stats = [[posts.length, "Stories"], [inv.length, "Funding deals"], [money(total) || "–", "Capital raised"]];
     $("stats").innerHTML = stats.map(function (s) {
@@ -559,7 +631,7 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
     var m = e.matrix || [];
     if (!m.length) { $("map").innerHTML = ""; return; }
     var X0 = 30, X1 = 292, Y0 = 8, Y1 = 196, mx = (X0 + X1) / 2, my = (Y0 + Y1) / 2;
-    var svg = '<svg viewBox="0 0 300 226" role="img" aria-label="Category map: market readiness against relevance to Aldar">' +
+    var svg = '<svg viewBox="0 0 300 226" role="img" aria-label="Category map: market readiness against relevance to ' + esc(vLabel()) + '">' +
       '<rect x="' + mx + '" y="' + Y0 + '" width="' + (X1 - mx) + '" height="' + (my - Y0) + '" fill="#EEF5EF"/>' +
       '<rect x="' + X0 + '" y="' + Y0 + '" width="' + (mx - X0) + '" height="' + (my - Y0) + '" fill="#F4F6FA"/>' +
       '<line x1="' + X0 + '" y1="' + Y1 + '" x2="' + X1 + '" y2="' + Y1 + '" stroke="#9AA0AC"/><line x1="' + X0 + '" y1="' + Y0 + '" x2="' + X0 + '" y2="' + Y1 + '" stroke="#9AA0AC"/>' +
@@ -569,7 +641,7 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
       '<text x="' + (X0 + 5) + '" y="' + (Y1 - 6) + '" font-size="9" font-weight="600" fill="#9AA0AC">PARK</text>' +
       '<text x="' + (X1 - 5) + '" y="' + (Y1 - 6) + '" font-size="9" font-weight="600" fill="#9AA0AC" text-anchor="end">USE WHEN NEEDED</text>' +
       '<text x="' + mx + '" y="' + (Y1 + 16) + '" font-size="10" fill="#6A6A78" text-anchor="middle">Market readiness \u2192</text>' +
-      '<text transform="translate(11 ' + my + ') rotate(-90)" font-size="10" fill="#6A6A78" text-anchor="middle">Relevance to Aldar \u2192</text>';
+      '<text transform="translate(11 ' + my + ') rotate(-90)" font-size="10" fill="#6A6A78" text-anchor="middle">Relevance to ' + esc(vLabel()) + ' \u2192</text>';
     m.forEach(function (d) {
       var c = catOf(d.category), x = X0 + d.readiness / 100 * (X1 - X0), y = Y1 - d.relevance / 100 * (Y1 - Y0), hype = d.hype - d.substance >= 15;
       svg += '<g><title>' + esc(c.label) + ": readiness " + d.readiness + ", relevance " + d.relevance + ", hype " + d.hype + ", substance " + d.substance + ". " + esc(d.reason || "") + "</title>" +
@@ -628,7 +700,7 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
       '<div class="body">' + kick +
       '<h3><a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener">' + esc(p.headline) + "</a></h3>" +
       (p.summary ? '<p class="sum">' + esc(p.summary) + "</p>" : "") +
-      (p.why_it_matters ? '<div class="why"><b>Why it matters for Aldar</b><span>' + esc(p.why_it_matters) + "</span></div>" : "") +
+      (p.why_it_matters ? '<div class="why"><b>Why it matters for ' + esc(vLabel()) + "</b><span>" + esc(p.why_it_matters) + "</span></div>" : "") +
       '<div class="meta">' + meta.join("") + "</div></div>" +
       thumbHtml(p, c) + "</article>";
   }
@@ -647,11 +719,22 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
   }
 
   function render() {
-    var e = edition();
+    var e = view();
     if (!e) {
       $("edLabel").textContent = "No editions yet";
       $("headline").textContent = "The first edition will appear after the next Monday run.";
       $("posts").innerHTML = '<div class="empty">No stories yet.</div>';
+      return;
+    }
+    ["stats", "filters", "feedhead"].forEach(function (id) { $(id).hidden = !!e.missing; });
+    document.querySelector(".side").hidden = !!e.missing;
+    document.querySelector(".wrap").classList.toggle("solo", !!e.missing);
+    if (e.missing) {
+      renderHero(e); renderTabs(e);
+      $("feedhead").hidden = true;
+      $("posts").innerHTML = '<div class="empty">' + (state.ed === 0 ? "The " + esc(vLabel()) + " report starts with the next weekly edition." : "This edition was published before business-area reports began.") +
+        " Choose <b>All Aldar</b> to see the company-wide pulse.</div>";
+      $("foot").textContent = "Innovation Pulse updates every Monday at 10:00 Abu Dhabi time.";
       return;
     }
     renderHero(e); renderTakeaways(e); renderTrends(e); renderMap(e); renderFilters(e); renderPosts(e); renderTabs(e);
@@ -661,7 +744,7 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
 
   /* Re-render after a filter change, keeping the top of the list in view. */
   function refresh(heroToo) {
-    var e = edition(); if (heroToo) renderHero(e); renderFilters(e); renderPosts(e);
+    var e = view(); if (heroToo) renderHero(e); renderFilters(e); renderPosts(e);
     var headerH = $("top").offsetHeight, feedTop = $("filters").parentNode.getBoundingClientRect().top;
     if (feedTop < headerH)  // list starts above the screen: bring the filters and first story back into view
       window.scrollTo({ top: window.scrollY + feedTop - headerH - 12, behavior: "smooth" });
@@ -692,8 +775,8 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
 
   /* Plain-text brief that pastes cleanly into email, Teams or WhatsApp. */
   $("copy").addEventListener("click", function () {
-    var e = edition(); if (!e) return;
-    var lines = ["Innovation Pulse · " + (e.label || e.id) + (state.region === "gcc" ? " · GCC" : ""), "", e.headline, "", "Key takeaways:"];
+    var e = view(); if (!e || e.missing) return;
+    var lines = ["Innovation Pulse · " + (state.v === "all" ? "" : vLabel() + " · ") + (e.label || e.id) + (state.region === "gcc" ? " · GCC" : ""), "", e.headline, "", "Key takeaways:"];
     (e.takeaways || []).forEach(function (t, i) { lines.push((i + 1) + ". " + t); });
     if ((e.trend_watch || []).length) {
       lines.push("", "Trend radar:");
@@ -722,7 +805,12 @@ details[open].card > summary .chev{transform:rotate(-135deg)}
   /* Trend radar starts open on wide screens and folded on phones, so stories come sooner. */
   try { $("trendPanel").open = window.matchMedia("(min-width: 961px)").matches; } catch (err) { $("trendPanel").open = true; }
 
+  $("vtabs").addEventListener("click", function (ev) {
+    var b = ev.target.closest("[data-v]"); if (b && b.getAttribute("data-v") !== state.v) setVertical(b.getAttribute("data-v"));
+  });
+
   renderEditionPicker();
+  renderVerticals();
   render();
 })();
 </script>

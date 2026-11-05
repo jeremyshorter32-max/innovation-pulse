@@ -10,7 +10,10 @@ What it does, once a week:
   3. If ANTHROPIC_API_KEY is set, Claude picks the stories that matter most to
      executives and writes a short summary plus a "why it matters" line for each.
      Without a key, a simple scoring rule picks the stories instead.
-  4. Adds the new edition to data/pulse-feed.json and data/pulse-feed.js, which the
+  4. Does the same for each Aldar business area (the 'verticals' in pulse/config.json:
+     Development, Communities, Hospitality, Education, Investments, Infrastructure), each
+     with its own searches, story picks, takeaways, trends and "why it matters" lines.
+  5. Adds the new edition to data/pulse-feed.json and data/pulse-feed.js, which the
      page index.html reads.
 
 Run it:
@@ -92,7 +95,8 @@ REGION_PATTERNS = [
 # --------------------------------------------------------------------------- utils
 
 def log(msg: str) -> None:
-    print(msg, file=sys.stderr, flush=True)
+    sys.stderr.write(msg + "\n")  # one write per line, so parallel runs do not mix lines
+    sys.stderr.flush()
 
 
 def load_config() -> dict:
@@ -192,23 +196,27 @@ def parse_feed(data: bytes, default_source: str) -> list[dict]:
 def collect(config: dict) -> tuple[list[dict], int]:
     """Returns the distinct stories and how many relevant articles they came from."""
     days = config["lookback_days"]
-    jobs: list[tuple[str, str, str | None]] = []  # (url, source name, category hint)
+    jobs: list[tuple[str, str, str | None, str | None]] = []  # (url, source name, category hint, vertical hint)
     for cat in config["categories"]:
         for q in cat["queries"]:
-            jobs.append((google_news_url(q, days), "Google News", cat["id"]))
+            jobs.append((google_news_url(q, days), "Google News", cat["id"], None))
     for q in config.get("general_queries", []) + config.get("gcc_queries", []):
-        jobs.append((google_news_url(q, days), "Google News", None))
+        jobs.append((google_news_url(q, days), "Google News", None, None))
+    for v in config.get("verticals", []):
+        for q in v.get("queries", []) + v.get("gcc_queries", []):
+            jobs.append((google_news_url(q, days), "Google News", None, v["id"]))
     for feed in config.get("feeds", []):
-        jobs.append((feed["url"], feed["name"], None))
+        jobs.append((feed["url"], feed["name"], None, None))
 
     log(f"Fetching {len(jobs)} sources…")
 
     def run(job):
-        url, name, hint = job
+        url, name, hint, vhint = job
         data = fetch(url)
         found = parse_feed(data, name) if data else []
         for item in found:
             item["hint"] = hint
+            item["vhints"] = {vhint} if vhint else set()
         return found
 
     with ThreadPoolExecutor(max_workers=8) as pool:
@@ -221,20 +229,26 @@ def collect(config: dict) -> tuple[list[dict], int]:
             if item["published"] and item["published"] < cutoff:
                 continue
             key = norm_key(item["title"])
-            if not key or key in seen:
+            if not key:
+                continue
+            if key in seen:  # the same article from another search: remember every vertical that found it
+                seen[key]["vhints"] |= item["vhints"]
+                seen[key]["hint"] = seen[key]["hint"] or item["hint"]
                 continue
             seen[key] = item
     items = list(seen.values())
-    # Stories from a category search are relevant by design; stories from general searches
-    # and feeds must name at least one category keyword. Market-size press releases are dropped.
+    # Stories from a category or vertical search are relevant by design; stories from general
+    # searches and feeds must name at least one category keyword. Market-size press releases are dropped.
     items = [i for i in items if not is_noise(i)]
     for item in items:
         enrich(item, config)
-    items = [i for i in items if i["hint"] or i["_kw"]]
+    items = [i for i in items if i["hint"] or i["_kw"] or i["vhints"]]
     raw = len(items)
     items = group_same_story(items)
     items.sort(key=lambda i: i["published"] or cutoff, reverse=True)
     log(f"Kept {raw} relevant stories from the last {days} days, about {len(items)} distinct events.")
+    for v in config.get("verticals", []):
+        log(f"  {v['label']}: {sum(1 for i in items if v['id'] in i['verticals'])} stories tagged.")
     return items, raw
 
 
@@ -256,6 +270,11 @@ def enrich(item: dict, config: dict) -> None:
             best, best_score = cat["id"], score
     item["_kw"] = best_score >= 1  # names at least one category keyword
     item["category"] = best or config["categories"][0]["id"]
+    # Business areas this story is relevant to: found by that area's own searches, or naming its keywords.
+    # vmatch counts each area's keywords in the story, a guide to how strongly it belongs there.
+    item["vmatch"] = {v["id"]: n for v in config.get("verticals", [])
+                      if (n := sum(1 for k in v.get("keywords", []) if k.lower() in text))}
+    item["verticals"] = sorted(set(item.get("vhints", ())) | set(item["vmatch"]))
     title = item["title"].lower()
     item["type"] = "trend"
     for t, pattern in TYPE_PATTERNS:
@@ -383,6 +402,9 @@ def group_same_story(items: list[dict]) -> list[dict]:
         group.sort(key=source_rank)
         lead = {k: v for k, v in group[0].items() if not k.startswith("_")}
         sources = []
+        lead["verticals"] = sorted({v for o in group for v in o.get("verticals", [])})
+        lead["vmatch"] = {v: max(o.get("vmatch", {}).get(v, 0) for o in group) for v in lead["verticals"]}
+        lead.pop("vhints", None)
         for other in group:
             if other["source"] not in sources:
                 sources.append(other["source"])
@@ -449,40 +471,93 @@ def history_brief(history: list[dict], moves: list[dict], config: dict) -> str:
     return "\n".join(lines)
 
 
-def curate_with_claude(items: list[dict], config: dict, history: list[dict], moves: list[dict]) -> dict | None:
-    """Ask Claude to pick and write up the stories and track trends. Returns None on any failure."""
+def curate_with_claude(items: list[dict], config: dict, history: list[dict], moves: list[dict],
+                       scope: dict | None = None) -> dict | None:
+    """Ask Claude to pick and write up the stories and track trends. Returns None on any failure.
+
+    With scope (one of the verticals in config.json), the briefing is written for that business area:
+    its stories go first, and the takeaways, trends and "why it matters" lines are written for it.
+    """
+    tag = f"[{scope['label']}] " if scope else ""
     if not os.environ.get("ANTHROPIC_API_KEY"):
-        log("No ANTHROPIC_API_KEY set; using the rule-based picker.")
+        log(f"{tag}No ANTHROPIC_API_KEY set; using the rule-based picker.")
         return None
     try:
         import anthropic
     except ImportError:
-        log("The anthropic package is not installed; using the rule-based picker.")
+        log(f"{tag}The anthropic package is not installed; using the rule-based picker.")
         return None
 
-    # The most widely covered stories go to Claude, with every GCC story kept in.
-    ranked = sorted(items, key=lambda i: (i["region"] != "GCC", -i.get("coverage", 1), source_rank(i)))
-    gcc = [i for i in ranked if i["region"] == "GCC"][:40]
-    rest = sorted((i for i in ranked if i not in gcc), key=lambda i: (-i.get("coverage", 1), source_rank(i)))
-    candidates = (gcc + rest)[: config["max_candidates_for_ai"]]
+    limit = config["max_candidates_for_ai"]
+    by_size = lambda i: (-i.get("coverage", 1), source_rank(i))
+    if scope:
+        # Stories tagged for this business area first (GCC ones leading), then the week's biggest
+        # stories overall, so a major general shift can still make the cut.
+        mine = [i for i in items if scope["id"] in i.get("verticals", [])]
+        mine = sorted(mine, key=lambda i: (i["region"] != "GCC",) + by_size(i))[: int(limit * 0.75)]
+        rest = sorted((i for i in items if i not in mine), key=by_size)
+        candidates = (mine + rest)[:limit]
+        max_posts = config.get("vertical_max_posts", 16)
+        gcc_min = config.get("vertical_gcc_min_posts", 4)
+    else:
+        # The most widely covered stories go to Claude, with every GCC story kept in.
+        ranked = sorted(items, key=lambda i: (i["region"] != "GCC",) + by_size(i))
+        gcc = [i for i in ranked if i["region"] == "GCC"][:40]
+        rest = sorted((i for i in ranked if i not in gcc), key=by_size)
+        candidates = (gcc + rest)[:limit]
+        max_posts = config["max_posts"]
+        gcc_min = config.get("gcc_min_posts", 6)
     cat_ids = [c["id"] for c in config["categories"]]
     cat_lines = "\n".join(f"- {c['id']}: {c['label']}" for c in config["categories"])
     listing = "\n".join(
         f"[{n}] {i['title']} | source: {i['source']} | outlets covering it: {i.get('coverage', 1)}"
         f" | date: {i['published'].date() if i['published'] else 'unknown'}"
         f" | guess: {i['category']}/{i['type']}/{i['region']}"
+        + (" | TAGGED FOR THIS BUSINESS" if scope and scope["id"] in i.get("verticals", []) else "")
         + (f" | snippet: {i['snippet']}" if i["snippet"] else "")
         for n, i in enumerate(candidates)
     )
 
+    if scope:
+        intro = (
+            "You are an innovation analyst writing the weekly innovation briefing for the leadership team of "
+            f"{scope['label']} at Aldar Properties, a real estate developer and asset manager in Abu Dhabi. "
+            f"About this business: {scope['focus']}.\n\n"
+            "Your readers are busy executives. They want to know, in seconds, what moved in innovation this week "
+            "that matters to their business: what they could adopt, pilot, partner with or must prepare for, plus "
+            "the trends shaping their part of the market. Stories marked TAGGED FOR THIS BUSINESS were found by "
+            "searches for this business; prefer them, and include a big general shift (for example in AI) only "
+            "when it clearly affects this business. You write a new edition every week and keep a running view "
+            "of the trends, so say how this week fits what came before.\n\n"
+        )
+        spread = (
+            "- Cover the categories that matter to this business; keep any one category to at most "
+            f"{config.get('max_per_category', 4) + 1} stories unless the week is dominated by it. Do not pad with "
+            "weak or loosely related stories: fewer, sharper stories are better.\n"
+        )
+        why = f"the implication for Aldar's {scope['label']} business specifically"
+        trends = f"three to five running innovation themes that matter to {scope['label']}"
+    else:
+        intro = (
+            "You are an innovation analyst writing a weekly innovation briefing for "
+            f"{config['audience']}.\n\n"
+            "Your readers are busy executives. They want to know, in seconds, what moved in innovation this "
+            "week worldwide, across every category below: emerging trends, notable launches, major investments, "
+            "real deployments and regulation, plus what each means for a property developer and operator. You "
+            "write a new edition every week and keep a running view of the trends, so say how this week fits "
+            "what came before.\n\n"
+        )
+        spread = (
+            "- This is a broad briefing: cover every category that has a story worth reading, and keep any one "
+            f"category to at most {config.get('max_per_category', 4)} stories unless the week is dominated by it. "
+            "Do not pad a category with weak stories. Prefer stories with a clear line to real estate, cities, "
+            "retail, hospitality, workplaces or schools, but include big general shifts (for example in AI) too.\n"
+        )
+        why = ("the implication for a real estate developer and operator of communities, malls, offices, "
+               "hotels, schools and construction sites")
+        trends = "three to five running innovation themes that matter to this audience"
     system = (
-        "You are an innovation analyst writing a weekly innovation briefing for "
-        f"{config['audience']}.\n\n"
-        "Your readers are busy executives. They want to know, in seconds, what moved in innovation this "
-        "week worldwide, across every category below: emerging trends, notable launches, major investments, "
-        "real deployments and regulation, plus what each means for a property developer and operator. You "
-        "write a new edition every week and keep a running view of the trends, so say how this week fits "
-        "what came before.\n\n"
+        intro +
         f"Categories:\n{cat_lines}\n\n"
         "Rules:\n"
         "- Use only the numbered stories provided. Refer to each by its number in item_index. "
@@ -496,19 +571,15 @@ def curate_with_claude(items: list[dict], config: dict, history: list[dict], mov
         "scale, regulation, and anything in the GCC. A story covered by many outlets is usually bigger. Skip "
         "opinion pieces, listicles, market-size press releases, stock-price stories and stories already "
         "covered by another item you picked.\n"
-        "- This is a broad briefing: cover every category that has a story worth reading, and keep any one "
-        f"category to at most {config.get('max_per_category', 4)} stories unless the week is dominated by it. "
-        "Do not pad a category with weak stories. Prefer stories with a clear line to real estate, cities, "
-        "retail, hospitality, workplaces or schools, but include big general shifts (for example in AI) too.\n"
+        + spread +
         f"- The readers are based in Abu Dhabi and can filter the feed to GCC news, so include every significant "
-        f"GCC story (aim for at least {config.get('gcc_min_posts', 6)} if that many are worth reading); GCC stories "
+        f"GCC story (aim for at least {gcc_min} if that many are worth reading); GCC stories "
         "may go beyond the story limit. region is GCC for anything in or about the six Gulf states.\n"
         "- headline: at most 90 characters, plain and factual. summary: one or two sentences, at most 40 words. "
-        "why_it_matters: one sentence, at most 25 words, on the implication for a real estate developer and "
-        "operator of communities, malls, offices, hotels, schools and construction sites. Be concrete, avoid hype.\n"
+        f"why_it_matters: one sentence, at most 25 words, on {why}. Be concrete, avoid hype.\n"
         "- takeaways: the three most important patterns this week, one sentence each. Where it applies, say how "
         "this compares with earlier weeks.\n"
-        "- trend_watch: three to five running innovation themes that matter to this audience, carried over "
+        f"- trend_watch: {trends}, carried over "
         "from earlier editions where they continue. status: new (first appeared this week), rising (more or "
         "bigger evidence than before), steady, or cooling (less evidence than before). evidence: at most 25 "
         "words, citing this week's stories or the volume figures.\n"
@@ -557,7 +628,7 @@ def curate_with_claude(items: list[dict], config: dict, history: list[dict], mov
     }
 
     client = anthropic.Anthropic()
-    log(f"Asking Claude to curate {len(candidates)} stories…")
+    log(f"{tag}Asking Claude to curate {len(candidates)} stories…")
     try:
         response = client.beta.messages.create(
             model=config["model"],
@@ -570,25 +641,25 @@ def curate_with_claude(items: list[dict], config: dict, history: list[dict], mov
                 "role": "user",
                 "content": (
                     f"{history_brief(history, moves, config)}\n\n"
-                    f"Pick up to {config['max_posts']} stories for this week's briefing.\n\nStories:\n{listing}"
+                    f"Pick up to {max_posts} stories for this week's briefing.\n\nStories:\n{listing}"
                 ),
             }],
         )
     except anthropic.APIConnectionError as exc:
-        log(f"Could not reach the Claude API ({exc}); using the rule-based picker.")
+        log(f"{tag}Could not reach the Claude API ({exc}); using the rule-based picker.")
         return None
     except anthropic.APIStatusError as exc:
-        log(f"Claude API error {exc.status_code}: {exc.message}; using the rule-based picker.")
+        log(f"{tag}Claude API error {exc.status_code}: {exc.message}; using the rule-based picker.")
         return None
 
     if response.stop_reason in ("refusal", "max_tokens"):
-        log(f"Claude stopped early ({response.stop_reason}); using the rule-based picker.")
+        log(f"{tag}Claude stopped early ({response.stop_reason}); using the rule-based picker.")
         return None
     text = next((b.text for b in response.content if b.type == "text"), "")
     try:
         result = json.loads(text)
     except json.JSONDecodeError:
-        log("Claude returned unreadable JSON; using the rule-based picker.")
+        log(f"{tag}Claude returned unreadable JSON; using the rule-based picker.")
         return None
 
     posts, used = [], set()
@@ -609,8 +680,20 @@ def curate_with_claude(items: list[dict], config: dict, history: list[dict], mov
     }
 
 
-def curate_with_rules(items: list[dict], config: dict, history: list[dict], moves: list[dict]) -> dict:
-    """Fallback picker: favour widely covered stories, funding, GCC news and launches."""
+def curate_with_rules(items: list[dict], config: dict, history: list[dict], moves: list[dict],
+                      scope: dict | None = None) -> dict:
+    """Fallback picker: favour widely covered stories, funding, GCC news and launches.
+
+    With scope, only stories tagged for that business area are used (topped up with the week's
+    biggest stories when there are too few).
+    """
+    max_posts, gcc_min = config["max_posts"], config.get("gcc_min_posts", 6)
+    if scope:
+        mine = [i for i in items if scope["id"] in i.get("verticals", [])]
+        if len(mine) < 8:
+            mine += sorted((i for i in items if i not in mine), key=lambda i: -i.get("coverage", 1))[: 8 - len(mine)]
+        items = mine
+        max_posts, gcc_min = config.get("vertical_max_posts", 16), config.get("vertical_gcc_min_posts", 4)
     weight = {"investment": 3, "deployment": 2, "product": 2, "trend": 1}
 
     def score(i):
@@ -626,12 +709,17 @@ def curate_with_rules(items: list[dict], config: dict, history: list[dict], move
     labels = {c["id"]: c["label"] for c in config["categories"]}
     per_cat: dict[str, int] = {}
     posts = []
-    ranked = sorted(items, key=score, reverse=True)
+    if scope:  # stories that name this area's keywords most often come first
+        fit = lambda i: i.get("vmatch", {}).get(scope["id"], 0)
+        ranked = sorted(items, key=lambda i: (min(fit(i), 3), score(i)), reverse=True)
+    else:
+        fit = lambda i: 1
+        ranked = sorted(items, key=score, reverse=True)
     # GCC stories first, so that view always has news to show; then the best story in each
     # category, so the briefing stays broad; then the rest by score.
-    reserved = [i for i in ranked if i["region"] == "GCC"][: config.get("gcc_min_posts", 6)]
+    reserved = [i for i in ranked if i["region"] == "GCC" and fit(i)][:gcc_min]
     for c in config["categories"]:
-        best = next((i for i in ranked if i["category"] == c["id"] and i not in reserved), None)
+        best = next((i for i in ranked if i["category"] == c["id"] and i not in reserved and fit(i)), None)
         if best:
             reserved.append(best)
     cap = config.get("max_per_category", 4)
@@ -644,7 +732,7 @@ def curate_with_rules(items: list[dict], config: dict, history: list[dict], move
         chosen.add(id(i))
         per_cat[i["category"]] = per_cat.get(i["category"], 0) + 1
         posts.append(i)
-        if len(posts) >= config["max_posts"]:
+        if len(posts) >= max_posts:
             break
     posts.sort(key=ranked.index)  # show in order of importance, not GCC first
     posts = [make_post(i, {"headline": i["title"], "summary": i["snippet"], "why_it_matters": "", "company": ""}) for i in posts]
@@ -856,6 +944,7 @@ def load_feed(config: dict) -> dict:
         feed = {"meta": {}, "editions": []}
     feed["meta"]["title"] = TITLE
     feed["meta"]["categories"] = [{k: c[k] for k in ("id", "label", "color", "ink")} for c in config["categories"]]
+    feed["meta"]["verticals"] = [{"id": v["id"], "label": v["label"], "focus": v["focus"]} for v in config.get("verticals", [])]
     return feed
 
 
@@ -896,18 +985,71 @@ def main() -> int:
     signals = category_signals(items, config)
     moves = momentum(signals, history, config)
     curated = curate_with_claude(items, config, history, moves) or curate_with_rules(items, config, history, moves)
-    add_previews(curated["posts"])
 
-    # Web research by Claude: big moves, startups to watch, category map. Never blocks the edition.
+    # One tailored report per business area, written in parallel.
+    def build_vertical(v: dict) -> tuple[str, dict]:
+        mine = [i for i in items if v["id"] in i.get("verticals", [])]
+        past = [{"id": e["id"], **e["verticals"][v["id"]]} for e in history if v["id"] in e.get("verticals", {})]
+        v_signals = category_signals(mine, config)
+        v_moves = momentum(v_signals, past, config)
+        report = (curate_with_claude(items, config, past, v_moves, scope=v)
+                  or curate_with_rules(items, config, past, v_moves, scope=v))
+        return v["id"], {"label": v["label"], "relevant_stories": len(mine), "signals": v_signals,
+                         "momentum": v_moves, **report}
+
+    verticals_out: dict[str, dict] = {}
+    if config.get("verticals"):
+        with ThreadPoolExecutor(max_workers=config.get("research", {}).get("parallel", 4)) as pool:
+            for vid, report in pool.map(build_vertical, config["verticals"]):
+                verticals_out[vid] = report
+                log(f"[{report['label']}] {len(report['posts'])} posts ({report['generated_by']}).")
+
+    # Read each article's preview once, even when several reports picked it.
+    every_post = curated["posts"] + [p for r in verticals_out.values() for p in r["posts"]]
+    by_url: dict[str, list[dict]] = {}
+    for p in every_post:
+        by_url.setdefault(p["url"], []).append(p)
+    add_previews([group[0] for group in by_url.values()])
+    for group in by_url.values():
+        lead = group[0]
+        for p in group[1:]:
+            p["url"] = lead["url"]
+            if lead.get("image"):
+                p["image"] = lead["image"]
+            if not p.get("summary") and lead.get("summary"):
+                p["summary"] = lead["summary"]
+
+    # Web research by Claude: big moves, startups to watch, category map, for the whole company and
+    # (if switched on) for each business area. Runs in parallel and never blocks the edition.
     period_from = (now - timedelta(days=config["lookback_days"])).strftime("%Y-%m-%d")
-    try:
-        found = research.run_research(
-            config, [p["headline"] for p in curated["posts"]],
-            next((e for e in history if e.get("challengers")), None), (period_from, now.strftime("%Y-%m-%d")),
-        ) or {}
-    except Exception as exc:  # a failed research run must not stop the weekly edition
-        log(f"Research step failed ({exc!r}); publishing without it.")
-        found = {}
+    window = (period_from, now.strftime("%Y-%m-%d"))
+
+    def research_for(scope: dict | None) -> tuple[str | None, dict]:
+        if scope:
+            report = verticals_out.get(scope["id"], {})
+            past = [e["verticals"][scope["id"]] for e in history if scope["id"] in e.get("verticals", {})]
+        else:
+            report, past = curated, history
+        try:
+            found = research.run_research(
+                config, [p["headline"] for p in report.get("posts", [])],
+                next((e for e in past if e.get("challengers")), None), window, scope=scope,
+            ) or {}
+        except Exception as exc:  # a failed research run must not stop the weekly edition
+            log(f"{'[' + scope['label'] + '] ' if scope else ''}Research step failed ({exc!r}); publishing without it.")
+            found = {}
+        return (scope["id"] if scope else None), found
+
+    scopes: list[dict | None] = [None]
+    if config.get("research", {}).get("per_vertical", True):
+        scopes += [v for v in config.get("verticals", []) if v["id"] in verticals_out]
+    found: dict = {}
+    with ThreadPoolExecutor(max_workers=config.get("research", {}).get("parallel", 4)) as pool:
+        for vid, result in pool.map(research_for, scopes):
+            if vid is None:
+                found = result
+            else:
+                verticals_out[vid].update(result)
     edition = {
         "id": edition_id,
         "label": f"Week {iso.week} · {now.strftime('%-d %b %Y')}",
@@ -922,6 +1064,7 @@ def main() -> int:
         "momentum": moves,
         **curated,
         **found,
+        "verticals": verticals_out,
     }
 
     if args.dry_run:
@@ -933,7 +1076,8 @@ def main() -> int:
     feed["editions"] = feed["editions"][: config["max_editions_kept"]]
     feed["meta"]["updated_at"] = edition["published_at"]
     save_feed(feed)
-    log(f"Published {edition_id}: {len(edition['posts'])} posts ({edition['generated_by']}).")
+    log(f"Published {edition_id}: {len(edition['posts'])} posts ({edition['generated_by']}), "
+        f"plus {len(verticals_out)} business-area reports.")
     return 0
 
 
