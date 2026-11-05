@@ -65,149 +65,181 @@ window.PULSE_FEED = {
     "ink": "#5E6E32"
    }
   ],
-  "updated_at": "2026-11-05T17:42+04:00"
+  "updated_at": "2026-11-05T22:09+04:00",
+  "verticals": [
+   {
+    "id": "development",
+    "label": "Development",
+    "focus": "Aldar Development builds masterplanned communities in the UAE: land and masterplanning, design, construction delivery, off-plan sales, handover and the home-buyer experience"
+   },
+   {
+    "id": "communities",
+    "label": "Communities",
+    "focus": "Aldar Estates manages Aldar's communities: facility management, property and community management for about 155,000 homes, and integrated services such as cleaning, security, landscaping and maintenance"
+   },
+   {
+    "id": "hospitality",
+    "label": "Hospitality",
+    "focus": "Aldar Hospitality and Leisure runs 12 hotels and 8 beach clubs, marinas and golf courses in Abu Dhabi"
+   },
+   {
+    "id": "education",
+    "label": "Education",
+    "focus": "Aldar Education operates and manages 27 schools in the UAE with about 36,000 students, their teachers, parents and campuses"
+   },
+   {
+    "id": "investments",
+    "label": "Investments",
+    "focus": "Aldar Investment owns and runs a recurring-income portfolio: offices, retail malls, residential leasing, and industrial and logistics assets"
+   },
+   {
+    "id": "infrastructure",
+    "label": "Infrastructure",
+    "focus": "Aldar Projects delivers government infrastructure and community projects in Abu Dhabi: roads, cycle tracks, villas and community facilities such as schools, mosques and parks"
+   }
+  ]
  },
  "editions": [
   {
    "id": "2026-W45",
    "label": "Week 45 · 5 Nov 2026",
-   "published_at": "2026-11-05T17:42+04:00",
+   "published_at": "2026-11-05T22:09+04:00",
    "period": {
     "from": "2026-10-29",
     "to": "2026-11-05"
    },
-   "stories_scanned": 1901,
-   "distinct_events": 1035,
+   "stories_scanned": 2802,
+   "distinct_events": 1472,
    "signals": {
     "volume": {
-     "proptech": 39,
-     "ai": 253,
-     "sustainability": 131,
-     "construction": 82,
-     "mobility": 106,
-     "robotics": 131,
-     "retail": 107,
-     "fintech": 52,
-     "frontier": 61,
-     "work_edu": 73
+     "proptech": 269,
+     "ai": 331,
+     "sustainability": 136,
+     "construction": 94,
+     "mobility": 119,
+     "robotics": 135,
+     "retail": 122,
+     "fintech": 55,
+     "frontier": 81,
+     "work_edu": 130
     },
     "deals": {
-     "proptech": 4,
+     "proptech": 13,
      "ai": 39,
-     "sustainability": 10,
+     "sustainability": 11,
      "construction": 1,
-     "mobility": 2,
-     "robotics": 14,
-     "retail": 3,
-     "fintech": 8,
-     "frontier": 4,
+     "mobility": 3,
+     "robotics": 13,
+     "retail": 2,
+     "fintech": 9,
+     "frontier": 6,
      "work_edu": 1
     }
    },
    "momentum": [
     {
      "category": "proptech",
-     "volume": 39,
-     "deals": 4,
+     "volume": 269,
+     "deals": 13,
      "avg_prev": null,
      "change_pct": null
     },
     {
      "category": "ai",
-     "volume": 253,
+     "volume": 331,
      "deals": 39,
      "avg_prev": null,
      "change_pct": null
     },
     {
      "category": "sustainability",
-     "volume": 131,
-     "deals": 10,
+     "volume": 136,
+     "deals": 11,
      "avg_prev": null,
      "change_pct": null
     },
     {
      "category": "construction",
-     "volume": 82,
+     "volume": 94,
      "deals": 1,
      "avg_prev": null,
      "change_pct": null
     },
     {
      "category": "mobility",
-     "volume": 106,
-     "deals": 2,
-     "avg_prev": null,
-     "change_pct": null
-    },
-    {
-     "category": "robotics",
-     "volume": 131,
-     "deals": 14,
-     "avg_prev": null,
-     "change_pct": null
-    },
-    {
-     "category": "retail",
-     "volume": 107,
+     "volume": 119,
      "deals": 3,
      "avg_prev": null,
      "change_pct": null
     },
     {
+     "category": "robotics",
+     "volume": 135,
+     "deals": 13,
+     "avg_prev": null,
+     "change_pct": null
+    },
+    {
+     "category": "retail",
+     "volume": 122,
+     "deals": 2,
+     "avg_prev": null,
+     "change_pct": null
+    },
+    {
      "category": "fintech",
-     "volume": 52,
-     "deals": 8,
+     "volume": 55,
+     "deals": 9,
      "avg_prev": null,
      "change_pct": null
     },
     {
      "category": "frontier",
-     "volume": 61,
-     "deals": 4,
+     "volume": 81,
+     "deals": 6,
      "avg_prev": null,
      "change_pct": null
     },
     {
      "category": "work_edu",
-     "volume": 73,
+     "volume": 130,
      "deals": 1,
      "avg_prev": null,
      "change_pct": null
     }
    ],
    "generated_by": "claude",
-   "headline": "Abu Dhabi's ADNOC and G42 sign AI deals with OpenAI as Altman visits UAE",
+   "headline": "Abu Dhabi's ADNOC and G42 sign AI deals with OpenAI during Altman's UAE visit",
    "takeaways": [
-    "Gulf AI ambitions dominated GCC news: Abu Dhabi signed OpenAI deals, Aramco took an AI stake and Oracle expanded regional data centres. This is the first tracked week, so the baseline starts here.",
-    "Robots are moving from demos to work: Agility's humanoid SPAC was approved, Xiaomi ran humanoids on full factory shifts and Zipline added 300 Walmart drone sites.",
-    "AI is reaching building operations, retail floors and schools, with new security risks such as the cyberattack on supermarket fridges and fresh funding for AI agent controls."
+    "Gulf capital and compute dominated AI news: OpenAI deals in Abu Dhabi, UAE investors in OpenAI's $20 billion round, and Aramco's Saudi AI stake set the baseline for future weeks.",
+    "Robots are moving from demos to work, with Agility's Nasdaq listing, Xiaomi humanoids on full factory shifts and Zipline adding 300 Walmart drone sites.",
+    "Pushback on AI is growing, from US regulation fears after the Democratic sweep to the backlash over Google's AI policy for schools, so governance now matters alongside adoption."
    ],
    "trend_watch": [
     {
-     "trend": "Gulf sovereign AI and data centre buildout",
+     "trend": "GCC sovereign AI and compute buildout",
      "status": "new",
-     "evidence": "ADNOC/G42-OpenAI deals, Aramco's 49% AI stake, Oracle UAE/Saudi data centres and EQT courting Gulf sovereign investors."
+     "evidence": "ADNOC/G42-OpenAI deals, UAE capital in OpenAI's round, Aramco's 49% AI stake and Go Telecom's Saudi AI cloud contract."
     },
     {
-     "trend": "Humanoid and service robots go commercial",
+     "trend": "Humanoid and service robots commercialising",
      "status": "new",
-     "evidence": "Agility $2.5B SPAC approved, Xiaomi 8-hour humanoid shifts, Meta-Fourier prototype, CNTXT robotics facilities in UAE; robotics had 131 stories and 14 deals."
+     "evidence": "Agility goes public, Xiaomi humanoids work 8-hour shifts, Peppermint raises for cleaning robots; robotics logged 13 funding deals."
     },
     {
-     "trend": "AI agents need security and governance",
+     "trend": "AI regulation and public backlash",
      "status": "new",
-     "evidence": "Sentra raised $150M for AI agent data controls; supermarket fridge cyberattack shows connected building systems are exposed. AI led volume with 253 stories."
+     "evidence": "US AI regulation fears after Democratic sweep, and Google faces backlash over its AI policy for schools across 63 outlets."
     },
     {
-     "trend": "Autonomous delivery and transport in cities",
+     "trend": "Gulf real estate capital and development partnerships",
      "status": "new",
-     "evidence": "Zipline adds 300 Walmart drone sites, Tesla robotaxis reach Fort Worth, and self-driving shuttles are coming to Sentosa."
+     "evidence": "Brookfield-Lunate Gulf development firm, Arcapita's $1.5B logistics plan, Abu Dhabi residential sales up 30.06% in October."
     },
     {
-     "trend": "Energy-efficient buildings and storage",
+     "trend": "Autonomous delivery and AI-managed mobility",
      "status": "new",
-     "evidence": "Schneider targets 28% hospital energy savings, Masdar starts $28.3m Spanish storage builds, and the smart charging study finds 40% grid savings."
+     "evidence": "Zipline's 300 Walmart drone sites, Dubai's AI traffic lights and Sentosa self-driving shuttles."
     }
    ],
    "posts": [
@@ -218,17 +250,37 @@ window.PULSE_FEED = {
      "region": "GCC",
      "company": "ADNOC, G42, OpenAI",
      "amount_usd_m": null,
-     "headline": "ADNOC and G42 sign deals with OpenAI during Sam Altman's UAE visit",
-     "summary": "Abu Dhabi's ADNOC and G42 signed agreements with OpenAI, covered by 20 outlets. Related reports say they target government services and education.",
-     "why_it_matters": "Enterprise-grade AI tools will likely become available locally, so Aldar's schools, operations and customer services should prepare to adopt them.",
+     "headline": "ADNOC and G42 sign deals with OpenAI as Sam Altman visits the UAE",
+     "summary": "Abu Dhabi's ADNOC and G42 signed agreements with OpenAI. Related Abu Dhabi deals aim to transform government services and education with AI, as reported by 14 outlets.",
+     "why_it_matters": "Government-backed OpenAI access in Abu Dhabi could speed AI adoption in Aldar's schools and services and in permitting processes.",
      "source": "Reuters",
      "url": "https://www.reuters.com/business/energy/abu-dhabis-adnoc-g42-sign-deal-with-openai-sam-altman-travels-uae-2026-11-02/",
-     "published": "2026-11-02",
-     "coverage": 20,
+     "published": "2026-11-01",
+     "coverage": 14,
      "also_covered_by": [
-      "The National",
       "Khaleej Times",
-      "CNBC"
+      "CNBC",
+      "Fortune"
+     ]
+    },
+    {
+     "id": "openaicutsroundto20billionasuaeinvestors",
+     "category": "ai",
+     "type": "trend",
+     "region": "GCC",
+     "company": "OpenAI",
+     "amount_usd_m": null,
+     "headline": "OpenAI cuts funding round to $20 billion as UAE investors pair capital with compute",
+     "summary": "OpenAI reduced its funding round to $20 billion. UAE investors are combining cash with compute capacity, which reinforces the Gulf's role in global AI infrastructure.",
+     "why_it_matters": "Gulf compute ambitions drive demand for data centre land, power and specialised construction in the UAE.",
+     "source": "Forbes",
+     "url": "https://www.forbes.com/sites/guneyyildiz/2026/11/02/openai-cuts-round-to-20-billion-as-uae-investors-pair-capital-with-compute-capacity/",
+     "published": "2026-10-30",
+     "coverage": 8,
+     "also_covered_by": [
+      "ad-hoc-news.de",
+      "GlobeNewswire",
+      "CoinMarketCap"
      ]
     },
     {
@@ -239,16 +291,16 @@ window.PULSE_FEED = {
      "company": "Aramco",
      "amount_usd_m": null,
      "headline": "Aramco takes 49% stake in a Saudi AI company",
-     "summary": "Saudi oil giant Aramco has taken a 49 per cent stake in a Saudi AI company, deepening its role in the kingdom's AI ambitions.",
-     "why_it_matters": "Gulf energy majors are becoming AI owners, which signals more regional AI capacity and possible partners for property operations.",
+     "summary": "Saudi oil giant Aramco took a 49 per cent stake in a Saudi AI company, making it a central vehicle for the kingdom's AI ambitions.",
+     "why_it_matters": "Saudi Arabia's state-led AI push will compete with the UAE for AI talent, data centres and associated real estate demand.",
      "source": "Gulf News",
      "url": "https://gulfnews.com/business/energy/oil-giant-aramco-takes-49-per-cent-stake-in-saudi-ai-company-1.500731592",
      "published": "2026-11-01",
-     "coverage": 8,
+     "coverage": 7,
      "also_covered_by": [
-      "Startup Fortune",
       "The Next Web",
-      "The Decoder"
+      "The Decoder",
+      "Wamda"
      ],
      "image": "https://media.assettype.com/gulfnews%2F2026-10-22%2F5r5lr7ul%2FAramco-2.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
     },
@@ -259,13 +311,13 @@ window.PULSE_FEED = {
      "region": "GCC",
      "company": "AIREV",
      "amount_usd_m": null,
-     "headline": "Singapore's Terra Invest joins strategic round for Abu Dhabi AI firm AIREV",
-     "summary": "Singapore's Terra Invest took part in a strategic funding round for AIREV, an AI company based in Abu Dhabi.",
-     "why_it_matters": "Abu Dhabi's AI startup base is attracting foreign capital, which widens the pool of local vendors and partners.",
+     "headline": "Singapore's Terra Invest joins strategic funding round for Abu Dhabi AI firm AIREV",
+     "summary": "Singapore-based Terra Invest participated in a strategic funding round for AIREV, an AI company based in Abu Dhabi.",
+     "why_it_matters": "A growing local AI vendor base gives Aldar more home-grown partners to pilot and procure from.",
      "source": "Zawya",
      "url": "https://www.zawya.com/en/press-release/companies-news/singapores-terra-invest-participates-in-strategic-funding-round-for-abu-dhabi-based-ai-company-airev-1941493",
      "published": "2026-10-29",
-     "coverage": 11,
+     "coverage": 12,
      "also_covered_by": [
       "BW Disrupt",
       "Entrackr",
@@ -274,238 +326,260 @@ window.PULSE_FEED = {
      "image": "https://media.zawya.com/prod/images/gm_preview/4b908abe5697-image-2026-11-04t113404995.jpeg"
     },
     {
-     "id": "oracleopeningmoredatacentresinuaeandsaud",
+     "id": "gotelecomawardsasar1859mncontracttobuild",
      "category": "ai",
      "type": "deployment",
      "region": "GCC",
-     "company": "Oracle",
-     "amount_usd_m": null,
-     "headline": "Oracle opens more data centres in UAE and Saudi Arabia",
-     "summary": "Oracle is adding data centres in the UAE and Saudi Arabia as demand for AI grows.",
-     "why_it_matters": "Demand for data centre land, power and offices is rising locally, which creates a potential asset class for developers.",
-     "source": "The National",
-     "url": "https://www.thenationalnews.com/future/technology/2026/10/29/oracle-opening-more-data-centres-in-uae-and-saudi-arabia-as-ai-demand-soars/",
-     "published": "2026-10-29",
-     "coverage": 2,
-     "also_covered_by": [
-      "Stock Titan"
-     ],
-     "image": "https://www.thenationalnews.com/resizer/v2/77JGXHUSQIOQOAH24JNSLBS7DA.jpg?auth=4472eed27f955805e0422eec26499719d88b975e03e05d78043c9f4714f3c36d&smart=true&width=1200&height=630"
-    },
-    {
-     "id": "eqtseeksjointaianddatacentredealswithsau",
-     "category": "ai",
-     "type": "trend",
-     "region": "GCC",
-     "company": "EQT",
-     "amount_usd_m": null,
-     "headline": "EQT seeks joint AI and data centre deals with Saudi and UAE sovereign funds",
-     "summary": "Private equity firm EQT wants to co-invest in AI and data centre assets alongside Gulf sovereign investors.",
-     "why_it_matters": "Global capital is lining up for Gulf digital infrastructure, so data centre real estate partnerships could become attractive.",
-     "source": "The National",
-     "url": "https://www.thenationalnews.com/business/markets/2026/11/03/exclusive-eqt-joint-deals-saudi-uae-sovereign-investors/",
-     "published": "2026-11-03",
-     "coverage": 1,
-     "also_covered_by": [],
-     "image": "https://www.thenationalnews.com/resizer/v2/TYQYLOWOYRFJBJYE3JLD4HLKME.jpg?auth=f3037fec2f35f9242406dc5cb6e14946f99fc8bb80cba443c147a1faf6af987e&focal=2555%2C1605&width=1200&height=630"
-    },
-    {
-     "id": "cntxtaitoopenroboticsdataandtrainingfaci",
-     "category": "robotics",
-     "type": "deployment",
-     "region": "GCC",
-     "company": "CNTXT AI",
-     "amount_usd_m": null,
-     "headline": "CNTXT AI to open robotics data and training facilities in the UAE",
-     "summary": "CNTXT AI plans facilities in the UAE to collect robotics data and train robots.",
-     "why_it_matters": "A local robotics ecosystem could supply cleaning, security and construction robots for UAE assets.",
-     "source": "The National",
-     "url": "https://www.thenationalnews.com/future/technology/2026/11/02/physical-ai-cntxt-mohammad-abu-sheikh/",
-     "published": "2026-10-31",
-     "coverage": 1,
-     "also_covered_by": [],
-     "image": "https://www.thenationalnews.com/resizer/v2/ASAH6UN74NEQ5MBRF6IW6AR4DI.JPG?auth=11c381f29430afd0a9373e1553eb8e527c055a2098167d6ec9ed95c51c2a7ce2&smart=true&width=1200&height=630"
-    },
-    {
-     "id": "85ofuaeemployeesuseaiatworkwhile67worrya",
-     "category": "work_edu",
-     "type": "trend",
-     "region": "GCC",
-     "company": "Oliver Wyman Forum",
-     "amount_usd_m": null,
-     "headline": "85% of UAE employees use AI at work; 67% fear job losses",
-     "summary": "Oliver Wyman Forum research finds AI use is widespread among UAE workers, yet most worry about AI-related job losses.",
-     "why_it_matters": "Aldar should pair its AI rollout with reskilling and clear communication to keep staff engaged.",
-     "source": "Zawya",
-     "url": "https://www.zawya.com/en/press-release/research-studies/85-of-uae-employees-use-ai-at-work-while-67-worry-about-ai-related-job-losses-new-oliver-wyman-forum-research-reveals-1997666",
-     "published": "2026-11-05",
-     "coverage": 1,
-     "also_covered_by": [],
-     "image": "https://media.zawya.com/prod/images/gm_preview/b063a4bdd58e-mona-hammami-oliver-wyman.jpg"
-    },
-    {
-     "id": "standardcharteredsventurearmexpandsuaefi",
-     "category": "fintech",
-     "type": "trend",
-     "region": "GCC",
-     "company": "SC Ventures (Standard Chartered)",
-     "amount_usd_m": null,
-     "headline": "Standard Chartered's venture arm grows UAE fintech portfolio past 10 firms",
-     "summary": "Standard Chartered's venture arm has expanded its UAE fintech portfolio to more than 10 businesses.",
-     "why_it_matters": "Bank-backed fintech growth could bring new payment, lending and rent-financing options to residents and tenants.",
-     "source": "Zawya",
-     "url": "https://www.zawya.com/en/business/standard-chartereds-venture-arm-expands-uae-fintech-portfolio-with-over-10-businesses-1906639",
-     "published": "2026-11-04",
-     "coverage": 1,
-     "also_covered_by": [],
-     "image": "https://media.zawya.com/prod/images/gm_preview/7cd1cd960201-2026-08-04t090539z1866218749rc2grmavaezxrtrmadp3singapore-business.jpg"
-    },
-    {
-     "id": "zawyabahrainfintechstartupsitrlaunchessh",
-     "category": "fintech",
-     "type": "product",
-     "region": "GCC",
-     "company": "SITR",
-     "amount_usd_m": null,
-     "headline": "Bahrain's SITR launches Shariah compliance platform for Islamic banks",
-     "summary": "Bahraini fintech startup SITR has launched a platform that automates Shariah compliance for Islamic banks.",
-     "why_it_matters": "Faster Islamic finance compliance could speed up Shariah-compliant mortgages and real estate financing products.",
-     "source": "TradingView",
-     "url": "https://www.tradingview.com/news/reuters.com,2026-11-04:newsml_Zaw449L0Q:0-zawya-bahrain-fintech-startup-sitr-launches-shariah-compliance-platform-for-islamic-banks/",
+     "company": "Go Telecom",
+     "amount_usd_m": 49.6,
+     "headline": "Go Telecom awards SAR 185.9m contract to build an AI cloud for Saudi customers",
+     "summary": "Saudi Go Telecom awarded a SAR 185.9 million contract to build an AI cloud that it will rent to Saudi customers.",
+     "why_it_matters": "Regional sovereign AI clouds will offer data-resident options for running building and customer AI systems.",
+     "source": "EnterpriseAM",
+     "url": "https://enterpriseam.com/infrastructure/2026/11/03/go-telecom-awards-a-sar-185-9-mn-contract-to-build-an-ai-cloud-it-will-rent-to-saudi-customers/",
      "published": "2026-11-01",
      "coverage": 2,
      "also_covered_by": [
-      "Rocky Mount Telegram"
+      "TradingView"
      ]
     },
     {
-     "id": "lightintelligentbuildingmiddleeastmarksm",
+     "id": "brookfieldlunatesetupnewgulfpropertydeve",
+     "category": "fintech",
+     "type": "investment",
+     "region": "GCC",
+     "company": "Brookfield, Lunate",
+     "amount_usd_m": null,
+     "headline": "Brookfield and Lunate set up a new Gulf property development firm",
+     "summary": "Global investor Brookfield and Abu Dhabi's Lunate are creating a new property development company focused on the Gulf.",
+     "why_it_matters": "This creates a well-capitalised new competitor, and potential partner, for Aldar in Abu Dhabi land and development deals.",
+     "source": "Bloomberg.com",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-03/brookfield-lunate-set-up-new-gulf-property-development-firm",
+     "published": "2026-11-03",
+     "coverage": 1,
+     "also_covered_by": []
+    },
+    {
+     "id": "bahrainsarcapitatoinvest15bingccindustri",
+     "category": "fintech",
+     "type": "trend",
+     "region": "GCC",
+     "company": "Arcapita",
+     "amount_usd_m": null,
+     "headline": "Bahrain's Arcapita plans $1.5B investment in GCC industrial and logistics real estate",
+     "summary": "Arcapita plans to invest $1.5 billion in industrial and logistics real estate across the GCC.",
+     "why_it_matters": "Investor appetite for logistics assets supports Aldar's industrial and logistics expansion and its exit valuations.",
+     "source": "Forbes Middle East",
+     "url": "https://www.forbesmiddleeast.com/industry/real-estate/bahrains-arcapita-to-invest-$15b-in-gcc-industrial-logistics-real-estate",
+     "published": "2026-10-30",
+     "coverage": 11,
+     "also_covered_by": [
+      "Container News",
+      "Gulf Business",
+      "GlobeNewswire"
+     ],
+     "image": "https://d1epq84pwgteub.cloudfront.net/936138c0e873436f8b3653078d21a0fd.jpg"
+    },
+    {
+     "id": "abudhabiresidentialunitsalesrise3006toae",
      "category": "proptech",
      "type": "trend",
      "region": "GCC",
-     "company": "Light + Intelligent Building Middle East",
+     "company": "Abu Dhabi residential market",
      "amount_usd_m": null,
-     "headline": "Light + Intelligent Building Middle East marks 20th edition",
-     "summary": "The regional show's 20th edition focused on the convergence of lighting, building management and smart building technologies.",
-     "why_it_matters": "Integrated building systems are becoming standard and should shape specifications for Aldar's new towers and malls.",
-     "source": "www.wam.ae",
-     "url": "https://www.wam.ae/en/article/c32irze-light-intelligent-building-middle-east-marks",
-     "published": "2026-10-30",
-     "coverage": 3,
+     "headline": "Abu Dhabi residential unit sales rise 30.06% to AED 12.97bn in October 2026",
+     "summary": "Residential unit sales in Abu Dhabi rose 30.06% to AED 12.97 billion in October 2026.",
+     "why_it_matters": "Strong demand supports Aldar's launch pipeline and pricing, while raising expectations for digital sales and handover capacity.",
+     "source": "Zawya",
+     "url": "https://www.zawya.com/en/press-release/research-studies/abu-dhabi-residential-unit-sales-rise-30.06-to-aed-12.97bln-in-october-2026-2000628",
+     "published": "2026-10-29",
+     "coverage": 8,
      "also_covered_by": [
-      "www.veolia.com",
-      "markets.businessinsider.com"
+      "The Robot Report",
+      "Business Wire",
+      "blog.google"
+     ],
+     "image": "https://media.zawya.com/prod/images/gm_preview/88cc989d4fea-untitled-1.gif"
+    },
+    {
+     "id": "ellingtonpropertiesandalhamraunveildh28b",
+     "category": "proptech",
+     "type": "product",
+     "region": "GCC",
+     "company": "Ellington Properties, Al Hamra",
+     "amount_usd_m": null,
+     "headline": "Ellington and Al Hamra unveil Dh2.8bn commercial tower in Business Bay",
+     "summary": "Ellington Properties and Al Hamra announced a Dh2.8 billion commercial tower in Dubai's Business Bay, covered by 26 outlets.",
+     "why_it_matters": "New Dubai office supply signals confidence in Grade A demand and will compete for tenants with Abu Dhabi offices.",
+     "source": "Khaleej Times",
+     "url": "https://www.khaleejtimes.com/business/property/ellington-properties-and-al-hamra-unveil-dh28-billion-commercial-tower-in-business-bay?amp=1",
+     "published": "2026-10-30",
+     "coverage": 26,
+     "also_covered_by": [
+      "Tech In Africa",
+      "Business Wire",
+      "InfoWorld"
      ]
     },
     {
-     "id": "uaesmasdarendesabeginconstructionof283mb",
-     "category": "sustainability",
+     "id": "aipoweredtrafficlightsindubaiexpectedtoc",
+     "category": "mobility",
      "type": "deployment",
      "region": "GCC",
-     "company": "Masdar, Endesa",
-     "amount_usd_m": 28.3,
-     "headline": "Masdar and Endesa start building $28.3m battery storage projects in Spain",
-     "summary": "UAE's Masdar and Spain's Endesa have begun construction of battery storage projects worth $28.3m.",
-     "why_it_matters": "Masdar's growing storage expertise could support on-site batteries in Aldar communities and malls.",
-     "source": "Gulf Business",
-     "url": "https://gulfbusiness.com/en/2026/energy/uaes-masdar-endesa-begin-construction-of-28-3m-battery-storage-projects-in-spain/",
-     "published": "2026-11-05",
-     "coverage": 1,
-     "also_covered_by": []
-    },
-    {
-     "id": "omanchinaspacedealtolaunch7satellitestra",
-     "category": "frontier",
-     "type": "deployment",
-     "region": "GCC",
-     "company": "Oman, China",
+     "company": "Dubai RTA",
      "amount_usd_m": null,
-     "headline": "Oman-China space deal to launch 7 satellites and train 1,000 specialists",
-     "summary": "Oman signed a space agreement with China to launch seven satellites and train 1,000 specialists.",
-     "why_it_matters": "Growing Gulf satellite capacity can improve mapping, connectivity and monitoring data for large developments.",
-     "source": "Muscat Daily",
-     "url": "https://www.muscatdaily.com/2026/11/04/oman-china-space-deal-to-launch-7-satellites/",
-     "published": "2026-11-04",
-     "coverage": 1,
-     "also_covered_by": []
+     "headline": "Dubai RTA expects AI-powered traffic lights to cut congestion by at least 10%",
+     "summary": "Dubai's Roads and Transport Authority says AI-controlled traffic signals should reduce congestion by at least 10%.",
+     "why_it_matters": "AI traffic control shapes access to communities and malls, and is a model for coordinating with Abu Dhabi transport authorities.",
+     "source": "Khaleej Times",
+     "url": "https://www.khaleejtimes.com/uae/transport/rta-ai-traffic-lights-expected-to-reduce-dubai-congestion?amp=1",
+     "published": "2026-11-02",
+     "coverage": 5,
+     "also_covered_by": [
+      "Zawya",
+      "Facilities Dive",
+      "deltanews.tv"
+     ],
+     "image": "https://imgengine.khaleejtimes.com/khaleejtimes/import/images/4bc44631-7604-428b-9740-4e911c031585-org.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=fill&fill=blur"
     },
     {
-     "id": "jeddahtowersaudiarabiaadvanceswiththecon",
+     "id": "sheikhhamdanlaunchesworldsfirstcitywidet",
+     "category": "retail",
+     "type": "product",
+     "region": "GCC",
+     "company": "Dubai Government",
+     "amount_usd_m": null,
+     "headline": "Dubai launches city-wide tourism loyalty programme and invitation-only tourism club",
+     "summary": "Sheikh Hamdan launched what Dubai calls the world's first city-wide tourism loyalty programme. An invitation-only tourism club and streamlined visa services also begin in November.",
+     "why_it_matters": "City-level loyalty could steer tourist spending; Aldar's malls and hotels need comparable rewards or tie-ins with Abu Dhabi schemes.",
+     "source": "Khaleej Times",
+     "url": "https://www.khaleejtimes.com/uae/dubai-tourism-loyalty-programme-visit-visa-sheikh-hamdan",
+     "published": "2026-11-01",
+     "coverage": 3,
+     "also_covered_by": [
+      "www.wam.ae",
+      "Arabian Business"
+     ],
+     "image": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-11-01/4jgwhh3c/hamdan.jpeg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=69,0,506,337"
+    },
+    {
+     "id": "constructionstartsontwonewbridgesondubai",
      "category": "construction",
      "type": "trend",
      "region": "GCC",
-     "company": "Jeddah Tower",
+     "company": "Dubai RTA",
      "amount_usd_m": null,
-     "headline": "Construction of Jeddah Tower, planned as world's tallest building, advances",
-     "summary": "Saudi Arabia is pressing ahead with Jeddah Tower, which is intended to become the tallest building on the planet.",
-     "why_it_matters": "Saudi megaprojects compete for contractors, materials and skilled labour, which could raise UAE construction costs and lengthen schedules.",
-     "source": "Noticias Ambientales",
-     "url": "https://noticiasambientales.com/innovation/jeddah-tower-saudi-arabia-advances-with-the-construction-of-what-is-intended-to-be-the-tallest-building-on-the-planet/",
-     "published": "2026-11-04",
+     "headline": "Construction starts on two new bridges on Dubai's Palm Jumeirah",
+     "summary": "Work has begun on two new bridges on Palm Jumeirah to improve access to the island.",
+     "why_it_matters": "Access upgrades show that infrastructure timing directly lifts waterfront asset values, which is relevant to Aldar's island communities.",
+     "source": "The National",
+     "url": "https://www.thenationalnews.com/news/uae/2026/10/30/construction-starts-on-two-new-bridges-on-dubais-palm-jumeirah/",
+     "published": "2026-10-30",
+     "coverage": 6,
+     "also_covered_by": [
+      "curlytales.com",
+      "BW Auto World",
+      "ET Auto"
+     ],
+     "image": "https://www.thenationalnews.com/resizer/v2/P6LSVJIPL5HYJJFEUYTRGHCSAA.jpg?auth=55720e54dea3ecc2b131dbaca50c60cabee99339cd25277c36580b97115b73a8&smart=true&width=1200&height=630"
+    },
+    {
+     "id": "aiusedby85percentofuaeworkersbuttheyworr",
+     "category": "work_edu",
+     "type": "trend",
+     "region": "GCC",
+     "company": "UAE workforce",
+     "amount_usd_m": null,
+     "headline": "85% of UAE workers use AI but fear it will take their jobs",
+     "summary": "A survey finds 85 per cent of UAE workers use AI, while many worry about job losses.",
+     "why_it_matters": "Aldar's AI rollouts need reskilling and change management to win staff buy-in across operations.",
+     "source": "The National",
+     "url": "https://www.thenationalnews.com/news/uae/2026/11/05/ai-used-by-85-per-cent-of-uae-workers-but-they-worry-it-will-take-their-jobs/",
+     "published": "2026-11-05",
      "coverage": 1,
      "also_covered_by": [],
-     "image": "https://storage.googleapis.com/media-cloud-na/2026/11/edificio-mas-alto-del-planeta-en-Arabia-Saudita.webp"
+     "image": "https://www.thenationalnews.com/resizer/v2/566YHV62B5BH5GHN5UQJPUL6DM.jpg?auth=a5e7e277543a75da50024dfb95101f9c020e4f722c5ca6ad43ba65d7a28c5b4e&smart=true&width=1200&height=630"
     },
     {
-     "id": "churchillcapitalxishareholdersapprove25b",
-     "category": "robotics",
+     "id": "abudhabistechnologyinnovationinstitutena",
+     "category": "frontier",
+     "type": "deployment",
+     "region": "GCC",
+     "company": "Technology Innovation Institute, Naval Group",
+     "amount_usd_m": null,
+     "headline": "Abu Dhabi's TII and Naval Group to advance autonomous underwater technologies",
+     "summary": "The Technology Innovation Institute is partnering with France's Naval Group on autonomous underwater systems.",
+     "why_it_matters": "Underwater autonomy could support inspection of marinas, seawalls and coastal assets in Aldar's waterfront developments.",
+     "source": "www.wam.ae",
+     "url": "https://www.wam.ae/en/article/c33pmgg-abu-dhabi%E2%80%99s-technology-innovation-institute-naval",
+     "published": "2026-11-05",
+     "coverage": 2,
+     "also_covered_by": [
+      "Via TT"
+     ]
+    },
+    {
+     "id": "democraticsweepraisesconcernsoverstricte",
+     "category": "ai",
+     "type": "trend",
+     "region": "North America",
+     "company": "US Congress",
+     "amount_usd_m": null,
+     "headline": "Democratic sweep of Congress raises prospect of stricter US AI regulation",
+     "summary": "Democrats winning Congress has raised concerns about tighter AI rules, and data centre and AI stocks fell on the result.",
+     "why_it_matters": "US rules often shape global vendor terms; expect more compliance requirements in AI tools Aldar buys.",
+     "source": "Fox Business",
+     "url": "https://www.foxbusiness.com/video/6407918879112",
+     "published": "2026-11-04",
+     "coverage": 5,
+     "also_covered_by": [
+      "TradingView",
+      "Riviera Radio",
+      "BigGo Finance"
+     ],
+     "image": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/854081161001/2dfd3bf1-e53c-4782-8586-1375cdedf1a8/2f9558b9-0808-40bf-a15d-bed2bb8545c8/1280x720/match/1024/512/image.jpg?ve=1&tl=1"
+    },
+    {
+     "id": "googlefacesbacklashforplanthatwouldturno",
+     "category": "work_edu",
+     "type": "trend",
+     "region": "North America",
+     "company": "Google",
+     "amount_usd_m": null,
+     "headline": "Google faces backlash over plan to cut Search for schools that restrict AI",
+     "summary": "Google plans to turn off Search access for schools that opt out of its AI. The plan drew wide criticism, covered by 63 outlets, alongside a lawsuit over AI harm to a student.",
+     "why_it_matters": "Aldar Education needs clear AI policies and vendor-independence plans as big tech links core tools to AI adoption.",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+     "published": "2026-10-29",
+     "coverage": 63,
+     "also_covered_by": [
+      "Forbes",
+      "The Verge",
+      "WIRED"
+     ],
+     "image": "https://techcrunch.com/wp-content/uploads/2024/03/students-typing-on-laptops-GettyImages_1513744777.jpeg?w=1200"
+    },
+    {
+     "id": "dropboxacquirestigrisdatafor350mtobolste",
+     "category": "ai",
      "type": "investment",
      "region": "North America",
-     "company": "Agility Robotics",
-     "amount_usd_m": null,
-     "headline": "Shareholders approve $2.5B Agility Robotics SPAC, first public humanoid maker",
-     "summary": "Churchill Capital XI shareholders approved the SPAC deal, taking Agility Robotics public as the first humanoid robot maker on Wall Street.",
-     "why_it_matters": "Public markets are backing humanoids, so warehouse and facilities robots will mature faster for building operators.",
-     "source": "The Robot Report",
-     "url": "https://www.therobotreport.com/agility-robotics-shareholders-approve-25b-humanoid-spac/",
-     "published": "2026-11-03",
-     "coverage": 3,
-     "also_covered_by": [
-      "BigGo Finance",
-      "Ars Technica"
-     ],
-     "image": "https://www.therobotreport.com/wp-content/uploads/2026/10/Agility_Digit_5.jpg"
-    },
-    {
-     "id": "xiaomishumanoidrobotsworkafull8hourshift",
-     "category": "robotics",
-     "type": "deployment",
-     "region": "China",
-     "company": "Xiaomi",
-     "amount_usd_m": null,
-     "headline": "Xiaomi humanoid robots complete full 8-hour shifts in its EV factory",
-     "summary": "Xiaomi's humanoid robots worked a full eight-hour shift on its electric vehicle production line.",
-     "why_it_matters": "Robots now complete full shifts, which strengthens the case for trialling them in facilities management and off-site construction.",
-     "source": "Electrek",
-     "url": "https://electrek.co/2026/11/04/xiaomi-humanoid-robot-8-hour-shift-ev-factory/",
-     "published": "2026-11-03",
-     "coverage": 4,
-     "also_covered_by": [
-      "Interesting Engineering",
-      "The Gadgeteer",
-      "Martin Cid Magazine"
-     ],
-     "image": "https://electrek.co/wp-content/uploads/sites/3/2026/11/Xiaomi-humanoid-robot.jpeg?quality=82&strip=all&resize=1200,628"
-    },
-    {
-     "id": "metabuildshumanoidrobotwithchinesestartu",
-     "category": "robotics",
-     "type": "trend",
-     "region": "China",
-     "company": "Meta, Fourier",
-     "amount_usd_m": null,
-     "headline": "Meta built a humanoid robot prototype with Chinese startup Fourier",
-     "summary": "Meta developed a humanoid prototype with China's Fourier as it ramps up its robotics push, The Information reports.",
-     "why_it_matters": "Big Tech's entry into humanoids could bring service robots to homes and buildings within a few years.",
-     "source": "Reuters",
-     "url": "https://www.reuters.com/world/china/meta-builds-humanoid-robot-with-chinese-startup-fourier-information-says-2026-10-31/",
-     "published": "2026-10-31",
+     "company": "Dropbox",
+     "amount_usd_m": 350,
+     "headline": "Dropbox acquires Tigris Data for $350M to bolster AI infrastructure",
+     "summary": "Dropbox bought Tigris Data for $350 million to support DBX Agent Cloud, a storage platform for developers building AI models and agents.",
+     "why_it_matters": "Enterprise document platforms are becoming AI agent hubs, which matters for managing Aldar's large building and lease records.",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+     "published": "2026-10-30",
      "coverage": 12,
      "also_covered_by": [
-      "The Next Web",
-      "AI Magazine",
-      "Technology Org"
-     ]
+      "Wired",
+      "citybiz",
+      "Yahoo"
+     ],
+     "image": "https://techcrunch.com/wp-content/uploads/2021/03/GettyImages-1211180751.jpg?w=1024"
     },
     {
      "id": "ziplinetops21billionvaluationadds300walm",
@@ -514,215 +588,202 @@ window.PULSE_FEED = {
      "region": "North America",
      "company": "Zipline",
      "amount_usd_m": null,
-     "headline": "Zipline tops $21B valuation and adds 300 Walmart drone sites",
-     "summary": "Drone delivery firm Zipline is valued above $21 billion and is adding 300 Walmart drone delivery sites.",
-     "why_it_matters": "Drone delivery at scale means communities and malls should plan landing zones and airspace-ready rooftops.",
+     "headline": "Zipline tops $21 billion valuation and adds 300 Walmart drone delivery sites",
+     "summary": "Drone delivery company Zipline reached a valuation above $21 billion and is expanding to 300 more Walmart sites.",
+     "why_it_matters": "Drone delivery at scale means malls and communities may need landing zones and drone-ready design.",
      "source": "Bloomberg.com",
      "url": "https://www.bloomberg.com/news/articles/2026-11-05/zipline-tops-21-billion-valuation-adds-300-walmart-drone-sites",
-     "published": "2026-10-29",
-     "coverage": 35,
+     "published": "2026-10-31",
+     "coverage": 24,
      "also_covered_by": [
-      "Dronelife",
-      "Multifamily Executive",
-      "Yahoo Finance"
+      "TechCrunch",
+      "Axios",
+      "Dronelife"
      ]
     },
     {
-     "id": "sentraraises150mtocontrolwhataiagentscan",
-     "category": "ai",
-     "type": "investment",
-     "region": "Global",
-     "company": "Sentra",
-     "amount_usd_m": 150,
-     "headline": "Sentra raises $150M to control what AI agents can access in corporate data",
-     "summary": "Sentra raised $150M for tools that limit which corporate data AI agents can reach.",
-     "why_it_matters": "As Aldar deploys AI agents, controlling their access to tenant and financial data becomes a must-have.",
-     "source": "SiliconANGLE",
-     "url": "https://siliconangle.com/2026/11/04/sentra-raises-150m-to-control-what-ai-agents-can-reach-in-corporate-data/",
-     "published": "2026-11-01",
+     "id": "nvidiabackedhumanoidmakeragilitygoespubl",
+     "category": "robotics",
+     "type": "trend",
+     "region": "North America",
+     "company": "Agility Robotics",
+     "amount_usd_m": null,
+     "headline": "Nvidia-backed humanoid maker Agility Robotics goes public on Nasdaq",
+     "summary": "Agility Robotics completed a SPAC merger and began trading on Nasdaq, the first US-listed humanoid robot maker.",
+     "why_it_matters": "Public capital for humanoids speeds their arrival in logistics and facilities work at Aldar's sites.",
+     "source": "Bloomberg.com",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-05/nvidia-backed-humanoid-maker-agility-goes-public-in-first-for-the-us",
+     "published": "2026-10-29",
      "coverage": 8,
      "also_covered_by": [
-      "SC Media",
-      "AOL.com",
-      "Ynetnews"
-     ],
-     "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/sentra.png"
+      "Forbes",
+      "InsideEVs",
+      "Electric Cars Report"
+     ]
     },
     {
-     "id": "googlexcofoundersebastianthrunraises130m",
-     "category": "ai",
+     "id": "xiaomishumanoidrobotsworkafull8hourshift",
+     "category": "robotics",
+     "type": "deployment",
+     "region": "China",
+     "company": "Xiaomi",
+     "amount_usd_m": null,
+     "headline": "Xiaomi humanoid robots work a full 8-hour shift in its EV factory",
+     "summary": "Xiaomi's humanoid robots completed full eight-hour shifts on its EV production line.",
+     "why_it_matters": "Shift-length endurance makes humanoids viable for repetitive site and facilities tasks within a few years.",
+     "source": "Electrek",
+     "url": "https://electrek.co/2026/11/04/xiaomi-humanoid-robot-8-hour-shift-ev-factory/",
+     "published": "2026-11-03",
+     "coverage": 4,
+     "also_covered_by": [
+      "The Gadgeteer",
+      "Interesting Engineering",
+      "Martin Cid Magazine"
+     ],
+     "image": "https://electrek.co/wp-content/uploads/sites/3/2026/11/Xiaomi-humanoid-robot.jpeg?quality=82&strip=all&resize=1200,628"
+    },
+    {
+     "id": "peppermintroboticsraisesrs100crinpreseri",
+     "category": "robotics",
+     "type": "investment",
+     "region": "Asia-Pacific",
+     "company": "Peppermint Robotics",
+     "amount_usd_m": null,
+     "headline": "Peppermint Robotics raises Rs 100 crore in Pre-Series B led by pi Ventures",
+     "summary": "Indian cleaning robot maker Peppermint Robotics raised Rs 100 crore in a Pre-Series B round with pi Ventures and Crane Venture Partners.",
+     "why_it_matters": "Autonomous cleaning robots could cut facilities costs in Aldar's malls, offices and schools.",
+     "source": "Entrackr",
+     "url": "https://entrackr.com/news/peppermint-robotics-raises-rs-100-cr-in-pre-series-b-led-by-pi-ventures-crane-venture-partners-12781643",
+     "published": "2026-11-03",
+     "coverage": 7,
+     "also_covered_by": [
+      "Indian Startup News",
+      "Siliconindia",
+      "Bharat Fast"
+     ],
+     "image": "https://img-cdn.publive.online/fit-in/1200x675/entrackr/media/media_files/2026/11/04/gcm7ffmgkjjvfozrxmx3-2026-11-04-09-26-22.webp"
+    },
+    {
+     "id": "happycoacquiresbannertechnologiestoexpan",
+     "category": "proptech",
+     "type": "investment",
+     "region": "North America",
+     "company": "HappyCo",
+     "amount_usd_m": null,
+     "headline": "HappyCo acquires Banner Technologies to expand its proptech platform",
+     "summary": "Multifamily operations software firm HappyCo bought Banner Technologies, broadening its property management platform.",
+     "why_it_matters": "Consolidating residential operations software means fewer, larger vendors for Aldar's leasing and maintenance systems.",
+     "source": "Multifamily Executive",
+     "url": "https://www.multifamilyexecutive.com/technology/happyco-acquires-banner-technologies-expand-proptech-platform",
+     "published": "2026-10-30",
+     "coverage": 10,
+     "also_covered_by": [
+      "https://ascendants.in/",
+      "Pulse 2.0",
+      "CairoScene"
+     ],
+     "image": "https://qtxasset.com/quartz/qcloud1/media/image/jindou_lee.png?VersionId=agMj65RcnZwMSKHHffvmQLioiv2ty9jO"
+    },
+    {
+     "id": "dormakabaclosesalliantsdealbringinginteg",
+     "category": "proptech",
      "type": "investment",
      "region": "Global",
-     "company": "Dulo",
-     "amount_usd_m": 130,
-     "headline": "Google X co-founder Sebastian Thrun raises $130M for AI engineering startup Dulo",
-     "summary": "Sebastian Thrun's startup Dulo raised $130M to apply AI to engineering work.",
-     "why_it_matters": "AI-driven engineering could shorten design cycles for buildings and infrastructure projects.",
-     "source": "SiliconANGLE",
-     "url": "https://siliconangle.com/2026/10/30/google-x-co-founder-sebastian-thrun-raises-130m-for-ai-engineering-startup-dulo/",
-     "published": "2026-10-29",
-     "coverage": 2,
-     "also_covered_by": [
-      "The Information"
-     ],
-     "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Sebastian-Thrun.png"
-    },
-    {
-     "id": "googlefacesbacklashforplanthatwouldturno",
-     "category": "work_edu",
-     "type": "trend",
-     "region": "Global",
-     "company": "Google",
+     "company": "dormakaba",
      "amount_usd_m": null,
-     "headline": "Google faces backlash over plan to cut Search for schools that restrict AI",
-     "summary": "Google drew criticism, covered by 32 outlets, over a plan to switch off Search for schools that opt out of its AI features.",
-     "why_it_matters": "Aldar's schools may face vendor pressure on AI policy and need clear, deliberate positions on AI use.",
-     "source": "TechCrunch",
-     "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
-     "published": "2026-10-29",
-     "coverage": 32,
+     "headline": "dormakaba closes Alliants deal to offer integrated hotel technology",
+     "summary": "Access control maker dormakaba completed its acquisition of Alliants, combining guest-experience software with door and access systems for hotels.",
+     "why_it_matters": "Integrated access and guest-app platforms simplify technology stacks across Aldar's hotels.",
+     "source": "Hospitality Net",
+     "url": "https://www.hospitalitynet.org/news/4135222/dormakaba-closes-alliants-deal-bringing-integrated-hotel-technology-to-the-hospitality-show-2026",
+     "published": "2026-11-02",
+     "coverage": 5,
      "also_covered_by": [
-      "Forbes",
-      "The Verge",
-      "Wired"
-     ],
-     "image": "https://techcrunch.com/wp-content/uploads/2024/03/students-typing-on-laptops-GettyImages_1513744777.jpeg?w=1200"
+      "Travel Daily Media",
+      "Brand Finance",
+      "Demócrata"
+     ]
     },
     {
      "id": "aishoppingagentscouldthreatenamazonandwa",
      "category": "retail",
      "type": "trend",
-     "region": "Global",
+     "region": "North America",
      "company": "Amazon, Walmart",
      "amount_usd_m": null,
-     "headline": "AI shopping agents could threaten Amazon and Walmart ad businesses",
-     "summary": "AI agents that shop on behalf of consumers may bypass retailer search and the ad revenue it generates.",
-     "why_it_matters": "If agents do the shopping, malls must work harder on experiences and make tenant data readable by AI agents.",
+     "headline": "AI shopping agents could threaten Amazon and Walmart's ad business",
+     "summary": "Reuters reports that AI agents shopping for consumers may bypass retail ads and search, disrupting retail media revenue.",
+     "why_it_matters": "Mall tenants and Aldar's retail media plans must prepare for shoppers who discover products through AI agents.",
      "source": "Reuters",
      "url": "https://www.reuters.com/business/media-telecom/ai-shopping-agents-could-threaten-amazon-walmarts-ad-business-2026-11-04/",
      "published": "2026-11-03",
-     "coverage": 9,
+     "coverage": 10,
      "also_covered_by": [
       "Marketing Tech News",
-      "New Orleans CityBusiness",
-      "Storyboard18"
+      "Storyboard18",
+      "BigGo Finance"
      ]
     },
     {
-     "id": "marksandspencertapsvusionedgesenseplatfo",
+     "id": "jdsportsrollsoutzebratechnologiesrfidtec",
      "category": "retail",
      "type": "deployment",
      "region": "Europe",
-     "company": "Marks and Spencer, Vusion",
+     "company": "JD Sports, Zebra Technologies",
      "amount_usd_m": null,
-     "headline": "Marks and Spencer adopts Vusion EdgeSense as part of store modernisation",
-     "summary": "M&S is rolling out Vusion's EdgeSense in-store platform as part of its push to modernise stores.",
-     "why_it_matters": "Digitised stores need power, connectivity and data infrastructure that mall landlords can provide as a service.",
+     "headline": "JD Sports rolls out Zebra RFID across 414 UK and Ireland stores",
+     "summary": "JD Sports deployed Zebra Technologies RFID inventory tracking across 414 stores in the UK and Ireland.",
+     "why_it_matters": "Store-level RFID is now standard among anchor tenants, enabling richer mall data partnerships.",
      "source": "Retail Technology Innovation Hub",
-     "url": "https://retailtechinnovationhub.com/home/2026/11/4/marks-and-spencer-taps-vusion-edgesense-platform-amid-retailers-store-modernisation-push",
-     "published": "2026-11-02",
-     "coverage": 6,
-     "also_covered_by": [
-      "The Manila Times",
-      "Yahoo Finance",
-      "HousingWire"
-     ],
-     "image": "https://storage.googleapis.com/rtih-storage/32007/Clapham-Junction8.jpg"
-    },
-    {
-     "id": "dormakabaclosesalliantsdealbringinginteg",
-     "category": "retail",
-     "type": "investment",
-     "region": "Global",
-     "company": "dormakaba, Alliants",
-     "amount_usd_m": null,
-     "headline": "dormakaba closes Alliants deal to offer integrated hotel technology",
-     "summary": "Access-control firm dormakaba completed its acquisition of Alliants and will present an integrated hotel technology offering.",
-     "why_it_matters": "Combined room access and guest platforms could simplify the technology stacks in Aldar's hotels.",
-     "source": "Hospitality Net",
-     "url": "https://www.hospitalitynet.org/news/4135222/dormakaba-closes-alliants-deal-bringing-integrated-hotel-technology-to-the-hospitality-show-2026",
-     "published": "2026-11-02",
-     "coverage": 2,
-     "also_covered_by": [
-      "Travel Daily Media"
-     ]
-    },
-    {
-     "id": "schneiderelectricpartnerswithjupiterhosp",
-     "category": "proptech",
-     "type": "deployment",
-     "region": "Asia-Pacific",
-     "company": "Schneider Electric, Jupiter Hospitals",
-     "amount_usd_m": null,
-     "headline": "Schneider Electric to deliver Jupiter Hospitals campus with up to 28% energy savings",
-     "summary": "Schneider Electric is partnering with Jupiter Hospitals on a technology-led, energy-efficient campus targeting up to 28% energy savings.",
-     "why_it_matters": "It sets a measurable energy-savings benchmark for smart building retrofits across Aldar's offices and schools.",
-     "source": "Business Standard",
-     "url": "https://www.business-standard.com/amp/content/press-releases-ani/schneider-electric-partners-with-jupiter-hospitals-to-deliver-a-technology-led-patient-first-energy-efficient-campus-with-up-to-28-energy-savings-126110401635_1.html?isa=yes",
-     "published": "2026-10-31",
-     "coverage": 5,
-     "also_covered_by": [
-      "Aviation Jeta",
-      "Yahoo Finance",
-      "Britannica"
-     ],
-     "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-11/04/full/20261104174709.jpg"
-    },
-    {
-     "id": "compassgrouplaunchesaipoweredmanagedserv",
-     "category": "proptech",
-     "type": "product",
-     "region": "Global",
-     "company": "Compass Group",
-     "amount_usd_m": null,
-     "headline": "Compass Group launches AI-powered managed services hub",
-     "summary": "Facilities services giant Compass Group launched an AI-powered hub for managed services.",
-     "why_it_matters": "AI-driven facilities management is arriving from major vendors, a benchmark for Aldar's own FM contracts.",
-     "source": "Facilities Dive",
-     "url": "https://www.facilitiesdive.com/news/compass-group-launches-ai-powered-managed-services-hub/873607/",
-     "published": "2026-11-03",
+     "url": "https://www.retailtechinnovationhub.com/home/2026/11/5/jd-sports-rolls-out-zebra-technologies-rfid-tech-across-414-stores-in-uk-and-ireland",
+     "published": "2026-11-01",
      "coverage": 3,
      "also_covered_by": [
-      "Retail Insider",
-      "Yahoo Finance"
-     ]
-    },
-    {
-     "id": "proptechsuparaises21mafteracquisitionspr",
-     "category": "proptech",
-     "type": "investment",
-     "region": "Europe",
-     "company": "Supa",
-     "amount_usd_m": null,
-     "headline": "UK proptech Supa raises £21m after acquisition spree",
-     "summary": "Supa raised £21m following a series of acquisitions.",
-     "why_it_matters": "Proptech is consolidating through acquisitions, which points to fewer but broader platforms for property operators.",
-     "source": "BusinessCloud",
-     "url": "https://businesscloud.co.uk/news/proptech-supa-raises-21m-after-acquisition-spree/",
-     "published": "2026-11-04",
-     "coverage": 2,
-     "also_covered_by": [
-      "Tech.eu"
+      "Facilitiesnet",
+      "Topgolf"
      ],
-     "image": "https://businesscloud.co.uk/wp-content/uploads/2026/11/Supa-founders-Calum-Brannan-and-Alexis-Johnson.jpg"
+     "image": "https://storage.googleapis.com/rtih-storage/32011/JD-Sports.jpeg"
     },
     {
-     "id": "newcyberattackonsupermarketfridgessweeps",
-     "category": "proptech",
+     "id": "holciminvestsincarbonstoragestartup4401",
+     "category": "sustainability",
+     "type": "investment",
+     "region": "Global",
+     "company": "Holcim, 44.01",
+     "amount_usd_m": null,
+     "headline": "Holcim invests in carbon storage startup 44.01",
+     "summary": "Building materials giant Holcim invested in 44.01, a startup that mineralises CO2 for permanent storage.",
+     "why_it_matters": "Cement makers' carbon removal bets could lower the embodied carbon of concrete in Aldar's projects.",
+     "source": "ESG Today",
+     "url": "https://www.esgtoday.com/holcim-invests-in-decarbonization-startup-44-01/",
+     "published": "2026-10-31",
+     "coverage": 3,
+     "also_covered_by": [
+      "Construction Owners",
+      "https://3dprinting.com/"
+     ],
+     "image": "https://www.esgtoday.com/wp-content/uploads/2026/11/4401-2.jpg"
+    },
+    {
+     "id": "impactofpartlandthefuturehomesstandardon",
+     "category": "sustainability",
      "type": "trend",
      "region": "Europe",
-     "company": "Supermarket refrigeration systems",
+     "company": "UK Future Homes Standard",
      "amount_usd_m": null,
-     "headline": "New cyberattack on supermarket fridges sweeps across Europe",
-     "summary": "A cyberattack targeting connected supermarket refrigeration is spreading across Europe.",
-     "why_it_matters": "Connected building equipment in malls and offices is now a cyber target, so operational systems need security audits.",
-     "source": "Reuters",
-     "url": "https://www.reuters.com/business/retail-consumer/temperature-soars-swedish-grocery-store-freezers-one-store-blames-hackers-2026-11-02/",
-     "published": "2026-11-02",
-     "coverage": 2,
+     "headline": "UK Part L and Future Homes Standard push timber frame housebuilding",
+     "summary": "Tighter UK energy rules under Part L and the Future Homes Standard are reshaping housebuilding and favouring timber frame construction.",
+     "why_it_matters": "These rules preview the stricter building energy codes the UAE may adopt, affecting Aldar's specifications and costs.",
+     "source": "Planning, Building & Construction Today",
+     "url": "https://www.pbctoday.co.uk/news/energy-news/impact-part-l-future-homes-standard-timber-frame-housebuilding/166342/",
+     "published": "2026-11-03",
+     "coverage": 4,
      "also_covered_by": [
-      "CBC"
-     ]
+      "DiscoverEstevan",
+      "Out of Town Blog",
+      "BigGo Finance"
+     ],
+     "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/10/wood-based-panels-being-placed-onto-timber-frame-house-scaled-1-scaled.jpg"
     },
     {
      "id": "europeancitiescouldcutevgridbillby40with",
@@ -731,9 +792,9 @@ window.PULSE_FEED = {
      "region": "Europe",
      "company": "European cities",
      "amount_usd_m": null,
-     "headline": "Smart EV charging could cut European cities' grid bill by 40%",
-     "summary": "A study finds smart charging could cut the cost of grid upgrades for electric vehicles in European cities by 40%.",
-     "why_it_matters": "Smart charging in Aldar car parks can limit costly power upgrades as EV adoption grows.",
+     "headline": "European cities could cut EV grid costs by 40% with smart charging, study says",
+     "summary": "A study finds smart EV charging could reduce grid upgrade bills in European cities by 40%.",
+     "why_it_matters": "Smart charging in Aldar's car parks can avoid costly power upgrades as EV adoption grows.",
      "source": "Reuters",
      "url": "https://www.reuters.com/business/european-cities-could-cut-ev-grid-bill-by-40-with-smart-charging-study-says-2026-11-03/",
      "published": "2026-11-03",
@@ -751,9 +812,9 @@ window.PULSE_FEED = {
      "region": "Asia-Pacific",
      "company": "Sentosa",
      "amount_usd_m": null,
-     "headline": "Self-driving shuttles are coming to Singapore's Sentosa",
-     "summary": "Singapore's Sentosa resort island is set to introduce self-driving shuttles.",
-     "why_it_matters": "It is a model for autonomous shuttles in Aldar destinations such as Saadiyat and Yas.",
+     "headline": "Self-driving shuttles coming to Singapore's Sentosa island",
+     "summary": "Autonomous shuttles will soon run on Sentosa, Singapore's resort island.",
+     "why_it_matters": "This is a direct template for driverless shuttles in Aldar's master communities and leisure destinations such as Yas and Saadiyat.",
      "source": "Travel Weekly Asia",
      "url": "https://www.travelweekly-asia.com/Destination-Travel/self-driving-shuttles-are-soon-coming-to-sentosa",
      "published": "2026-10-30",
@@ -765,170 +826,139 @@ window.PULSE_FEED = {
      ]
     },
     {
-     "id": "robotaxisrollintofortworthasteslaexpands",
-     "category": "mobility",
-     "type": "deployment",
-     "region": "North America",
-     "company": "Tesla",
-     "amount_usd_m": null,
-     "headline": "Tesla expands robotaxi service into Fort Worth",
-     "summary": "Tesla's robotaxi service has expanded to Fort Worth, Texas.",
-     "why_it_matters": "Robotaxi growth will change parking demand and drop-off design in communities, malls and offices.",
-     "source": "Fort Worth Report",
-     "url": "https://fortworthreport.org/2026/11/02/robotaxis-roll-into-fort-worth-as-tesla-expands-service/",
-     "published": "2026-11-02",
-     "coverage": 3,
-     "also_covered_by": [
-      "Austin American-Statesman",
-      "Electric Vehicles"
-     ],
-     "image": "https://fortworthreport.org/wp-content/uploads/2026/11/IMG_5604-scaled.jpeg"
-    },
-    {
-     "id": "holciminvestsincarbonstoragestartup4401",
-     "category": "construction",
-     "type": "investment",
+     "id": "googlesfirstdatacentersatelliteisonlinea",
+     "category": "frontier",
+     "type": "trend",
      "region": "Global",
-     "company": "Holcim, 44.01",
+     "company": "Google",
      "amount_usd_m": null,
-     "headline": "Holcim invests in carbon storage startup 44.01",
-     "summary": "Cement maker Holcim invested in 44.01, a startup that stores carbon dioxide permanently in rock.",
-     "why_it_matters": "Carbon capture in cement could reduce embodied carbon in Aldar's projects and support green building ratings.",
-     "source": "ESG Today",
-     "url": "https://www.esgtoday.com/holcim-invests-in-decarbonization-startup-44-01/",
-     "published": "2026-10-31",
-     "coverage": 3,
+     "headline": "Google's first data centre satellite is online",
+     "summary": "Google's first satellite designed to run data centre computing in orbit is now operating.",
+     "why_it_matters": "Orbital compute is early, but it signals alternatives to land- and power-hungry data centres in the long term.",
+     "source": "TechCrunch",
+     "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+     "published": "2026-10-30",
+     "coverage": 7,
      "also_covered_by": [
-      "Construction Owners",
-      "https://3dprinting.com/"
+      "TechRepublic",
+      "아시아경제",
+      "Stock Titan"
      ],
-     "image": "https://www.esgtoday.com/wp-content/uploads/2026/11/4401-2.jpg"
+     "image": "https://techcrunch.com/wp-content/uploads/2026/10/DSC_0298.jpg?resize=1200,800"
     }
    ],
    "viral": [
     {
-     "platform": "Tencent press release and tech press",
-     "date": "4 Nov 2026",
-     "title": "Tencent Launches Hy4, Joining the Ranks of the World's Leading Open-Source AI Models",
+     "platform": "Tech press",
+     "date": "2026-11-04",
+     "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
      "category": "ai",
      "views_reported": "Not verified",
-     "views_source": "No dated public figure found",
-     "what_shows": "Tencent's newest large AI model understands images and can operate a computer by clicking through apps. It is available now via Tencent Cloud, OpenRouter and Tencent apps, at about $0.834 per million input tokens.",
-     "what_behind": "Most performance figures are Tencent's own. By its own chart it trails Claude and GPT on Terminal-Bench. Vals.ai ranks it 13th of 33. Open weights, licence and parameter count are still promised, not delivered.",
-     "checks": {
-      "available": "yes",
-      "corroborated": "yes",
-      "deployed": "unknown",
-      "scaled": "unknown",
-      "gcc": "unknown"
-     },
-     "verdict": "watch",
-     "fit": "Low",
-     "aldar_fit_area": "Operations and back-office automation, as one of several AI models to compare",
-     "action": "Watch",
-     "leadership_line": "It's a strong, cheaper Chinese AI model, but by its own maker's numbers it trails the US leaders, and we'd need data-residency comfort before using it.",
-     "assessed_from": "Tencent release, one independent benchmark (Vals.ai) and three press or blog analyses",
-     "video_url": "",
-     "corroboration": [
-      {
-       "label": "Tencent press release, 4 Nov",
-       "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"
-      },
-      {
-       "label": "Unite.AI, 4 Nov",
-       "url": "https://www.unite.ai/tencent-releases-full-hy4-model-with-vision-and-computer-use/"
-      },
-      {
-       "label": "madrobot.blog, 4 Nov",
-       "url": "https://madrobot.blog/2026/11/04/tencent-hy4-release-computer-use-open-weight/"
-      },
-      {
-       "label": "Vals.ai benchmark, 5 Nov",
-       "url": "https://www.vals.ai/models/tencent_hy4"
-      }
-     ]
-    },
-    {
-     "platform": "Press, FAA and Florida DOT posts on X",
-     "date": "30 Oct and 4 Nov 2026",
-     "title": "FDOT and Orlando International Airport Celebrate Air Taxi Landing at Nation's First Vertipad at a Commercial Airport",
-     "category": "mobility",
-     "views_reported": "Not verified",
-     "views_source": "No dated public figure found",
-     "what_shows": "Joby electric air taxis flew St. Petersburg to Tampa, then landed on a dedicated pad at Orlando airport beside Terminal C and the train station, under a federal air-taxi pilot programme.",
-     "what_behind": "These are demonstrations: no passenger service, prices or start date. 2026 sources say Joby targeted Dubai and Archer targeted Abu Dhabi and Dubai; whether service has started is unconfirmed.",
+     "views_source": "No dated source gives a view count; wide press pickup is not a reach figure.",
+     "what_shows": "OpenAI's automated pipeline, using an upcoming cyber model, examined 2,308 Linux kernel flaws, reproduced 1,724 in about 30 hours and produced 948 working root exploits plus patches, costing about $1.2M in API credits.",
+     "what_behind": "OpenAI's own numbers, building on 24 exploits reported in June 2026. The model is unreleased and no independent check of results was found.",
      "checks": {
       "available": "no",
-      "corroborated": "yes",
+      "corroborated": "no",
       "deployed": "no",
-      "scaled": "no",
+      "scaled": "unknown",
       "gcc": "yes"
      },
-     "verdict": "watch",
+     "verdict": "real",
      "fit": "Medium",
-     "aldar_fit_area": "Landing pads at master-planned communities, malls, hotels and mixed-use projects",
-     "action": "Watch",
-     "leadership_line": "These are real flights with regulators involved, but still demonstrations; what matters for us is where landing pads get planned in Abu Dhabi and Dubai.",
-     "assessed_from": "Regulator as reported, a government press release and trade press",
+     "aldar_fit_area": "Group IT and building-systems security (BMS, access control, CCTV, smart-home hubs on Linux)",
+     "action": "Act",
+     "leadership_line": "AI can now find security holes in common software much faster than before, so we're making sure our building systems get patched faster too.",
+     "assessed_from": "OpenAI's disclosure as quoted by the press",
      "video_url": "",
      "corroboration": [
       {
-       "label": "Florida DOT press release, 5 Nov",
-       "url": "https://www.einpresswire.com/article/954618392/fdot-and-orlando-international-airport-celebrate-air-taxi-landing-at-nation-s-first-vertipad-at-a-commercial-airport"
+       "label": "The Hacker News",
+       "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
       },
       {
-       "label": "Interesting Engineering, 30 Oct",
-       "url": "https://interestingengineering.com/transportation/joby-electric-air-taxi-flights-florida-airports"
+       "label": "Neowin",
+       "url": "https://www.neowin.net/news/openais-upcoming-model-finds-948-linux-kernel-vulnerabilities-that-could-grant-root-access/"
       },
       {
-       "label": "UASweekly, 2 Nov",
-       "url": "https://uasweekly.com/2026/11/02/joby-launches-electric-air-taxi-flights-across-florida-under-faa-evtol-pilot-program/"
+       "label": "Cellcog",
+       "url": "https://cellcog.ai/blog/openai-948-linux-root-exploits/"
       },
       {
-       "label": "CiberCuba, 30 Oct",
-       "url": "https://en.cibercuba.com/noticias/2026-10-30-u1-e135253-s27061-nid344321-florida-hace-historia-taxi-volador-electrico"
+       "label": "The Neuron",
+       "url": "https://theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026"
       }
      ]
     },
     {
      "platform": "X",
-     "date": "2 Nov 2026",
-     "title": "Newly manufactured F.03 robots leaving BotQ and heading across campus",
-     "category": "robotics",
-     "views_reported": "Not verified",
-     "views_source": "No dated public figure found",
-     "what_shows": "A roughly 19-second clip from CEO Brett Adcock of newly built Figure 03 humanoid robots walking out of the company's BotQ factory. Press reports more than 1,000 robots built.",
-     "what_behind": "No new production, delivery or customer numbers. Unclear if robots were autonomous or remotely controlled. Not for sale; business customers only. One blog says output is far below the planned 12,000 a year.",
+     "date": "2026-11-02",
+     "title": "Cybercab is back. Starting November 5…",
+     "category": "mobility",
+     "views_reported": "69.9K views",
+     "views_source": "X view counter on @teslaeurope post, captured around 2–3 Nov; Sawyer Merritt repost had 54.4K.",
+     "what_shows": "A European display tour of Tesla's steering-wheel-free robotaxi, opening at Auto Zürich on 5 Nov and running to January 2027, mostly at Tesla stores. Viewing and photos only; no rides in Europe.",
+     "what_behind": "Tesla's own posts. A fan site reports 300+ Cybercabs running in Austin and Dallas rides due; Tesla aims for first customer deliveries before end-2026. No UAE approval or plans found.",
      "checks": {
       "available": "no",
       "corroborated": "no",
-      "deployed": "unknown",
+      "deployed": "no",
+      "scaled": "no",
+      "gcc": "unknown"
+     },
+     "verdict": "watch",
+     "fit": "Medium",
+     "aldar_fit_area": "Master-plan mobility, pick-up/drop-off design at malls and communities, future parking ratios",
+     "action": "Watch",
+     "leadership_line": "It's a showroom tour for now; we're designing new communities to handle robotaxis whichever operator gets approved in the UAE.",
+     "assessed_from": "Tesla's X posts and fan-press reports",
+     "video_url": "https://x.com/teslaeurope/status/2117171084466257939",
+     "corroboration": [
+      {
+       "label": "Sawyer Merritt on X",
+       "url": "https://x.com/SawyerMerritt/status/2117266048462291421"
+      },
+      {
+       "label": "Not a Tesla App",
+       "url": "https://www.notateslaapp.com/news/4933/tesla-cybercab-goes-on-tour-in-europe-cities-dates"
+      }
+     ]
+    },
+    {
+     "platform": "Tech press",
+     "date": "2026-10-31",
+     "title": "Meta built a humanoid robot with China's Fourier, The Information reports",
+     "category": "robotics",
+     "views_reported": "Not verified",
+     "views_source": "No view count available.",
+     "what_shows": "Meta and Fourier reportedly built 'Max', a household-chore humanoid prototype in about three months: 1.5 m, 48 kg, Nvidia Jetson Thor, screen face, five-fingered hands. 'Max 2' in development since September.",
+     "what_behind": "Anonymous sources in a single paywalled scoop. Meta calls it internal research with no plans to sell and no launch date. Nobody has shown the robot.",
+     "checks": {
+      "available": "no",
+      "corroborated": "no",
+      "deployed": "no",
       "scaled": "no",
       "gcc": "unknown"
      },
      "verdict": "hype",
      "fit": "Low",
-     "aldar_fit_area": "Later, possibly facilities management and logistics in operations",
+     "aldar_fit_area": "Long term: resident service in branded residences",
      "action": "Watch",
-     "leadership_line": "It's a marketing clip with no customer or delivery numbers; we'll look again when humanoids show paid, measured work.",
-     "assessed_from": "Company social post and secondary robotics press; no independent data",
+     "leadership_line": "It's a research prototype Meta says it won't sell; home humanoids are still years away from our residents.",
+     "assessed_from": "Secondary reports of a single paywalled scoop",
      "video_url": "",
      "corroboration": [
       {
-       "label": "Humanoids Daily, 2 Nov",
-       "url": "https://www.humanoidsdaily.com/news/figure-03-robots-leave-botq-campus-video"
+       "label": "TNW",
+       "url": "https://thenextweb.com/news/meta-humanoid-robot-fourier-max"
       },
       {
-       "label": "Interesting Engineering, 3 Nov",
-       "url": "https://interestingengineering.com/ai-robotics/figure-03-humanoids-take-campus-walk"
+       "label": "Engadget",
+       "url": "https://www.engadget.com/2303434/meta-reportedly-built-a-humanoid-robot-prototype-that-can-do-household-chores/"
       },
       {
-       "label": "Blog, 4 Nov",
-       "url": "https://www.petertheil.com/167684/"
-      },
-      {
-       "label": "Nextgov, 4 Nov",
-       "url": "https://www.nextgov.com/emerging-tech/2026/11/my-feed-full-robots-someone-should-check-them/417005/"
+       "label": "TechRadar",
+       "url": "https://www.techradar.com/science/robotics/metas-rumored-humanoid-robot-is-another-ai-services-trojan-horse-and-this-is-how-you-end-up-paying-for-the-robot-and-ai-revolution"
       }
      ]
     }
@@ -937,75 +967,75 @@ window.PULSE_FEED = {
     {
      "name": "Bedrock Robotics",
      "category": "construction",
-     "what": "Self-driving kits for existing excavators; raised $600M at $4.1B valuation from CapitalG, Nvidia and Temasek.",
+     "what": "Retrofit kit making existing excavators dig autonomously; commercial at Nevada plant, Champion Site Prep, Zachry project.",
      "scores": {
       "funding": 4,
       "customers": 3,
       "scale": 1,
-      "partners": 4,
+      "partners": 3,
       "gcc": 0
      },
-     "why": "Paid work since August 2026 for named contractors; reference case for automating earthworks. No GCC presence reported.",
+     "why": "Could pilot on master-plan earthworks with our contractors and ease skilled-operator shortages.",
      "source": {
-      "label": "Tech Startups, 27 Oct 2026",
-      "url": "https://techstartups.com/2026/10/27/startup-funding-news-today-october-27-2026-bedrock-robotics-cent-epoch-nevis-north-vector-hyperbolic-more/"
+      "label": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/26/this-startups-self-driving-excavators-help-dig-up-600m-in-new-funding/"
      },
-     "total": 12,
+     "total": 11,
      "verdict": "watch"
     },
     {
-     "name": "Rently",
-     "category": "fintech",
-     "what": "Rent now, pay later: tenants pay monthly, landlords get scheduled payouts; $12M credit line from January Capital.",
-     "scores": {
-      "funding": 2,
-      "customers": 0,
-      "scale": 2,
-      "partners": 1,
-      "gcc": 4
-     },
-     "why": "Already in UAE; says AED 100M+ contracts processed. Candidate partner for monthly-rent options in leasing.",
-     "source": {
-      "label": "Wamda, 27 Oct 2026",
-      "url": "https://www.wamda.com/2026/10/singapore-rently-secures-12-million-credit-facility-expand-uae"
-     },
-     "total": 9,
-     "verdict": "watch"
-    },
-    {
-     "name": "Origin",
-     "category": "robotics",
-     "what": "OG-1 robot applies filler, sands and primes interior walls; $20M co-led by Accel and Zacua Ventures.",
-     "scores": {
-      "funding": 2,
-      "customers": 0,
-      "scale": 1,
-      "partners": 3,
-      "gcc": 2
-     },
-     "why": "Relevant to residential fit-out. Claims unnamed US contractor pilots, Saudi pilots scheduled, 150 robots by end-2027.",
-     "source": {
-      "label": "Robotics & Automation News, 19 Oct 2026",
-      "url": "https://roboticsandautomationnews.com/2026/10/19/origin-raises-20-million-to-scale-general-purpose-construction-robots/106024/"
-     },
-     "total": 8,
-     "verdict": "watch"
-    },
-    {
-     "name": "Lette",
+     "name": "The Rest (Deuhui)",
      "category": "proptech",
-     "what": "AI agents for leasing, resident support, maintenance, arrears and compliance on existing property software; $6.5M seed led by Peak.",
+     "what": "End-to-end hotel lifecycle service; runs 300+ properties, software at 1,300+ sites.",
      "scores": {
-      "funding": 2,
-      "customers": 2,
-      "scale": 0,
+      "funding": 3,
+      "customers": 1,
+      "scale": 4,
       "partners": 2,
       "gcc": 0
      },
-     "why": "Pattern for community and building management; JLL named as customer. No GCC plan.",
+     "why": "Model for Aldar Hospitality: uses operating data to judge which developments to build.",
      "source": {
-      "label": "PropTech Connect, 27 Oct 2026",
-      "url": "https://proptechconnect.com/lette-raises-65m-to-scale-ai-automation-for-uk-rental-operators/"
+      "label": "MoneyToday",
+      "url": "https://www.mt.co.kr/en/future/2026/10/25/2026102515204626680"
+     },
+     "total": 10,
+     "verdict": "watch"
+    },
+    {
+     "name": "Pathways",
+     "category": "sustainability",
+     "what": "Automates Environmental Product Declarations; largest contract with Heidelberg Materials over $1m.",
+     "scores": {
+      "funding": 1,
+      "customers": 3,
+      "scale": 1,
+      "partners": 2,
+      "gcc": 0
+     },
+     "why": "Supplier carbon data supports low-carbon procurement and embodied-carbon reporting.",
+     "source": {
+      "label": "Bricks & Bytes",
+      "url": "https://bricks-bytes.com/funding-ma/latest-construction-technology-funding-rounds-19th-oct-2026/"
+     },
+     "total": 7,
+     "verdict": "ignore"
+    },
+    {
+     "name": "reebuild",
+     "category": "ai",
+     "what": "AI matching construction invoices and delivery notes; claims 120+ companies, 8,200 sites.",
+     "scores": {
+      "funding": 1,
+      "customers": 0,
+      "scale": 3,
+      "partners": 2,
+      "gcc": 0
+     },
+     "why": "Easy back-office pilot for construction and contracting finance teams.",
+     "source": {
+      "label": "Bricks & Bytes",
+      "url": "https://bricks-bytes.com/funding-ma/latest-construction-technology-funding-rounds-19th-oct-2026/"
      },
      "total": 6,
      "verdict": "ignore"
@@ -1016,86 +1046,4198 @@ window.PULSE_FEED = {
      "category": "proptech",
      "readiness": 70,
      "relevance": 90,
-     "hype": 50,
-     "substance": 65,
-     "reason": "AI property-operations tools funded with named customers."
+     "hype": 40,
+     "substance": 70,
+     "reason": "Mature market; acquisitions this week; core business."
     },
     {
      "category": "ai",
-     "readiness": 75,
-     "relevance": 80,
+     "readiness": 65,
+     "relevance": 85,
      "hype": 95,
-     "substance": 65,
-     "reason": "Usable now, but maker claims outrun independent tests."
+     "substance": 60,
+     "reason": "Widely used, but big claims mostly company-reported."
     },
     {
      "category": "sustainability",
-     "readiness": 70,
+     "readiness": 60,
      "relevance": 85,
-     "hype": 45,
-     "substance": 70,
-     "reason": "Battery storage being built; building energy savings still claims."
+     "hype": 35,
+     "substance": 65,
+     "reason": "Low-carbon cement and EPD tools are being bought."
     },
     {
      "category": "construction",
-     "readiness": 50,
+     "readiness": 45,
      "relevance": 90,
-     "hype": 60,
+     "hype": 55,
      "substance": 55,
-     "reason": "Bedrock on paid sites; most robots still in pilots."
+     "reason": "Few named deployments; savings figures self-reported."
     },
     {
      "category": "mobility",
-     "readiness": 35,
+     "readiness": 40,
      "relevance": 65,
-     "hype": 70,
-     "substance": 40,
-     "reason": "Air taxis still demos; robotaxis growing in limited cities."
+     "hype": 75,
+     "substance": 45,
+     "reason": "Robotaxis still limited; congestion benefits are forecasts."
     },
     {
      "category": "robotics",
-     "readiness": 25,
-     "relevance": 50,
-     "hype": 95,
-     "substance": 35,
-     "reason": "Humanoid videos lack customer and delivery data."
+     "readiness": 40,
+     "relevance": 55,
+     "hype": 90,
+     "substance": 40,
+     "reason": "Cleaning robots deployable; humanoids remain prototypes."
     },
     {
      "category": "retail",
      "readiness": 70,
-     "relevance": 80,
-     "hype": 50,
+     "relevance": 75,
+     "hype": 55,
      "substance": 60,
-     "reason": "Store tech rolling out; AI shopping agents threaten mall advertising."
+     "reason": "RFID proven; AI shopping agents' mall impact unproven."
     },
     {
      "category": "fintech",
-     "readiness": 60,
+     "readiness": 55,
      "relevance": 70,
-     "hype": 45,
-     "substance": 55,
-     "reason": "Rent firms raise debt with real volumes; tokenised mortgages early."
+     "hype": 40,
+     "substance": 50,
+     "reason": "Big Gulf deals are capital moves, not technology."
     },
     {
      "category": "frontier",
      "readiness": 10,
-     "relevance": 15,
-     "hype": 55,
+     "relevance": 20,
+     "hype": 70,
      "substance": 25,
-     "reason": "Satellites and fusion are far from our business."
+     "reason": "Experimental; little near-term link to our business."
     },
     {
      "category": "work_edu",
-     "readiness": 60,
-     "relevance": 65,
-     "hype": 65,
-     "substance": 50,
-     "reason": "High UAE AI use; job fears and school AI policy matter."
+     "readiness": 55,
+     "relevance": 70,
+     "hype": 70,
+     "substance": 45,
+     "reason": "AI tools widely used; learning-outcome evidence thin."
     }
    ],
    "research_meta": {
     "searches": 18,
-    "sources": 160
+    "sources": 143
+   },
+   "verticals": {
+    "development": {
+     "label": "Development",
+     "relevant_stories": 260,
+     "signals": {
+      "volume": {
+       "proptech": 74,
+       "ai": 59,
+       "sustainability": 16,
+       "construction": 68,
+       "mobility": 7,
+       "robotics": 12,
+       "retail": 7,
+       "fintech": 3,
+       "frontier": 9,
+       "work_edu": 5
+      },
+      "deals": {
+       "proptech": 3,
+       "ai": 3,
+       "sustainability": 2,
+       "construction": 1,
+       "mobility": 0,
+       "robotics": 2,
+       "retail": 0,
+       "fintech": 1,
+       "frontier": 1,
+       "work_edu": 0
+      }
+     },
+     "momentum": [
+      {
+       "category": "proptech",
+       "volume": 74,
+       "deals": 3,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "ai",
+       "volume": 59,
+       "deals": 3,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "sustainability",
+       "volume": 16,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "construction",
+       "volume": 68,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "mobility",
+       "volume": 7,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "robotics",
+       "volume": 12,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "retail",
+       "volume": 7,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "fintech",
+       "volume": 3,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "frontier",
+       "volume": 9,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "work_edu",
+       "volume": 5,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      }
+     ],
+     "generated_by": "claude",
+     "headline": "Brookfield and Lunate form a new Gulf property development firm",
+     "takeaways": [
+      "New capital is moving into Gulf development: Brookfield and Lunate are building a developer, and Arcapita plans $1.5B in GCC industrial and logistics real estate. Expect more competition for land and partners.",
+      "AI is moving into design tools. Nemetschek and Qonic are building AI into BIM, and AI planning tools are targeting approval times, which points to faster design and permitting cycles.",
+      "UAE transport is changing fast: Etihad Rail passenger demand, driverless car tests in Ras Al Khaimah and AI traffic lights in Dubai all bear on how masterplans place density and parking. This is the first tracked week, so there is no earlier baseline to compare against."
+     ],
+     "trend_watch": [
+      {
+       "trend": "Institutional capital entering Gulf development",
+       "status": "new",
+       "evidence": "Brookfield–Lunate developer (14), Arcapita's $1.5B GCC logistics plan (139), and Abu Dhabi October sales up 30% (6)."
+      },
+      {
+       "trend": "AI embedded in BIM and design workflows",
+       "status": "new",
+       "evidence": "Nemetschek AI expansion (82), Qonic AI inside BIM (127), AI planning-decision tool (113); 59 AI stories this week."
+      },
+      {
+       "trend": "Construction robotics and offsite building",
+       "status": "new",
+       "evidence": "Construction robotics funding hit $1.6B, triple the previous peak (121); modular construction expanding in North America (87)."
+      },
+      {
+       "trend": "Rail and autonomous mobility reshaping UAE masterplans",
+       "status": "new",
+       "evidence": "Etihad Rail sold 120,000 tickets in 30 days (15), Ras Al Khaimah driverless tests (17), Dubai AI traffic lights (169)."
+      },
+      {
+       "trend": "Low-carbon materials and storage",
+       "status": "new",
+       "evidence": "Meta–Fortera low-carbon cement plant deal (108); Masdar battery storage construction (22); 16 sustainability stories."
+      }
+     ],
+     "posts": [
+      {
+       "id": "brookfieldlunatesetupnewgulfpropertydeve",
+       "category": "proptech",
+       "type": "investment",
+       "region": "GCC",
+       "company": "Brookfield / Lunate",
+       "amount_usd_m": null,
+       "headline": "Brookfield and Lunate set up a new Gulf property development firm",
+       "summary": "Global asset manager Brookfield and Abu Dhabi's Lunate are creating a new property development company focused on the Gulf.",
+       "why_it_matters": "A well-funded new developer could compete with Aldar for land, contractors and buyers, or become a co-development partner.",
+       "source": "Bloomberg.com",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-03/brookfield-lunate-set-up-new-gulf-property-development-firm",
+       "published": "2026-11-03",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "abudhabiresidentialunitsalesrise3006toae",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Abu Dhabi residential market",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi residential unit sales up 30.06% to AED 12.97bn in October",
+       "summary": "Residential unit sales in Abu Dhabi rose 30.06% to AED 12.97bn in October 2026.",
+       "why_it_matters": "Strong local demand supports Aldar's off-plan launch pipeline and pricing confidence for the coming quarters.",
+       "source": "Zawya",
+       "url": "https://www.zawya.com/en/press-release/research-studies/abu-dhabi-residential-unit-sales-rise-30.06-to-aed-12.97bln-in-october-2026-2000628",
+       "published": "2026-10-29",
+       "coverage": 8,
+       "also_covered_by": [
+        "The Robot Report",
+        "Business Wire",
+        "blog.google"
+       ],
+       "image": "https://media.zawya.com/prod/images/gm_preview/88cc989d4fea-untitled-1.gif"
+      },
+      {
+       "id": "bahrainsarcapitatoinvest15bingccindustri",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Arcapita",
+       "amount_usd_m": null,
+       "headline": "Bahrain's Arcapita plans $1.5B investment in GCC industrial and logistics real estate",
+       "summary": "Arcapita plans to invest $1.5B in industrial and logistics real estate across the GCC.",
+       "why_it_matters": "Signals investor appetite for logistics land and possible partners for Aldar's mixed-use and industrial masterplan components.",
+       "source": "Forbes Middle East",
+       "url": "https://www.forbesmiddleeast.com/industry/real-estate/bahrains-arcapita-to-invest-$15b-in-gcc-industrial-logistics-real-estate",
+       "published": "2026-10-30",
+       "coverage": 11,
+       "also_covered_by": [
+        "Container News",
+        "Gulf Business",
+        "GlobeNewswire"
+       ],
+       "image": "https://d1epq84pwgteub.cloudfront.net/936138c0e873436f8b3653078d21a0fd.jpg"
+      },
+      {
+       "id": "ellingtonpropertiesandalhamraunveildh28b",
+       "category": "proptech",
+       "type": "product",
+       "region": "GCC",
+       "company": "Ellington Properties / Al Hamra",
+       "amount_usd_m": null,
+       "headline": "Ellington and Al Hamra unveil Dh2.8bn commercial tower in Business Bay",
+       "summary": "Ellington Properties and Al Hamra have launched a Dh2.8 billion commercial tower in Dubai's Business Bay, a joint venture covered by 26 outlets.",
+       "why_it_matters": "Residential developers in the region are moving into commercial towers, a benchmark for Aldar's own commercial launches.",
+       "source": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/business/property/ellington-properties-and-al-hamra-unveil-dh28-billion-commercial-tower-in-business-bay?amp=1",
+       "published": "2026-10-30",
+       "coverage": 26,
+       "also_covered_by": [
+        "Tech In Africa",
+        "Business Wire",
+        "InfoWorld"
+       ]
+      },
+      {
+       "id": "abudhabisadnocg42signdealwithopenaiassam",
+       "category": "ai",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "ADNOC / G42 / OpenAI",
+       "amount_usd_m": null,
+       "headline": "ADNOC and G42 sign deal with OpenAI during Sam Altman's UAE visit",
+       "summary": "Abu Dhabi's ADNOC and G42 signed an agreement with OpenAI as its CEO travelled to the UAE.",
+       "why_it_matters": "Deeper frontier-AI access in Abu Dhabi creates local partners for AI in Aldar's design, sales and customer service.",
+       "source": "Reuters",
+       "url": "https://www.reuters.com/business/energy/abu-dhabis-adnoc-g42-sign-deal-with-openai-sam-altman-travels-uae-2026-11-02/",
+       "published": "2026-11-01",
+       "coverage": 14,
+       "also_covered_by": [
+        "Khaleej Times",
+        "CNBC",
+        "Fortune"
+       ]
+      },
+      {
+       "id": "etihadrailrecords120000ticketsalesin30da",
+       "category": "mobility",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Etihad Rail",
+       "amount_usd_m": null,
+       "headline": "Etihad Rail sells 120,000 tickets in 30 days after linking four UAE cities",
+       "summary": "Etihad Rail's passenger service recorded 120,000 ticket sales in its first 30 days connecting four UAE cities.",
+       "why_it_matters": "Strong early ridership argues for planning communities, density and sales stories around station access.",
+       "source": "The National",
+       "url": "https://www.thenationalnews.com/news/uae/2026/10/30/etihad-rail-sells-120000-passenger-tickets-in-first-month-of-operations/",
+       "published": "2026-10-31",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://www.thenationalnews.com/resizer/v2/EKCBEJZC7ZANLDLFOEH4TVI6DE.jpg?auth=ca2110a2715f85a20bba686196a50014809da40e9649da2485c5bb11aeaa4c19&focal=1172%2C1702&width=1200&height=630"
+      },
+      {
+       "id": "rasalkhaimahtotestdriverlesscarsinrealwo",
+       "category": "mobility",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "Ras Al Khaimah government",
+       "amount_usd_m": null,
+       "headline": "Ras Al Khaimah to test driverless cars in real-world environments",
+       "summary": "Ras Al Khaimah will trial autonomous vehicles on real roads to assess them for possible future use.",
+       "why_it_matters": "Autonomous mobility spreading across emirates affects parking ratios, drop-off design and street layouts in new masterplans.",
+       "source": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/uae/transport/ras-al-khaimah-test-driverless-cars-potential-wider-use",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://imgengine.khaleejtimes.com/khaleejtimes/import/images/97017e62-5b57-4aa3-a793-138c4cc8e6cf-org.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=0,32,1200,800"
+      },
+      {
+       "id": "aipoweredtrafficlightsindubaiexpectedtoc",
+       "category": "mobility",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "Dubai RTA",
+       "amount_usd_m": null,
+       "headline": "Dubai RTA expects AI traffic lights to cut congestion by at least 10%",
+       "summary": "Dubai's roads authority says AI-powered traffic signals should reduce congestion by at least 10%.",
+       "why_it_matters": "Smart signals offer a model for building community traffic infrastructure with Abu Dhabi authorities.",
+       "source": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/uae/transport/rta-ai-traffic-lights-expected-to-reduce-dubai-congestion?amp=1",
+       "published": "2026-11-02",
+       "coverage": 5,
+       "also_covered_by": [
+        "Zawya",
+        "Facilities Dive",
+        "deltanews.tv"
+       ],
+       "image": "https://imgengine.khaleejtimes.com/khaleejtimes/import/images/4bc44631-7604-428b-9740-4e911c031585-org.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=fill&fill=blur"
+      },
+      {
+       "id": "uaesmasdarendesabeginconstructionof283mb",
+       "category": "sustainability",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "Masdar / Endesa",
+       "amount_usd_m": 28.3,
+       "headline": "Masdar and Endesa start building $28.3m battery storage projects in Spain",
+       "summary": "Masdar and Endesa have begun construction of battery storage projects in Spain worth $28.3m.",
+       "why_it_matters": "Masdar's growing storage expertise makes it a natural partner for community-scale batteries in Aldar developments.",
+       "source": "Gulf Business",
+       "url": "https://gulfbusiness.com/en/2026/energy/uaes-masdar-endesa-begin-construction-of-28-3m-battery-storage-projects-in-spain/",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "lightintelligentbuildingmiddleeastmarksm",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Light + Intelligent Building Middle East",
+       "amount_usd_m": null,
+       "headline": "Light + Intelligent Building Middle East's 20th edition spotlights converging building tech",
+       "summary": "The regional trade show's 20th edition focused on integrating lighting, building management and smart systems.",
+       "why_it_matters": "A practical place to source integrated smart-home and building-management specifications for upcoming communities.",
+       "source": "www.wam.ae",
+       "url": "https://www.wam.ae/en/article/c32irze-light-intelligent-building-middle-east-marks",
+       "published": "2026-10-30",
+       "coverage": 11,
+       "also_covered_by": [
+        "Middle East Construction News",
+        "markets.businessinsider.com",
+        "SMBtech"
+       ]
+      },
+      {
+       "id": "sectorsnapshotconstructionroboticsfundin",
+       "category": "robotics",
+       "type": "trend",
+       "region": "Global",
+       "company": "Construction robotics sector",
+       "amount_usd_m": null,
+       "headline": "Construction robotics funding soars to $1.6B, tripling previous peak",
+       "summary": "Crunchbase data shows venture funding for construction robotics has reached $1.6B, three times the sector's previous peak.",
+       "why_it_matters": "Better-funded site robotics could ease labour constraints for Aldar's contractors and speed up delivery.",
+       "source": "Crunchbase News",
+       "url": "https://news.crunchbase.com/venture/sector-snapshot-2026-construction-robotics-funding-soars-bedrock/",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://news.crunchbase.com/wp-content/uploads/AI-manufacturing.jpg"
+      },
+      {
+       "id": "nemetschekexpandsaitoolsacrossbuildingwo",
+       "category": "construction",
+       "type": "product",
+       "region": "Global",
+       "company": "Nemetschek",
+       "amount_usd_m": null,
+       "headline": "Nemetschek expands AI tools across building design workflows",
+       "summary": "Nemetschek, whose software includes widely used BIM and design tools, is adding AI features across its building workflow products.",
+       "why_it_matters": "Aldar's design consultants may gain AI features in tools they already use; ask them about adoption plans.",
+       "source": "Engineering.com",
+       "url": "https://www.engineering.com/nemetschek-expands-ai-tools-across-building-workflows/",
+       "published": "2026-11-02",
+       "coverage": 2,
+       "also_covered_by": [
+        "IT Brief Asia"
+       ],
+       "image": "https://www.engineering.com/wp-content/uploads/2026/11/Nemetschek-expands-AI-tools-across-building-workflows-scaled.jpg"
+      },
+      {
+       "id": "qonicailaunchesinsidebimplatform",
+       "category": "construction",
+       "type": "product",
+       "region": "Global",
+       "company": "Qonic",
+       "amount_usd_m": null,
+       "headline": "Qonic launches AI inside its BIM platform",
+       "summary": "Qonic has added AI capabilities directly into its cloud BIM modelling platform.",
+       "why_it_matters": "In-model AI could shorten design coordination and clash checks on large masterplan packages.",
+       "source": "AEC Magazine",
+       "url": "https://aecmag.com/bim/qonic-ai-launches-inside-bim-platform/",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://aecmag.com/wp-content/uploads/2026/11/QonicAI_1.jpg"
+      },
+      {
+       "id": "aitooltospeedupplanningdecisionsforhomeh",
+       "category": "ai",
+       "type": "product",
+       "region": "Europe",
+       "company": "Propertymark (reported)",
+       "amount_usd_m": null,
+       "headline": "AI tool aims to speed up planning decisions for homeowners",
+       "summary": "A new AI tool is designed to accelerate planning application decisions.",
+       "why_it_matters": "A template for working with Abu Dhabi regulators on faster, AI-assisted permit and design approvals.",
+       "source": "Propertymark",
+       "url": "https://www.propertymark.co.uk/resource/ai-tool-to-speed-up-planning-decisions-for-homeowners.html",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://www.propertymark.co.uk/static/b7637a03-e917-4747-ac4e4c17da276ceb/opengraphimage_a162f340e24dc4d08dd7995529c01e82_4a7c7e45a350/Data-chain.jpg"
+      },
+      {
+       "id": "metastrikesdealtohelpbringalowcarbonceme",
+       "category": "sustainability",
+       "type": "deployment",
+       "region": "North America",
+       "company": "Meta / Fortera",
+       "amount_usd_m": null,
+       "headline": "Meta strikes deal to help bring a low-carbon cement plant to Missouri",
+       "summary": "Meta partnered with Fortera to support a low-carbon cement plant, aiming to create supply of clean materials.",
+       "why_it_matters": "Large buyers are underwriting supply of green materials, a model Aldar could use to secure low-carbon concrete locally.",
+       "source": "Canary Media",
+       "url": "https://www.canarymedia.com/articles/clean-industry/meta-fortera-deal-cement-plant-missouri",
+       "published": "2026-10-30",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://img.canarymedia.com/content/uploads/Fortera-Pour-Images-2-2-edit.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=670c0e717274dc6d549784fca1f93256"
+      },
+      {
+       "id": "internationalmodularconstructionexpandsi",
+       "category": "construction",
+       "type": "trend",
+       "region": "North America",
+       "company": "Modular construction sector",
+       "amount_usd_m": null,
+       "headline": "International modular construction expands in the US and Canada",
+       "summary": "Overseas modular builders are expanding into US and Canadian housing markets.",
+       "why_it_matters": "Offsite manufacturing growing abroad supports testing modular delivery for repeatable villa and townhouse products.",
+       "source": "Built Offsite",
+       "url": "https://builtoffsite.com.au/news/international-modular-construction-reds10-atco/",
+       "published": "2026-10-30",
+       "coverage": 2,
+       "also_covered_by": [
+        "Arabian Business"
+       ],
+       "image": "https://builtoffsite.com.au/wp-content/uploads/2026/10/reds10-mmy-us-modular-manufacturing-partnership-800x533-1.jpeg"
+      }
+     ],
+     "viral": [
+      {
+       "platform": "Press",
+       "date": "2026-11-02",
+       "title": "Abu Dhabi Government and OpenAI launch Machine-Readable Government",
+       "category": "ai",
+       "views_reported": "Not verified",
+       "views_source": "No dated source gave a reach figure; ADIPEC's 239,000 is event attendance",
+       "what_shows": "Abu Dhabi will convert a defined set of government rules into AI-readable code, starting with food import compliance. Construction permits, licensing and HR compliance are planned next, expanding by 2027, under the AED 13bn Digital Strategy 2025–2027.",
+       "what_behind": "Abu Dhabi Government and OpenAI, signed during Sam Altman's UAE visit. The 'AI-native government' label is the partners' own. Only food-import scope has started; construction permits are a plan, not a product. One secondary report.",
+       "checks": {
+        "available": "no",
+        "corroborated": "unknown",
+        "deployed": "no",
+        "scaled": "no",
+        "gcc": "yes"
+       },
+       "verdict": "watch",
+       "fit": "High",
+       "aldar_fit_area": "Development approvals and permitting, design compliance with Abu Dhabi codes and Estidama, masterplan sign-off timelines",
+       "action": "Act",
+       "leadership_line": "Abu Dhabi is converting its rules into AI-readable code, and building permits are planned by 2027; we want to help shape it, not just receive it.",
+       "assessed_from": "Crypto Briefing (2 Nov) via search-result text; IndexBox (3 Nov)",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "Crypto Briefing, 2 Nov",
+         "url": "https://cryptobriefing.com/openai-abu-dhabi-machine-readable-government/"
+        },
+        {
+         "label": "IndexBox, ADIPEC context, 3 Nov",
+         "url": "https://www.indexbox.io/blog/adipec-2026-opens-in-abu-dhabi-with-record-239000-participants-to-address-energy-security-ai-and-investment/"
+        }
+       ]
+      },
+      {
+       "platform": "X",
+       "date": "2026-11-02",
+       "title": "Figure 03 humanoids walk out of BotQ factory",
+       "category": "robotics",
+       "views_reported": "Not verified",
+       "views_source": "No view count in a dated source",
+       "what_shows": "Founder Brett Adcock's video of newly built Figure 03 robots crossing the company campus. Figure claims its 1,000th robot in July, production up to one an hour, and a nine-day, 560 km treadmill test.",
+       "what_behind": "Company footage and claims. Interesting Engineering notes 1,000+ is robots built, not delivered. No updated delivery or production figures; no named customers; no evidence for outdoor heat or dust.",
+       "checks": {
+        "available": "unknown",
+        "corroborated": "no",
+        "deployed": "unknown",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "hype",
+       "fit": "Low",
+       "aldar_fit_area": "Long term, possibly site logistics or interior fit-out",
+       "action": "Watch",
+       "leadership_line": "It's an impressive factory video, but Figure hasn't disclosed customer deliveries, so it isn't relevant to our sites yet.",
+       "assessed_from": "Interesting Engineering (3 Nov); Physical I/O newsletter (3 Nov) for context",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "Interesting Engineering, 3 Nov",
+         "url": "https://interestingengineering.com/ai-robotics/figure-03-humanoids-take-campus-walk"
+        },
+        {
+         "label": "Physical I/O newsletter, 3 Nov",
+         "url": "https://pruthvigeedh.substack.com/p/a-robot-watched-one-demo-then-a-london"
+        }
+       ]
+      },
+      {
+       "platform": "Press",
+       "date": "2026-11-04",
+       "title": "COP31 launches Antalya Compact for Energy Efficient Buildings",
+       "category": "sustainability",
+       "views_reported": "Not verified",
+       "views_source": "No dated source gave a reach figure",
+       "what_shows": "A framework to cut building operational energy use 25% per unit by 2035 versus 2020 while speeding electrification. Six priority areas include electrified heating and cooling, energy-system flexibility and finance. Developed with GlobalABC, hosted by UNEP.",
+       "what_behind": "COP31 Presidency (Türkiye). Signatories, whether it is binding, and UAE participation are unknown. Primary release could not be opened; assessed from a secondary report.",
+       "checks": {
+        "available": "no",
+        "corroborated": "unknown",
+        "deployed": "no",
+        "scaled": "no",
+        "gcc": "yes"
+       },
+       "verdict": "watch",
+       "fit": "Medium",
+       "aldar_fit_area": "Design standards, cooling and MEP specifications, green finance eligibility, sales messaging",
+       "action": "Watch",
+       "leadership_line": "It's a global target to cut building energy use by a quarter by 2035; our cooling and design specifications should be ready if the UAE commits.",
+       "assessed_from": "SustainabilityOnline (4 Nov); COP31 primary page inaccessible",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "SustainabilityOnline, 4 Nov",
+         "url": "https://sustainabilityonline.net/news/sustainabilityonline-the-sustainability-brief-4-november-2026/"
+        },
+        {
+         "label": "Colliers, Greenbuild 2026 takeaways, 3 Nov",
+         "url": "https://colliersengineering.com/perspectives/greenbuild-2026-key-takeaways-sustainable-design-decarbonization"
+        }
+       ]
+      }
+     ],
+     "challengers": [
+      {
+       "name": "Lette",
+       "category": "proptech",
+       "what": "London platform taking homes from first enquiry to signed lease and supporting residents after move-in; $6.5M seed led by Peak.",
+       "scores": {
+        "funding": 2,
+        "customers": 2,
+        "scale": 1,
+        "partners": 2,
+        "gcc": 0
+       },
+       "why": "Model for handover and post-handover resident experience; JLL is a named customer. Expansion targets Europe in 2027.",
+       "source": {
+        "label": "CFOtech, company statements",
+        "url": "https://cfotech.co.uk/story/lette-raises-usd-6-5-million-to-expand-uk-proptech"
+       },
+       "total": 7,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Cortas",
+       "category": "ai",
+       "what": "Copenhagen property management service with own AI software for tenant communications, move-ins/outs and bookkeeping; about €1.47M pre-seed.",
+       "scores": {
+        "funding": 1,
+        "customers": 0,
+        "scale": 0,
+        "partners": 1,
+        "gcc": 0
+       },
+       "why": "Learning case for how service-plus-software could run community handover and move-in operations.",
+       "source": {
+        "label": "ArcticStartup",
+        "url": "https://arcticstartup.com/cortas-raises-e1-47-million-pre-seed/"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Unitoq",
+       "category": "fintech",
+       "what": "Riga app for investing in vetted European homes from €100, launching early 2027; €155k pre-seed.",
+       "scores": {
+        "funding": 0,
+        "customers": 0,
+        "scale": 0,
+        "partners": 1,
+        "gcc": 0
+       },
+       "why": "Fractional ownership is a possible future off-plan distribution channel; learn only, not launched.",
+       "source": {
+        "label": "ArcticStartup",
+        "url": "https://arcticstartup.com/unitoq-raises-e155k-pre-seed/"
+       },
+       "total": 1,
+       "verdict": "ignore"
+      }
+     ],
+     "matrix": [
+      {
+       "category": "proptech",
+       "readiness": 70,
+       "relevance": 80,
+       "hype": 50,
+       "substance": 60,
+       "reason": "Resident platforms have named customers; building tech converging."
+      },
+      {
+       "category": "ai",
+       "readiness": 60,
+       "relevance": 85,
+       "hype": 90,
+       "substance": 55,
+       "reason": "Huge announcements, but permits use is a 2027 plan."
+      },
+      {
+       "category": "sustainability",
+       "readiness": 70,
+       "relevance": 80,
+       "hype": 45,
+       "substance": 70,
+       "reason": "Proven efficiency practice plus new Antalya Compact target."
+      },
+      {
+       "category": "construction",
+       "readiness": 50,
+       "relevance": 95,
+       "hype": 60,
+       "substance": 50,
+       "reason": "Record robotics funding, but adoption gap from demos to use."
+      },
+      {
+       "category": "mobility",
+       "readiness": 40,
+       "relevance": 60,
+       "hype": 65,
+       "substance": 45,
+       "reason": "Etihad Rail real; driverless and AI traffic still pilots."
+      },
+      {
+       "category": "robotics",
+       "readiness": 20,
+       "relevance": 40,
+       "hype": 90,
+       "substance": 25,
+       "reason": "No disclosed humanoid customer deliveries."
+      },
+      {
+       "category": "retail",
+       "readiness": 65,
+       "relevance": 75,
+       "hype": 50,
+       "substance": 55,
+       "reason": "AI-edited listings raise disclosure concerns for off-plan renders."
+      },
+      {
+       "category": "fintech",
+       "readiness": 55,
+       "relevance": 60,
+       "hype": 40,
+       "substance": 45,
+       "reason": "Fractional investing early; Property Finder led UAE rounds."
+      },
+      {
+       "category": "frontier",
+       "readiness": 10,
+       "relevance": 20,
+       "hype": 50,
+       "substance": 15,
+       "reason": "No relevant evidence gathered this week."
+      },
+      {
+       "category": "work_edu",
+       "readiness": 45,
+       "relevance": 55,
+       "hype": 35,
+       "substance": 35,
+       "reason": "Upskilling and construction workforce gap; limited evidence."
+      }
+     ],
+     "research_meta": {
+      "searches": 10,
+      "sources": 88
+     }
+    },
+    "communities": {
+     "label": "Communities",
+     "relevant_stories": 171,
+     "signals": {
+      "volume": {
+       "proptech": 64,
+       "ai": 46,
+       "sustainability": 11,
+       "construction": 4,
+       "mobility": 6,
+       "robotics": 15,
+       "retail": 8,
+       "fintech": 3,
+       "frontier": 7,
+       "work_edu": 7
+      },
+      "deals": {
+       "proptech": 3,
+       "ai": 4,
+       "sustainability": 1,
+       "construction": 0,
+       "mobility": 0,
+       "robotics": 2,
+       "retail": 0,
+       "fintech": 0,
+       "frontier": 0,
+       "work_edu": 0
+      }
+     },
+     "momentum": [
+      {
+       "category": "proptech",
+       "volume": 64,
+       "deals": 3,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "ai",
+       "volume": 46,
+       "deals": 4,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "sustainability",
+       "volume": 11,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "construction",
+       "volume": 4,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "mobility",
+       "volume": 6,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "robotics",
+       "volume": 15,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "retail",
+       "volume": 8,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "fintech",
+       "volume": 3,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "frontier",
+       "volume": 7,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "work_edu",
+       "volume": 7,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      }
+     ],
+     "generated_by": "claude",
+     "headline": "ADNOC and G42 sign deal with OpenAI as Abu Dhabi deepens its AI push",
+     "takeaways": [
+      "The Gulf AI build-out dominated GCC news: ADNOC and G42 signed with OpenAI, Aramco took 49% of a Saudi AI firm, and Abu Dhabi's AIREV raised funds.",
+      "Operations software consolidated and automated: HappyCo and Supa bought up proptech tools, while PassiveLogic claims one manager can run 100 buildings with AI.",
+      "Service robotics matured: cleaning robot maker Peppermint raised Rs 100 crore and a new ISO standard lets multi-vendor mobile robots coordinate, easing fleet adoption for FM."
+     ],
+     "trend_watch": [
+      {
+       "trend": "Gulf sovereign AI capacity and partnerships",
+       "status": "new",
+       "evidence": "ADNOC/G42–OpenAI deal [1], Aramco 49% Saudi AI stake [156], AIREV funding [139]; AI is the second-largest category with 46 stories."
+      },
+      {
+       "trend": "AI-driven property and facility operations",
+       "status": "new",
+       "evidence": "PassiveLogic 100-buildings-per-manager claim [128], HappyCo acquisition [52], Supa £21m raise [81]; PropTech leads volume at 64 stories."
+      },
+      {
+       "trend": "Cleaning and security robotics for estates",
+       "status": "new",
+       "evidence": "Peppermint Robotics Rs 100 crore round [61], ISO 21423:2026 interoperability standard [90], patrol robot dogs and drones [130]; 15 robotics stories."
+      },
+      {
+       "trend": "Community amenities and smart-city services",
+       "status": "new",
+       "evidence": "Dubai Work from Park [11], AI traffic lights [10], Abu Dhabi community intelligence conference [17]."
+      },
+      {
+       "trend": "Abu Dhabi residential demand growth",
+       "status": "new",
+       "evidence": "October Abu Dhabi residential sales up 30.06% to AED 12.97bn [6], pointing to more handovers for community management."
+      }
+     ],
+     "posts": [
+      {
+       "id": "abudhabisadnocg42signdealwithopenaiassam",
+       "category": "ai",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "ADNOC, G42, OpenAI",
+       "amount_usd_m": null,
+       "headline": "ADNOC and G42 sign deal with OpenAI during Sam Altman's UAE visit",
+       "summary": "Abu Dhabi's ADNOC and G42 signed an agreement with OpenAI as its CEO travelled to the UAE, widely reported by 14 outlets.",
+       "why_it_matters": "Local access to frontier AI via Abu Dhabi partners could ease data-residency concerns for resident-service and FM automation.",
+       "source": "Reuters",
+       "url": "https://www.reuters.com/business/energy/abu-dhabis-adnoc-g42-sign-deal-with-openai-sam-altman-travels-uae-2026-11-02/",
+       "published": "2026-11-01",
+       "coverage": 14,
+       "also_covered_by": [
+        "Khaleej Times",
+        "CNBC",
+        "Fortune"
+       ]
+      },
+      {
+       "id": "abudhabiresidentialunitsalesrise3006toae",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Abu Dhabi residential market",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi residential sales rise 30.06% to AED 12.97bn in October",
+       "summary": "Residential unit sales in Abu Dhabi climbed 30.06% year on year to AED 12.97 billion in October 2026.",
+       "why_it_matters": "Strong sales feed future handovers, expanding the portfolio Communities must staff, service and digitise.",
+       "source": "Zawya",
+       "url": "https://www.zawya.com/en/press-release/research-studies/abu-dhabi-residential-unit-sales-rise-30.06-to-aed-12.97bln-in-october-2026-2000628",
+       "published": "2026-10-29",
+       "coverage": 8,
+       "also_covered_by": [
+        "The Robot Report",
+        "Business Wire",
+        "blog.google"
+       ],
+       "image": "https://media.zawya.com/prod/images/gm_preview/88cc989d4fea-untitled-1.gif"
+      },
+      {
+       "id": "oilgiantaramcotakes49percentstakeinsaudi",
+       "category": "ai",
+       "type": "investment",
+       "region": "GCC",
+       "company": "Aramco",
+       "amount_usd_m": null,
+       "headline": "Aramco takes 49% stake in a Saudi AI company",
+       "summary": "Saudi oil giant Aramco acquired a 49 per cent stake in a Saudi AI company, extending Gulf corporates' direct ownership of AI capability.",
+       "why_it_matters": "Gulf conglomerates are owning AI suppliers; Aldar could consider similar partnerships for community operations tools.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/business/energy/oil-giant-aramco-takes-49-per-cent-stake-in-saudi-ai-company-1.500731592",
+       "published": "2026-11-01",
+       "coverage": 7,
+       "also_covered_by": [
+        "The Next Web",
+        "The Decoder",
+        "Wamda"
+       ],
+       "image": "https://media.assettype.com/gulfnews%2F2026-10-22%2F5r5lr7ul%2FAramco-2.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "singaporesterrainvestparticipatesinstrat",
+       "category": "ai",
+       "type": "investment",
+       "region": "GCC",
+       "company": "AIREV",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi AI firm AIREV raises strategic round with Singapore's Terra Invest",
+       "summary": "Singapore's Terra Invest joined a strategic funding round for Abu Dhabi-based AI company AIREV.",
+       "why_it_matters": "A funded local AI vendor is a potential partner for Arabic-capable resident service and workflow agents.",
+       "source": "Zawya",
+       "url": "https://www.zawya.com/en/press-release/companies-news/singapores-terra-invest-participates-in-strategic-funding-round-for-abu-dhabi-based-ai-company-airev-1941493",
+       "published": "2026-10-29",
+       "coverage": 12,
+       "also_covered_by": [
+        "BW Disrupt",
+        "Entrackr",
+        "Indian Startup News"
+       ],
+       "image": "https://media.zawya.com/prod/images/gm_preview/4b908abe5697-image-2026-11-04t113404995.jpeg"
+      },
+      {
+       "id": "newconferenceoncommunityintelligenceanno",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Community intelligence conference",
+       "amount_usd_m": null,
+       "headline": "New conference on community intelligence announced in Abu Dhabi",
+       "summary": "A new Abu Dhabi conference focused on community intelligence has been announced.",
+       "why_it_matters": "A home-market forum to showcase Aldar's community data work and scout vendors and partners.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/amp/story/uae%2Fabu-dhabi%2Fnew-conference-on-community-intelligence-announced-in-abu-dhabi-1.500735876",
+       "published": "2026-11-04",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://media.assettype.com/gulfnews%2F2026-11-04%2Fdz6kxazv%2FNew-conference-on-community-intelligence-announced-in-Abu-Dhabi?rect=0%2C132%2C2835%2C1488&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "lightintelligentbuildingmiddleeastmarksm",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Light + Intelligent Building Middle East",
+       "amount_usd_m": null,
+       "headline": "Light + Intelligent Building Middle East spotlights converging building tech",
+       "summary": "The 20th edition of the regional show focused on convergence of lighting, security and building management technologies.",
+       "why_it_matters": "Converged building systems simplify integrated FM; a useful venue to benchmark smart-community suppliers.",
+       "source": "www.wam.ae",
+       "url": "https://www.wam.ae/en/article/c32irze-light-intelligent-building-middle-east-marks",
+       "published": "2026-10-30",
+       "coverage": 11,
+       "also_covered_by": [
+        "Middle East Construction News",
+        "markets.businessinsider.com",
+        "SMBtech"
+       ]
+      },
+      {
+       "id": "aipoweredtrafficlightsindubaiexpectedtoc",
+       "category": "mobility",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Dubai RTA",
+       "amount_usd_m": null,
+       "headline": "Dubai RTA expects AI traffic lights to cut congestion by at least 10%",
+       "summary": "Dubai's Roads and Transport Authority says AI-powered traffic signals should reduce congestion by at least 10%.",
+       "why_it_matters": "Signals regional appetite for AI in public realm; community gates and internal roads could integrate with city systems.",
+       "source": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/uae/transport/rta-ai-traffic-lights-expected-to-reduce-dubai-congestion?amp=1",
+       "published": "2026-11-02",
+       "coverage": 5,
+       "also_covered_by": [
+        "Zawya",
+        "Facilities Dive",
+        "deltanews.tv"
+       ],
+       "image": "https://imgengine.khaleejtimes.com/khaleejtimes/import/images/4bc44631-7604-428b-9740-4e911c031585-org.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=fill&fill=blur"
+      },
+      {
+       "id": "dubaisfirstworkfromparkopenswithfreedesk",
+       "category": "work_edu",
+       "type": "product",
+       "region": "GCC",
+       "company": "Dubai Municipality",
+       "amount_usd_m": null,
+       "headline": "Dubai opens first Work from Park with free desks at Al Barsha Pond Park",
+       "summary": "Dubai launched free outdoor and rooftop workspaces in and around Al Barsha Pond Park.",
+       "why_it_matters": "A template for turning community parks and clubhouses into connected workspaces that lift resident satisfaction.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/uae/dubais-first-work-from-park-opens-with-free-desks-on-rooftops-and-around-al-barsha-pond-park-1.500732794",
+       "published": "2026-11-02",
+       "coverage": 4,
+       "also_covered_by": [
+        "Legal Maestros",
+        "markets.businessinsider.com",
+        "Campus Security Today"
+       ],
+       "image": "https://media.assettype.com/gulfnews%2F2026-11-02%2F94qsuyqa%2Fd88a5148-0930-4b1f-9e4e-98f875d4f567.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "theearlyscalepassivelogicclaimsonemanage",
+       "category": "proptech",
+       "type": "trend",
+       "region": "North America",
+       "company": "PassiveLogic",
+       "amount_usd_m": null,
+       "headline": "PassiveLogic claims one manager can run 100 buildings with AI",
+       "summary": "PassiveLogic says its autonomous building controls let a single manager oversee 100 buildings.",
+       "why_it_matters": "If proven, autonomous controls could sharply cut engineering headcount per building across Aldar's managed portfolio.",
+       "source": "MarketScale",
+       "url": "https://www.marketscale.com/industries/business-services/the-early-scale-2026-11-04",
+       "published": "2026-11-04",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://res.cloudinary.com/marketscalecms/image/upload/f_auto,q_auto/v1/payload/media/news-cover-passivelogic-claims-one-manager-can-handle-100-buildings-with-ai?_a=BAMAABiw0"
+      },
+      {
+       "id": "happycoacquiresbannertechnologiestoexpan",
+       "category": "proptech",
+       "type": "investment",
+       "region": "North America",
+       "company": "HappyCo",
+       "amount_usd_m": null,
+       "headline": "HappyCo acquires Banner Technologies to expand proptech platform",
+       "summary": "Property operations software firm HappyCo bought Banner Technologies, broadening its platform for residential operators.",
+       "why_it_matters": "Operations platforms are consolidating; expect fewer, broader vendors when Communities renews inspection and maintenance software.",
+       "source": "Multifamily Executive",
+       "url": "https://www.multifamilyexecutive.com/technology/happyco-acquires-banner-technologies-expand-proptech-platform",
+       "published": "2026-10-30",
+       "coverage": 10,
+       "also_covered_by": [
+        "https://ascendants.in/",
+        "Pulse 2.0",
+        "CairoScene"
+       ],
+       "image": "https://qtxasset.com/quartz/qcloud1/media/image/jindou_lee.png?VersionId=agMj65RcnZwMSKHHffvmQLioiv2ty9jO"
+      },
+      {
+       "id": "proptechsuparaises21mafteracquisitionspr",
+       "category": "proptech",
+       "type": "investment",
+       "region": "Europe",
+       "company": "Supa",
+       "amount_usd_m": null,
+       "headline": "UK proptech Supa raises £21m after acquisition spree",
+       "summary": "Supa raised £21 million following a series of acquisitions to build out its property services platform.",
+       "why_it_matters": "Another roll-up of property services tools; watch for integrated offerings relevant to community management.",
+       "source": "BusinessCloud",
+       "url": "https://businesscloud.co.uk/news/proptech-supa-raises-21m-after-acquisition-spree/",
+       "published": "2026-11-04",
+       "coverage": 3,
+       "also_covered_by": [
+        "Tech.eu",
+        "Sky News"
+       ],
+       "image": "https://businesscloud.co.uk/wp-content/uploads/2026/11/Supa-founders-Calum-Brannan-and-Alexis-Johnson.jpg"
+      },
+      {
+       "id": "peppermintroboticsraisesrs100crinpreseri",
+       "category": "robotics",
+       "type": "investment",
+       "region": "Asia-Pacific",
+       "company": "Peppermint Robotics",
+       "amount_usd_m": null,
+       "headline": "Peppermint Robotics raises Rs 100 crore Pre-Series B led by pi Ventures",
+       "summary": "Indian cleaning robot maker Peppermint Robotics raised Rs 100 crore, led by pi Ventures and Crane Venture Partners, to scale.",
+       "why_it_matters": "Funded autonomous floor-cleaning vendors offer pilot options for Aldar's cleaning services in malls, lobbies and car parks.",
+       "source": "Entrackr",
+       "url": "https://entrackr.com/news/peppermint-robotics-raises-rs-100-cr-in-pre-series-b-led-by-pi-ventures-crane-venture-partners-12781643",
+       "published": "2026-11-03",
+       "coverage": 7,
+       "also_covered_by": [
+        "Indian Startup News",
+        "Siliconindia",
+        "Bharat Fast"
+       ],
+       "image": "https://img-cdn.publive.online/fit-in/1200x675/entrackr/media/media_files/2026/11/04/gcm7ffmgkjjvfozrxmx3-2026-11-04-09-26-22.webp"
+      },
+      {
+       "id": "newisointeroperabilitystandardcoverscoll",
+       "category": "robotics",
+       "type": "trend",
+       "region": "Global",
+       "company": "ISO",
+       "amount_usd_m": null,
+       "headline": "New ISO 21423:2026 standard lets multi-vendor mobile robots coordinate",
+       "summary": "The ISO interoperability standard aims to let mobile robots from different vendors communicate and coordinate.",
+       "why_it_matters": "Lowers lock-in risk; require ISO 21423 compliance when procuring cleaning, security or delivery robots.",
+       "source": "The Robot Report",
+       "url": "https://www.therobotreport.com/new-iso-interoperability-standard-covers-collaboration-among-mobile-robots-from-multiple-vendors/",
+       "published": "2026-11-03",
+       "coverage": 2,
+       "also_covered_by": [
+        "MarketScale"
+       ],
+       "image": "https://www.therobotreport.com/wp-content/uploads/2026/11/AdobeStock_2225516731-copy.jpg"
+      },
+      {
+       "id": "robotdogsanddronesarepatrollingmilitaryb",
+       "category": "robotics",
+       "type": "trend",
+       "region": "North America",
+       "company": "Military base security robot maker",
+       "amount_usd_m": null,
+       "headline": "Robot dogs and drones patrolling military bases are finding more than expected",
+       "summary": "The maker of patrol robot dogs and drones deployed on military bases says they are detecting more issues than anticipated.",
+       "why_it_matters": "Evidence for robotic patrols that could augment guarding across large gated communities.",
+       "source": "Military.com",
+       "url": "https://www.military.com/400000-missions-later-robot-dogs-are-changing-how-the-military-protects-bases",
+       "published": "2026-11-04",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://static0.mltimages.com/wordpress/wp-content/uploads/2026/11/dd-sitting-in-doghouse-2.jpg?w=1600&h=900&fit=crop"
+      },
+      {
+       "id": "ziplinetops21billionvaluationadds300walm",
+       "category": "robotics",
+       "type": "investment",
+       "region": "North America",
+       "company": "Zipline",
+       "amount_usd_m": null,
+       "headline": "Zipline tops $21 billion valuation, adds 300 Walmart drone sites",
+       "summary": "Drone delivery firm Zipline passed a $21 billion valuation and is adding 300 Walmart drone sites; Amazon meanwhile dropped a Massachusetts drone plan after local pushback.",
+       "why_it_matters": "Drone delivery is scaling; communities will need landing, noise and privacy policies before residents demand or oppose it.",
+       "source": "Bloomberg.com",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-05/zipline-tops-21-billion-valuation-adds-300-walmart-drone-sites",
+       "published": "2026-10-31",
+       "coverage": 24,
+       "also_covered_by": [
+        "TechCrunch",
+        "Axios",
+        "Dronelife"
+       ]
+      },
+      {
+       "id": "europeancitiescouldcutevgridbillby40with",
+       "category": "mobility",
+       "type": "trend",
+       "region": "Europe",
+       "company": "European cities study",
+       "amount_usd_m": null,
+       "headline": "Smart EV charging could cut European cities' grid bill by 40%, study says",
+       "summary": "A study finds smart charging could reduce EV-related grid costs for European cities by 40%.",
+       "why_it_matters": "Supports specifying managed charging in community car parks to cap utility costs as resident EV use grows.",
+       "source": "Reuters",
+       "url": "https://www.reuters.com/business/european-cities-could-cut-ev-grid-bill-by-40-with-smart-charging-study-says-2026-11-03/",
+       "published": "2026-11-03",
+       "coverage": 5,
+       "also_covered_by": [
+        "driveteslacanada.ca",
+        "Fleet Europe",
+        "electrive.com"
+       ]
+      }
+     ],
+     "viral": [
+      {
+       "platform": "Press (The Information; X post by Jyoti Mann)",
+       "date": "31 Oct 2026",
+       "title": "Meta confirms Max, a humanoid robot built with China's Fourier",
+       "category": "robotics",
+       "views_reported": "Not verified",
+       "views_source": "No dated source gives views",
+       "what_shows": "Max, a prototype home humanoid about 1.5 m tall and 48 kg, running Nvidia Jetson Thor. It was built in about three months on Fourier hardware to give Meta's Muse AI agent a body. Max 2 is in development.",
+       "what_behind": "Based on unnamed sources at The Information. Meta calls it an internal research project with no plans to sell. There is no launch date, price or outside home test. TechRadar says no humanoid is home-ready.",
+       "checks": {
+        "available": "no",
+        "corroborated": "no",
+        "deployed": "no",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "hype",
+       "fit": "Low",
+       "aldar_fit_area": "Long-term in-home services such as cleaning and concierge across managed communities",
+       "action": "Watch",
+       "leadership_line": "Meta's robot is a research prototype it says it won't sell; single-task cleaning and security machines matter to us sooner than home humanoids.",
+       "assessed_from": "Press reports from 3 to 5 Nov tracing to The Information, plus Meta's confirmation that it is a research project",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "TechRadar analysis, 3 Nov",
+         "url": "https://www.techradar.com/science/robotics/metas-rumored-humanoid-robot-is-another-ai-services-trojan-horse-and-this-is-how-you-end-up-paying-for-the-robot-and-ai-revolution"
+        },
+        {
+         "label": "Yahoo Tech, 5 Nov",
+         "url": "https://tech.yahoo.com/ai/meta-ai/articles/meta-already-working-second-gen-084612701.html"
+        },
+        {
+         "label": "Tech blog explainer, 4 Nov",
+         "url": "https://pasqualepillitteri.it/en/news/30132/meta-max-humanoid-robot-fourier"
+        },
+        {
+         "label": "StarBot Spark press release, 4 Nov",
+         "url": "https://globenewswire.com/news-release/2026/11/04/3395568/0/en/made-in-america-and-priced-at-7-999-starbot-launches-spark-humanoid-robot.html"
+        }
+       ]
+      },
+      {
+       "platform": "Press (AI Weekly, citing The Hacker News)",
+       "date": "3 Nov 2026",
+       "title": "Claude finds two critical Xen hypervisor VM-escape flaws",
+       "category": "ai",
+       "views_reported": "Not verified",
+       "views_source": "AI Weekly's 55 Anthropic stories cover the company, not this story",
+       "what_shows": "The Xen advisory XSA-523 credits Anthropic's Claude with two critical flaws letting a malicious virtual machine read and write other VMs' memory, affecting Xen 4.6 onward. AI Weekly also headlined OpenAI finding 948 Linux root exploits for $1.2M.",
+       "what_behind": "The credit comes from the independent Xen Project, read via AI Weekly's summary, not the advisory itself. The OpenAI figure is an unchecked headline. Ai2's StateBench dropped top models to 13% on long state-tracking tasks.",
+       "checks": {
+        "available": "yes",
+        "corroborated": "yes",
+        "deployed": "unknown",
+        "scaled": "unknown",
+        "gcc": "yes"
+       },
+       "verdict": "real",
+       "fit": "Medium",
+       "aldar_fit_area": "IT and cyber security of access control, CCTV, building management systems, resident-app vendors and vendor contracts",
+       "action": "Act",
+       "leadership_line": "AI is now finding serious security holes faster, raising the stakes on how quickly our building and access-control vendors patch, and we're checking that.",
+       "assessed_from": "AI Weekly's 5 Nov summary of the Xen advisory and its OpenAI headline",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "AI Weekly, 5 Nov",
+         "url": "https://aiweekly.co/ai-news-today"
+        }
+       ]
+      }
+     ],
+     "challengers": [
+      {
+       "name": "Origin",
+       "category": "construction",
+       "what": "San Francisco modular AI-powered robots for interior work such as wall finishing; raised $20M co-led by Accel and Zacua Ventures.",
+       "scores": {
+        "funding": 3,
+        "customers": 0,
+        "scale": 0,
+        "partners": 3,
+        "gcc": 0
+       },
+       "why": "Repainting and wall repair at tenant turnover across about 155,000 homes is high-volume, repetitive work worth automating.",
+       "source": {
+        "label": "F-Prime Capital October 2026 roundup",
+        "url": "https://roboticsroundup.substack.com/p/robotics-roundup-34-october-2026"
+       },
+       "total": 6,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Elvio Robotics",
+       "category": "robotics",
+       "what": "Munich software coordinating cleaning and delivery robots from different makers in hospitals; raised €3M pre-seed led by Revent.",
+       "scores": {
+        "funding": 1,
+        "customers": 0,
+        "scale": 0,
+        "partners": 1,
+        "gcc": 0
+       },
+       "why": "A multi-vendor robot coordination layer that could be piloted on a large community site or mall.",
+       "source": {
+        "label": "F-Prime Capital October 2026 roundup",
+        "url": "https://roboticsroundup.substack.com/p/robotics-roundup-34-october-2026"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Danu Robotics",
+       "category": "sustainability",
+       "what": "Edinburgh AI-guided robots picking and sorting recyclables in waste facilities; raised a $5M seed round.",
+       "scores": {
+        "funding": 2,
+        "customers": 0,
+        "scale": 0,
+        "partners": 0,
+        "gcc": 0
+       },
+       "why": "Reachable through a waste contractor to improve community recycling and ESG reporting.",
+       "source": {
+        "label": "F-Prime Capital October 2026 roundup",
+        "url": "https://roboticsroundup.substack.com/p/robotics-roundup-34-october-2026"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Lettance",
+       "category": "proptech",
+       "what": "AI handling tenant messages, maintenance requests, rent reminders and compliance records at £29 per property per month.",
+       "scores": {
+        "funding": 0,
+        "customers": 0,
+        "scale": 0,
+        "partners": 0,
+        "gcc": 0
+       },
+       "why": "A public per-unit price for AI property administration to compare with our cost to serve.",
+       "source": {
+        "label": "Property Industry Eye, 5 Nov",
+        "url": "https://propertyindustryeye.com/new-29-a-month-ai-service-targets-landlords-who-bypass-agents/"
+       },
+       "total": 0,
+       "verdict": "ignore"
+      }
+     ],
+     "matrix": [
+      {
+       "category": "proptech",
+       "readiness": 70,
+       "relevance": 90,
+       "hype": 60,
+       "substance": 65,
+       "reason": "AI agents shipping inside property-management software (AppFolio, Rentvine)."
+      },
+      {
+       "category": "ai",
+       "readiness": 75,
+       "relevance": 85,
+       "hype": 90,
+       "substance": 70,
+       "reason": "Huge news volume; Xen credit is real, StateBench shows limits."
+      },
+      {
+       "category": "sustainability",
+       "readiness": 60,
+       "relevance": 75,
+       "hype": 40,
+       "substance": 50,
+       "reason": "Little new verified evidence; EV study modelled. Low confidence."
+      },
+      {
+       "category": "construction",
+       "readiness": 45,
+       "relevance": 45,
+       "hype": 65,
+       "substance": 55,
+       "reason": "Large October rounds; relevance mainly maintenance and refurbishment."
+      },
+      {
+       "category": "mobility",
+       "readiness": 70,
+       "relevance": 60,
+       "hype": 60,
+       "substance": 70,
+       "reason": "WeRide-Uber driverless robotaxis commercial in Abu Dhabi since Nov 2025."
+      },
+      {
+       "category": "robotics",
+       "readiness": 40,
+       "relevance": 75,
+       "hype": 90,
+       "substance": 45,
+       "reason": "Single-task robots near ready; home humanoids are not."
+      },
+      {
+       "category": "retail",
+       "readiness": 65,
+       "relevance": 70,
+       "hype": 45,
+       "substance": 55,
+       "reason": "AI resident communications maturing, e.g. EliseAI's Apollo agent."
+      },
+      {
+       "category": "fintech",
+       "readiness": 55,
+       "relevance": 40,
+       "hype": 35,
+       "substance": 35,
+       "reason": "No fresh evidence this week. Low confidence."
+      },
+      {
+       "category": "frontier",
+       "readiness": 10,
+       "relevance": 15,
+       "hype": 60,
+       "substance": 20,
+       "reason": "Unreviewed AI maths proofs and data-centre plans; not operationally relevant."
+      },
+      {
+       "category": "work_edu",
+       "readiness": 50,
+       "relevance": 45,
+       "hype": 40,
+       "substance": 35,
+       "reason": "AI admin automation matters for workforce planning; thin evidence. Low confidence."
+      }
+     ],
+     "research_meta": {
+      "searches": 10,
+      "sources": 86
+     }
+    },
+    "hospitality": {
+     "label": "Hospitality",
+     "relevant_stories": 207,
+     "signals": {
+      "volume": {
+       "proptech": 58,
+       "ai": 41,
+       "sustainability": 9,
+       "construction": 3,
+       "mobility": 11,
+       "robotics": 16,
+       "retail": 32,
+       "fintech": 4,
+       "frontier": 30,
+       "work_edu": 3
+      },
+      "deals": {
+       "proptech": 5,
+       "ai": 8,
+       "sustainability": 2,
+       "construction": 0,
+       "mobility": 1,
+       "robotics": 1,
+       "retail": 0,
+       "fintech": 1,
+       "frontier": 4,
+       "work_edu": 0
+      }
+     },
+     "momentum": [
+      {
+       "category": "proptech",
+       "volume": 58,
+       "deals": 5,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "ai",
+       "volume": 41,
+       "deals": 8,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "sustainability",
+       "volume": 9,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "construction",
+       "volume": 3,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "mobility",
+       "volume": 11,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "robotics",
+       "volume": 16,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "retail",
+       "volume": 32,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "fintech",
+       "volume": 4,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "frontier",
+       "volume": 30,
+       "deals": 4,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "work_edu",
+       "volume": 3,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      }
+     ],
+     "generated_by": "claude",
+     "headline": "Dubai launches city-wide tourism membership with visa perks and hotel upgrades",
+     "takeaways": [
+      "Destinations are now running loyalty: Dubai's five-year tourism membership bundles multiple-entry visas, hotel upgrades and perks, raising the bar for Abu Dhabi's offer to repeat visitors.",
+      "AI agents are moving from pilots into travel and discovery, from Saudi tourism deployments to AI search rankings for hotels and shopping agents that bypass traditional channels.",
+      "Gulf capital keeps flowing into AI and Saudi hospitality capacity while the region adapts after conflict, as seen in UAE energy resilience plans and war-hit Saudi entertainment."
+     ],
+     "trend_watch": [
+      {
+       "trend": "Destination-led loyalty and visa bundling",
+       "status": "new",
+       "evidence": "Dubai's tourism membership and visa streamlining were covered by at least six stories this week (6, 10, 14, 17, 22)."
+      },
+      {
+       "trend": "Agentic AI in travel, guest service and discovery",
+       "status": "new",
+       "evidence": "Saudi AI agents in tourism (19), DMscore hospitality AI search rankings (100) and AI shopping agents (140); 41 AI stories this week."
+      },
+      {
+       "trend": "Saudi hospitality and leisure capacity build-out",
+       "status": "new",
+       "evidence": "623,000 licensed lodging units (25), HiHome rentals (16), Qiddiya guest-feedback tech (117) and wellness hotels (42)."
+      },
+      {
+       "trend": "Gulf AI capital and compute alliances",
+       "status": "new",
+       "evidence": "ADNOC and G42 deal with OpenAI (1), Aramco's 49% AI stake (8) and the AIREV funding round (138)."
+      },
+      {
+       "trend": "Regional resilience after conflict",
+       "status": "new",
+       "evidence": "UAE energy overhaul with spare capacity (18); concerts a bright spot for war-hit Saudi entertainment (33)."
+      }
+     ],
+     "posts": [
+      {
+       "id": "dubailaunchesfiveyeartourismmembershipwi",
+       "category": "retail",
+       "type": "product",
+       "region": "GCC",
+       "company": "Dubai Department of Economy and Tourism",
+       "amount_usd_m": null,
+       "headline": "Dubai launches five-year tourism membership with visa, hotel upgrades and perks",
+       "summary": "Dubai unveiled a city-led, five-year tourism membership that combines a multiple-entry visa, hotel upgrades and exclusive perks to reward repeat visitors.",
+       "why_it_matters": "A direct competitor to Abu Dhabi for repeat leisure guests; Aldar should push DCT for a matching programme and plan hotel and beach club tie-ins.",
+       "source": "Gulf Business",
+       "url": "https://gulfbusiness.com/en/2026/dubai/dubai-launches-five-year-tourism-membership-with-multiple-entry-visa-hotel-upgrades-and-exclusive-perks/",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "abudhabisadnocg42signdealwithopenaiassam",
+       "category": "ai",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "ADNOC, G42, OpenAI",
+       "amount_usd_m": null,
+       "headline": "ADNOC and G42 sign deal with OpenAI during Sam Altman's UAE visit",
+       "summary": "Abu Dhabi's ADNOC and G42 signed a deal with OpenAI as Sam Altman travelled to the UAE, deepening the emirate's frontier AI partnerships.",
+       "why_it_matters": "Local access to OpenAI capability through G42 could speed enterprise-grade AI for Aldar's guest service, revenue management and operations.",
+       "source": "Reuters",
+       "url": "https://www.reuters.com/business/energy/abu-dhabis-adnoc-g42-sign-deal-with-openai-sam-altman-travels-uae-2026-11-02/",
+       "published": "2026-11-01",
+       "coverage": 14,
+       "also_covered_by": [
+        "Khaleej Times",
+        "CNBC",
+        "Fortune"
+       ]
+      },
+      {
+       "id": "saudiarabiaputsaiagentstoworkinlogistics",
+       "category": "ai",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Saudi Arabia",
+       "amount_usd_m": null,
+       "headline": "Saudi Arabia puts AI agents to work in logistics and tourism",
+       "summary": "Saudi Arabia is deploying AI agents across logistics and tourism, moving agentic AI from experiments into visitor-facing services.",
+       "why_it_matters": "A regional benchmark for agent-based booking, concierge and itinerary services that Aldar's hotels and leisure assets could pilot.",
+       "source": "Arab News",
+       "url": "https://www.arabnews.com/saudi-arabia/saudi-arabia-puts-ai-agents-to-work-in-logistics-and-tourism-3008938",
+       "published": "2026-10-30",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "oilgiantaramcotakes49percentstakeinsaudi",
+       "category": "ai",
+       "type": "investment",
+       "region": "GCC",
+       "company": "Aramco",
+       "amount_usd_m": null,
+       "headline": "Aramco takes 49% stake in a Saudi AI company",
+       "summary": "Saudi oil giant Aramco has taken a 49 per cent stake in a Saudi AI company, adding to Gulf state-backed AI investment.",
+       "why_it_matters": "Gulf conglomerates are building AI capability in-house; Aldar should decide whether to buy, partner or build AI for hospitality.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/business/energy/oil-giant-aramco-takes-49-per-cent-stake-in-saudi-ai-company-1.500731592",
+       "published": "2026-11-01",
+       "coverage": 7,
+       "also_covered_by": [
+        "The Next Web",
+        "The Decoder",
+        "Wamda"
+       ],
+       "image": "https://media.assettype.com/gulfnews%2F2026-10-22%2F5r5lr7ul%2FAramco-2.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "singaporesterrainvestparticipatesinstrat",
+       "category": "ai",
+       "type": "investment",
+       "region": "GCC",
+       "company": "AIREV",
+       "amount_usd_m": null,
+       "headline": "Singapore's Terra Invest joins funding round for Abu Dhabi AI firm AIREV",
+       "summary": "Terra Invest took part in a strategic funding round for Abu Dhabi-based AI company AIREV. The story was covered by 12 outlets.",
+       "why_it_matters": "A growing Abu Dhabi AI vendor base offers local partners for hotel automation pilots with data kept in the UAE.",
+       "source": "Zawya",
+       "url": "https://www.zawya.com/en/press-release/companies-news/singapores-terra-invest-participates-in-strategic-funding-round-for-abu-dhabi-based-ai-company-airev-1941493",
+       "published": "2026-10-29",
+       "coverage": 12,
+       "also_covered_by": [
+        "BW Disrupt",
+        "Entrackr",
+        "Indian Startup News"
+       ],
+       "image": "https://media.zawya.com/prod/images/gm_preview/4b908abe5697-image-2026-11-04t113404995.jpeg"
+      },
+      {
+       "id": "saudiarabiasaysithad623000licensedlodgin",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Saudi Ministry of Tourism",
+       "amount_usd_m": null,
+       "headline": "Saudi Arabia reports 623,000 licensed lodging units in first half of 2026",
+       "summary": "Saudi Arabia counted 623,000 licensed lodging units in the first half of 2026, reflecting rapid growth in hospitality supply.",
+       "why_it_matters": "Fast-growing Saudi supply competes with Abu Dhabi for GCC and international leisure travellers, sharpening the need to differentiate.",
+       "source": "Vinetur",
+       "url": "https://www.vinetur.com/en/20261104110383/saudi-arabia-says-it-had-623000-licensed-lodging-units-in-the-first-half-of-2026.html",
+       "published": "2026-11-04",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://www.vinetur.com/visuals/2026/november/4/agent-20261104-220540-2918d2d348e67f82.jpg"
+      },
+      {
+       "id": "thebusinessoflettingstrangersintoyourhom",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "HiHome",
+       "amount_usd_m": null,
+       "headline": "Saudi short-term rental operator HiHome scales home-sharing model",
+       "summary": "Gulf News profiles HiHome, a Saudi company building a business around managed short-term rentals in private homes.",
+       "why_it_matters": "Managed short-term rentals compete with hotels and could be an operating model for Aldar's residential stock near leisure assets.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/amp/story/the-kurator%2Flife%2Fthe-business-of-letting-strangers-into-your-home-meet-saudi-arabias-hihome-1.500734691",
+       "published": "2026-11-03",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://media.assettype.com/gulfnews%2F2026-11-03%2Fvv22goei%2F48238a3c-a24e-422b-83ec-2807b8b627b2.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "onasaudiislandahotelroomwithadifferentpr",
+       "category": "retail",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Saudi island resort",
+       "amount_usd_m": null,
+       "headline": "Saudi island resort builds hotel rooms around health and wellness",
+       "summary": "A Saudi island hotel is redesigning rooms around wellness and health services, part of a push to put healthcare at the centre of new destinations.",
+       "why_it_matters": "Medical-grade wellness is becoming a premium resort differentiator Aldar could add at Saadiyat and Yas beach properties.",
+       "source": "Arabian Business",
+       "url": "https://www.arabianbusiness.com/t-magazine/travel/miraval-the-red-sea-shura-island-wellbeing-villa",
+       "published": "2026-10-30",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "aviuspowersguestfeedbackataquarabiaandsi",
+       "category": "retail",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "Avius",
+       "amount_usd_m": null,
+       "headline": "Avius powers guest feedback at Aquarabia and Six Flags Qiddiya City",
+       "summary": "Avius has deployed its guest feedback technology at Qiddiya's Aquarabia water park and Six Flags theme park.",
+       "why_it_matters": "Real-time feedback tools at Gulf leisure parks are relevant to Aldar's beach clubs, marinas and golf courses.",
+       "source": "Blooloop",
+       "url": "https://blooloop.com/avius-qiddiya-city/",
+       "published": "2026-11-02",
+       "coverage": 2,
+       "also_covered_by": [
+        "Construction World India"
+       ],
+       "image": "https://blooloop.com/media-library/avius-partners-with-aquarabia-and-six-flags-qiddiya-for-guest-feedback.jpg?id=66717689&width=1200&height=600&coordinates=0%2C39%2C0%2C39"
+      },
+      {
+       "id": "concertsabrightspotforwarhitsaudienterta",
+       "category": "retail",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Saudi entertainment sector",
+       "amount_usd_m": null,
+       "headline": "Concerts remain a bright spot for war-hit Saudi entertainment",
+       "summary": "Live concerts are holding up demand in a Saudi entertainment sector hit by regional conflict.",
+       "why_it_matters": "Event-led demand looks resilient in a downturn; Aldar should weight concerts and events in its plans for hotels and leisure venues.",
+       "source": "Arabian Gulf Business Insight | AGBI",
+       "url": "https://www.agbi.com/analysis/leisure-hospitality/2026/11/concerts-a-bright-spot-for-war-hit-saudi-entertainment/",
+       "published": "2026-11-04",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "uaetooverhaulenergyinfrastructurebuildsp",
+       "category": "sustainability",
+       "type": "trend",
+       "region": "GCC",
+       "company": "UAE Ministry of Energy",
+       "amount_usd_m": null,
+       "headline": "UAE to overhaul energy infrastructure and build spare capacity after conflict",
+       "summary": "The UAE energy minister said the country will overhaul its energy infrastructure and build spare capacity following the conflict.",
+       "why_it_matters": "Grid resilience will shape backup power, storage and continuity planning for Aldar's hotels and resorts.",
+       "source": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/business/energy/uae-overhaul-infrastructure-build-spare-capacity-us-iran-conflict",
+       "published": "2026-11-02",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-11-02/9ysa4z69/http___doc_afp_com_D64Y2FG.jpeg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=0,0,8256,5504"
+      },
+      {
+       "id": "dormakabaclosesalliantsdealbringinginteg",
+       "category": "proptech",
+       "type": "investment",
+       "region": "Global",
+       "company": "dormakaba",
+       "amount_usd_m": null,
+       "headline": "dormakaba closes Alliants deal to offer integrated hotel technology",
+       "summary": "dormakaba completed its deal for Alliants, combining access control with guest-app and service technology, and will show the result at The Hospitality Show 2026.",
+       "why_it_matters": "Merged access and guest-experience platforms could simplify Aldar's mobile key and guest app stack across 12 hotels.",
+       "source": "Hospitality Net",
+       "url": "https://www.hospitalitynet.org/news/4135222/dormakaba-closes-alliants-deal-bringing-integrated-hotel-technology-to-the-hospitality-show-2026",
+       "published": "2026-11-02",
+       "coverage": 5,
+       "also_covered_by": [
+        "Travel Daily Media",
+        "Brand Finance",
+        "Demócrata"
+       ]
+      },
+      {
+       "id": "dmscorereleasesaisearchrankingsforhospit",
+       "category": "ai",
+       "type": "product",
+       "region": "Global",
+       "company": "DMscore",
+       "amount_usd_m": null,
+       "headline": "DMscore releases AI search rankings for hospitality brands",
+       "summary": "DMscore launched rankings that measure how visible hotels and hospitality brands are in AI-driven search results.",
+       "why_it_matters": "As guests plan trips through AI assistants, Aldar needs to track and optimise how its hotels appear in AI answers.",
+       "source": "LODGING Magazine",
+       "url": "https://lodgingmagazine.com/dmscore-releases-ai-search-rankings-for-hospitality/",
+       "published": "2026-11-03",
+       "coverage": 3,
+       "also_covered_by": [
+        "Yahoo Finance",
+        "Times Higher Education"
+       ],
+       "image": "https://lodgingmagazine.com/wp-content/uploads/2025/10/AdobeStock_442669721-hotel-guest-stock.jpg"
+      },
+      {
+       "id": "aishoppingagentscouldthreatenamazonandwa",
+       "category": "retail",
+       "type": "trend",
+       "region": "Global",
+       "company": "Amazon, Walmart",
+       "amount_usd_m": null,
+       "headline": "AI shopping agents could threaten Amazon and Walmart's ad business",
+       "summary": "Reuters reports that autonomous AI shopping agents could bypass retail ad placements and threaten the advertising revenue of Amazon and Walmart.",
+       "why_it_matters": "The same shift could weaken OTAs and paid search, rewarding hotels whose direct booking data is easy for AI agents to read.",
+       "source": "Reuters",
+       "url": "https://www.reuters.com/business/media-telecom/ai-shopping-agents-could-threaten-amazon-walmarts-ad-business-2026-11-04/",
+       "published": "2026-11-03",
+       "coverage": 10,
+       "also_covered_by": [
+        "Marketing Tech News",
+        "Storyboard18",
+        "BigGo Finance"
+       ]
+      },
+      {
+       "id": "livgolfisofficiallyshuttingdownafter5yea",
+       "category": "retail",
+       "type": "trend",
+       "region": "Global",
+       "company": "LIV Golf",
+       "amount_usd_m": null,
+       "headline": "LIV Golf is shutting down after five years",
+       "summary": "Forbes reports that LIV Golf is officially closing after five years; separately, BC Partners pulled out of a financing deal for a relaunch.",
+       "why_it_matters": "Fewer marquee events could affect golf tourism demand and sponsorship plans at Aldar's Abu Dhabi courses.",
+       "source": "Forbes",
+       "url": "https://www.forbes.com/sites/zacharyfolk/2026/11/05/liv-golf-is-shutting-down-and-liquidating-assets/",
+       "published": "2026-11-02",
+       "coverage": 4,
+       "also_covered_by": [
+        "Lohud",
+        "markets.businessinsider.com",
+        "Inside the Magic"
+       ]
+      },
+      {
+       "id": "ziplinetops21billionvaluationadds300walm",
+       "category": "robotics",
+       "type": "investment",
+       "region": "Global",
+       "company": "Zipline",
+       "amount_usd_m": null,
+       "headline": "Zipline tops $21 billion valuation and adds 300 Walmart drone sites",
+       "summary": "Drone delivery firm Zipline passed a $21 billion valuation and is expanding to 300 more Walmart sites, a sign that autonomous delivery is reaching scale.",
+       "why_it_matters": "Drone delivery at scale points to future resort, beach club and marina deliveries; Aldar should track UAE drone regulation.",
+       "source": "Bloomberg.com",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-05/zipline-tops-21-billion-valuation-adds-300-walmart-drone-sites",
+       "published": "2026-10-31",
+       "coverage": 24,
+       "also_covered_by": [
+        "TechCrunch",
+        "Axios",
+        "Dronelife"
+       ]
+      }
+     ],
+     "viral": [
+      {
+       "platform": "Press and newsletters (Big Technology, TechCrunch, The Neuron)",
+       "date": "28 Oct – 4 Nov 2026",
+       "title": "ChatGPT reaches 1.2bn weekly users, and Google puts ads inside AI Search",
+       "category": "retail",
+       "views_reported": "Not verified",
+       "views_source": "No figure found for news reach; 1.2bn weekly ChatGPT users is OpenAI's own figure",
+       "what_shows": "OpenAI says ChatGPT has 1.2bn weekly users and search-like queries equal about 20% of Google's volume. Google is expanding ads inside AI Search internationally as core Search ad growth slowed to 12%.",
+       "what_behind": "The 20% figure is OpenAI's own estimate using its own definition of search, not independently audited. Usage figures are company-stated.",
+       "checks": {
+        "available": "yes",
+        "corroborated": "no",
+        "deployed": "yes",
+        "scaled": "yes",
+        "gcc": "yes"
+       },
+       "verdict": "real",
+       "fit": "High",
+       "aldar_fit_area": "Guest discovery and booking for hotels, beach clubs and golf; paid search spend and OTA versus direct booking",
+       "action": "Act",
+       "leadership_line": "Guests now discover hotels inside AI assistants as well as on search pages, so we are making sure our properties show up there and can be booked from there.",
+       "assessed_from": "Secondary summary of company-stated figures",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "The Neuron digest, 4 Nov 2026",
+         "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-4-2026/"
+        },
+        {
+         "label": "The Neuron digest, 29 Oct 2026",
+         "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026/"
+        }
+       ]
+      },
+      {
+       "platform": "Trade show, wire and trade press (EquipHotel Paris)",
+       "date": "2–5 Nov 2026",
+       "title": "Hotel robots at EquipHotel Paris",
+       "category": "robotics",
+       "views_reported": "Not verified",
+       "views_source": "No dated source gives a reach figure",
+       "what_shows": "SoftBank Robotics demoed cooking robots and Servi Q, a compact serving robot built with Bear Robotics. Yunji showed service robots linked to hotel systems, including a C40 cleaning robot that uses lifts between floors.",
+       "what_behind": "Vendor claims and stand demos. No hotel customers named. SoftBank will only 'explore' EMEA, so availability is unclear.",
+       "checks": {
+        "available": "unknown",
+        "corroborated": "no",
+        "deployed": "no",
+        "scaled": "unknown",
+        "gcc": "unknown"
+       },
+       "verdict": "watch",
+       "fit": "Medium",
+       "aldar_fit_area": "Back-of-house linen, amenity and cleaning runs across 12 hotels; quiet-hour F&B at beach clubs and clubhouses",
+       "action": "Watch",
+       "leadership_line": "Robots for back-of-house jobs like linen runs are becoming practical, but we want named hotel references before we pilot them.",
+       "assessed_from": "Two company press releases and one trade-press preview",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "Yunji press release, PR Newswire",
+         "url": "https://prnewswire.com/news-releases/yunji-technology-to-showcase-ai-driven-robotics-and-real-world-hospitality-solutions-at-equiphotel-paris-2026-302928087.html"
+        },
+        {
+         "label": "SoftBank Robotics press release",
+         "url": "https://www.softbankrobotics.com/news/20260930/"
+        },
+        {
+         "label": "Infostourisme preview",
+         "url": "https://infostourisme.com/en/front-page/kitchen-robots-softbank-robotics-equiphotel-2026/2026/"
+        }
+       ]
+      },
+      {
+       "platform": "Press (CNBC) and Apple developer news",
+       "date": "3–4 Nov 2026",
+       "title": "Apple lets developers' apps act through Siri, while warning AI agents are risky",
+       "category": "ai",
+       "views_reported": "Not verified",
+       "views_source": "No dated source gives a reach figure",
+       "what_shows": "Apple opened Siri's AI features to developers in iOS 27.3 betas, letting apps connect multi-step actions to Siri. Apple's annual filing warned agents may exceed permissions or make unauthorised transactions.",
+       "what_behind": "Developer preview only; Apple says wider release comes later. Arabic support unclear.",
+       "checks": {
+        "available": "no",
+        "corroborated": "no",
+        "deployed": "unknown",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "watch",
+       "fit": "Medium",
+       "aldar_fit_area": "Guest app: voice booking of beach-club passes, tee times and room service",
+       "action": "Watch",
+       "leadership_line": "Voice assistants will soon be able to book things inside our app, and we'll be ready for that, with clear limits on what they can pay for.",
+       "assessed_from": "Secondary summary of Apple's developer note and CNBC's report",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "The Neuron digest, 4 Nov 2026",
+         "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-4-2026/"
+        }
+       ]
+      }
+     ],
+     "challengers": [
+      {
+       "name": "Bear Robotics",
+       "category": "robotics",
+       "what": "Makes serving robots; built Servi Q with SoftBank Robotics, shown at EquipHotel 2–5 Nov.",
+       "scores": {
+        "funding": 0,
+        "customers": 0,
+        "scale": 0,
+        "partners": 4,
+        "gcc": 1
+       },
+       "why": "Servi Q suits small venues, which could fit beach-club and clubhouse food and drink service.",
+       "source": {
+        "label": "SoftBank Robotics press release",
+        "url": "https://www.softbankrobotics.com/news/20260930/"
+       },
+       "total": 5,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Soniox",
+       "category": "ai",
+       "what": "STT v6 speech recognition in 60+ languages; filters out a voice agent's own speech.",
+       "scores": {
+        "funding": 0,
+        "customers": 0,
+        "scale": 1,
+        "partners": 0,
+        "gcc": 1
+       },
+       "why": "Could support multilingual voice concierge and phone booking for international guests. Arabic not confirmed.",
+       "source": {
+        "label": "The Neuron digest, 4 Nov 2026",
+        "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-4-2026/"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Dedica",
+       "category": "retail",
+       "what": "Runs 125 checks to find website tasks AI browsing agents can't complete, then suggests fixes.",
+       "scores": {
+        "funding": 0,
+        "customers": 0,
+        "scale": 0,
+        "partners": 0,
+        "gcc": 2
+       },
+       "why": "Cheap way to test whether AI agents can use Aldar's booking pages.",
+       "source": {
+        "label": "The Neuron digest, 29 Oct 2026",
+        "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026/"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Hotelbricks",
+       "category": "proptech",
+       "what": "New company offering hotels IT support, information security management and custom data platforms.",
+       "scores": {
+        "funding": 0,
+        "customers": 0,
+        "scale": 0,
+        "partners": 0,
+        "gcc": 0
+       },
+       "why": "Example of outsourced hotel IT and cybersecurity; more to learn from than partner. Base and customers unknown.",
+       "source": {
+        "label": "TravelDailyNews",
+        "url": "https://www.traveldailynews.com/technology/hotelbricks-hotel-technology-launch/"
+       },
+       "total": 0,
+       "verdict": "ignore"
+      }
+     ],
+     "matrix": [
+      {
+       "category": "ai",
+       "readiness": 75,
+       "relevance": 90,
+       "hype": 95,
+       "substance": 70,
+       "reason": "Huge usage, mostly company-reported; agent governance gaps remain."
+      },
+      {
+       "category": "retail",
+       "readiness": 65,
+       "relevance": 85,
+       "hype": 65,
+       "substance": 55,
+       "reason": "Shoppers use AI assistants, but few let agents pay."
+      },
+      {
+       "category": "proptech",
+       "readiness": 60,
+       "relevance": 70,
+       "hype": 40,
+       "substance": 55,
+       "reason": "Memoori: $1.85bn across 86 rounds in H1 2026."
+      },
+      {
+       "category": "mobility",
+       "readiness": 55,
+       "relevance": 65,
+       "hype": 55,
+       "substance": 55,
+       "reason": "Robotaxis commercial in Abu Dhabi; air taxi start unconfirmed."
+      },
+      {
+       "category": "robotics",
+       "readiness": 45,
+       "relevance": 60,
+       "hype": 70,
+       "substance": 40,
+       "reason": "Service robots deployed per vendors; all-robot hotel still 2027 promise."
+      },
+      {
+       "category": "sustainability",
+       "readiness": 60,
+       "relevance": 70,
+       "hype": 35,
+       "substance": 50,
+       "reason": "Weak evidence this week; only tangential items."
+      },
+      {
+       "category": "work_edu",
+       "readiness": 55,
+       "relevance": 60,
+       "hype": 55,
+       "substance": 45,
+       "reason": "Agents doing more work; raises training question for hotel teams."
+      },
+      {
+       "category": "fintech",
+       "readiness": 50,
+       "relevance": 35,
+       "hype": 30,
+       "substance": 35,
+       "reason": "Weak evidence this week (no searches)."
+      },
+      {
+       "category": "construction",
+       "readiness": 45,
+       "relevance": 30,
+       "hype": 30,
+       "substance": 40,
+       "reason": "Weak evidence; matters little to an operating hotel business."
+      },
+      {
+       "category": "frontier",
+       "readiness": 15,
+       "relevance": 15,
+       "hype": 60,
+       "substance": 20,
+       "reason": "Quantum switch at sample stage; smart glasses US-only."
+      }
+     ],
+     "research_meta": {
+      "searches": 10,
+      "sources": 93
+     }
+    },
+    "education": {
+     "label": "Education",
+     "relevant_stories": 218,
+     "signals": {
+      "volume": {
+       "proptech": 31,
+       "ai": 63,
+       "sustainability": 3,
+       "construction": 5,
+       "mobility": 4,
+       "robotics": 11,
+       "retail": 6,
+       "fintech": 3,
+       "frontier": 8,
+       "work_edu": 84
+      },
+      "deals": {
+       "proptech": 2,
+       "ai": 8,
+       "sustainability": 0,
+       "construction": 0,
+       "mobility": 0,
+       "robotics": 2,
+       "retail": 0,
+       "fintech": 2,
+       "frontier": 0,
+       "work_edu": 1
+      }
+     },
+     "momentum": [
+      {
+       "category": "proptech",
+       "volume": 31,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "ai",
+       "volume": 63,
+       "deals": 8,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "sustainability",
+       "volume": 3,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "construction",
+       "volume": 5,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "mobility",
+       "volume": 4,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "robotics",
+       "volume": 11,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "retail",
+       "volume": 6,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "fintech",
+       "volume": 3,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "frontier",
+       "volume": 8,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "work_edu",
+       "volume": 84,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      }
+     ],
+     "generated_by": "claude",
+     "headline": "Abu Dhabi signs OpenAI deals covering government services and education",
+     "takeaways": [
+      "Abu Dhabi's OpenAI deals and the national AI curriculum put government-led AI in schools on a fast track, while teacher training is flagged as the bottleneck; this is our first tracked week.",
+      "AI vendors are getting more leverage over schools: Google's plan to cut Search for schools restricting AI drew the week's widest coverage (63 outlets) alongside a mental-health lawsuit.",
+      "Safeguarding is tightening on both sides: new Abu Dhabi private-school cybersecurity rules, warnings on AI-generated bullying images and global 'digital detox' moves."
+     ],
+     "trend_watch": [
+      {
+       "trend": "Government-led AI adoption in UAE education",
+       "status": "new",
+       "evidence": "Abu Dhabi-OpenAI education deals [14], UAE AI curriculum training gap [33], Coders HQ Apple accreditation [13]."
+      },
+      {
+       "trend": "Big Tech leverage and liability in school AI",
+       "status": "new",
+       "evidence": "Google Search cut-off plan for AI-restricting schools [41], 63 outlets; follow-up default-off coverage [95]; lawsuit over Google AI in school [45]."
+      },
+      {
+       "trend": "Student safeguarding, cybersecurity and AI harms",
+       "status": "new",
+       "evidence": "Abu Dhabi private school cybersecurity rules [37]; AI-generated images used to bully UAE children [15]."
+      },
+      {
+       "trend": "Screen limits and digital wellbeing pushback",
+       "status": "new",
+       "evidence": "Australian classroom digital detox [128]; EU strategy refocusing on basic skills alongside AI [118]."
+      },
+      {
+       "trend": "Teacher capacity and AI workload support",
+       "status": "new",
+       "evidence": "Bett research on AI and teacher workload [131]; UAE AI curriculum training shortfall [33]; education the largest category with 84 stories."
+      }
+     ],
+     "posts": [
+      {
+       "id": "abudhabiagreesopenaidealstotransformgove",
+       "category": "ai",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "OpenAI",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi agrees OpenAI deals to transform government services and education",
+       "summary": "Abu Dhabi signed agreements with OpenAI targeting government services and education, coinciding with ADNOC and G42 deals as Sam Altman visited the UAE.",
+       "why_it_matters": "Expect ADEK-endorsed AI tools and expectations for schools; Aldar Education should position early as a pilot partner.",
+       "source": "The National",
+       "url": "https://www.thenationalnews.com/news/uae/2026/11/02/abu-dhabi-agrees-openai-deals-to-boost-government-services-and-education/",
+       "published": "2026-11-02",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://www.thenationalnews.com/resizer/v2/HUQR62NAZNBUPJN3FC5VBK2DGY.jpg?auth=80a9d8fc01168ca64eb3691b35e81062361b7158accf37a2f977c760d6f160eb&smart=true&width=1200&height=630"
+      },
+      {
+       "id": "abudhabiprivateschoolstightencybersecuri",
+       "category": "work_edu",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Abu Dhabi private schools",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi private schools tighten cybersecurity rules",
+       "summary": "New rules require internet monitoring, incident logs and new limits on teachers' social media use in Abu Dhabi private schools.",
+       "why_it_matters": "Direct compliance task across Aldar's Abu Dhabi schools: IT monitoring, incident processes and updated staff conduct policies.",
+       "source": "Emirates 24|7",
+       "url": "https://www.emirates247.com/uae/abu-dhabi-private-schools-tighten-cybersecurity-rules-internet-monitoring-incident-logs-and-new-limits-on-teachers-social-media/7373",
+       "published": "2026-11-03",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://api.emirates247.com/emirates247/uploads/images/2026/11/03/11580.webp"
+      },
+      {
+       "id": "googlefacesbacklashforplanthatwouldturno",
+       "category": "ai",
+       "type": "trend",
+       "region": "Global",
+       "company": "Google",
+       "amount_usd_m": null,
+       "headline": "Google faces backlash over plan to cut Search for schools that restrict AI",
+       "summary": "Google's plan to turn off Search for schools that restrict its AI tools triggered widespread backlash, covered by 63 outlets.",
+       "why_it_matters": "Highlights vendor lock-in risk in Aldar's edtech stack; AI policies should be reviewed against platform terms.",
+       "source": "TechCrunch",
+       "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+       "published": "2026-10-29",
+       "coverage": 63,
+       "also_covered_by": [
+        "Forbes",
+        "The Verge",
+        "WIRED"
+       ],
+       "image": "https://techcrunch.com/wp-content/uploads/2024/03/students-typing-on-laptops-GettyImages_1513744777.jpeg?w=1200"
+      },
+      {
+       "id": "googleaiinschooltriggeredteensmentalheal",
+       "category": "ai",
+       "type": "trend",
+       "region": "Global",
+       "company": "Google",
+       "amount_usd_m": null,
+       "headline": "Lawsuit says Google AI used in school triggered teen's mental health crisis",
+       "summary": "A lawsuit alleges that Google AI used at school contributed to a teenager's mental health crisis.",
+       "why_it_matters": "Raises duty-of-care and liability questions for any student-facing AI Aldar schools deploy.",
+       "source": "Bloomberg.com",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-05/google-ai-in-school-triggered-teen-s-mental-health-crisis-lawsuit-says",
+       "published": "2026-10-29",
+       "coverage": 24,
+       "also_covered_by": [
+        "shattered.io",
+        "Nokiapoweruser",
+        "TodoMountainBike"
+       ]
+      },
+      {
+       "id": "uaeparentsurgedtostepuponlinesafetyovera",
+       "category": "ai",
+       "type": "trend",
+       "region": "GCC",
+       "company": "UAE authorities",
+       "amount_usd_m": null,
+       "headline": "UAE parents urged to boost online safety as AI images used to bully children",
+       "summary": "UAE parents are urged to step up online safety after AI-generated images were used to bully and blackmail children.",
+       "why_it_matters": "Aldar schools need updated safeguarding, reporting procedures and parent education on AI-generated abuse.",
+       "source": "The National",
+       "url": "https://www.thenationalnews.com/news/uae/2026/10/30/uae-parents-urged-to-step-up-online-safety-over-ai-generated-images-used-to-bully-and-blackmail-children/",
+       "published": "2026-10-30",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://www.thenationalnews.com/resizer/v2/67XFDU6UA7WLAV77I6RJYKRZUA.jpg?auth=85b5aab3f450ca979f39c953c0534827bf086674acaaf4df04e139e435a883d6&smart=true&width=1200&height=630"
+      },
+      {
+       "id": "theuaeaicurriculumfitsin36periodsthetrai",
+       "category": "ai",
+       "type": "trend",
+       "region": "GCC",
+       "company": "UAE AI curriculum",
+       "amount_usd_m": null,
+       "headline": "UAE AI curriculum fits in 36 periods, but teacher training lags",
+       "summary": "Analysis argues the national AI curriculum fits into 36 class periods, but the teacher training needed to deliver it does not.",
+       "why_it_matters": "Aldar Education needs a structured AI upskilling plan for teachers to deliver the mandated curriculum well.",
+       "source": "IT Business Net",
+       "url": "https://itbusinessnet.com/2026/11/the-uae-ai-curriculum-fits-in-36-periods-the-training-does-not/",
+       "published": "2026-11-04",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "missingtwoschooldaysamonthcouldleavepupi",
+       "category": "work_edu",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Abu Dhabi education authorities",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi warns missing two school days a month can cost almost a year",
+       "summary": "Abu Dhabi warned that pupils missing two school days a month could fall almost a year behind.",
+       "why_it_matters": "Signals regulator focus on attendance; analytics and parent nudges could become an operational priority.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/uae/education/missing-two-school-days-a-month-could-leave-pupils-almost-a-year-behind-abu-dhabi-warns-1.500729725",
+       "published": "2026-10-30",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://media.assettype.com/gulfnews%2F2026-10-30%2Fqkcuy0a0%2FAD?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "reptonannouncesfirstbahrainschoolwithnew",
+       "category": "work_edu",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Repton",
+       "amount_usd_m": null,
+       "headline": "Repton announces first Bahrain school, targeting Saudi families",
+       "summary": "Repton is opening its first school in Bahrain with a new campus aimed at Saudi families.",
+       "why_it_matters": "Shows UAE premium school brands expanding regionally, a growth route Aldar Education could weigh.",
+       "source": "Arabian Business",
+       "url": "https://www.arabianbusiness.com/business/education/repton-announces-first-bahrain-school-with-new-campus-targeting-saudi-families",
+       "published": "2026-11-01",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "uaetostage300eventsnationwideforfirstear",
+       "category": "work_edu",
+       "type": "trend",
+       "region": "GCC",
+       "company": "UAE government",
+       "amount_usd_m": null,
+       "headline": "UAE to stage 300 events for first Early Childhood Week from November 16",
+       "summary": "The UAE will hold 300 events nationwide for its first Early Childhood Week, starting November 16.",
+       "why_it_matters": "Opportunity for Aldar's early-years settings to showcase programmes and engage prospective families.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/uae/government/uae-to-stage-300-events-nationwide-for-first-early-childhood-week-starting-november-16-1.500736186",
+       "published": "2026-11-04",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://media.assettype.com/gulfnews%2F2026-11-04%2Fophlo32c%2FChildhood-week.webp?rect=0%2C0%2C1200%2C630&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "dubaibansarabicteachersfromteachingislam",
+       "category": "work_edu",
+       "type": "trend",
+       "region": "GCC",
+       "company": "KHDA",
+       "amount_usd_m": null,
+       "headline": "Dubai requires separate KHDA approval for Arabic teachers to teach Islamic Education",
+       "summary": "Dubai bans Arabic teachers from teaching Islamic Education without separate KHDA approval.",
+       "why_it_matters": "Affects staffing flexibility for any Dubai campuses and may signal similar scrutiny in Abu Dhabi.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/uae/education/dubai-bans-arabic-teachers-from-teaching-islamic-education-without-separate-khda-approval-1.500731480",
+       "published": "2026-11-01",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://media.assettype.com/gulfnews%2F2026-11-01%2F2flq4hn1%2FUAE?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "uaescodershqreceivesappleaccreditationto",
+       "category": "work_edu",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "Coders HQ",
+       "amount_usd_m": null,
+       "headline": "UAE's Coders HQ gets Apple accreditation for Swift app development training",
+       "summary": "Coders HQ is now Apple-accredited to offer Swift app development training in the UAE.",
+       "why_it_matters": "Possible partner for student coding pathways and teacher CPD in Aldar schools.",
+       "source": "Gulf Business",
+       "url": "https://gulfbusiness.com/en/2026/tech/uaes-coders-hq-receives-apple-accreditation-to-offer-swift-app-development-training/",
+       "published": "2026-11-02",
+       "coverage": 2,
+       "also_covered_by": [
+        "www.wam.ae"
+       ]
+      },
+      {
+       "id": "egameslaunchesglobalschoolsesportscompet",
+       "category": "work_edu",
+       "type": "product",
+       "region": "GCC",
+       "company": "EGAMES",
+       "amount_usd_m": null,
+       "headline": "EGAMES launches global schools esports competition with Dubai finals in 2027",
+       "summary": "EGAMES launched a global esports competition for schools, with finals to be held in Dubai in 2027.",
+       "why_it_matters": "Low-cost extracurricular option for Aldar students, with a local final adding appeal for families.",
+       "source": "TahawulTech.com",
+       "url": "https://www.tahawultech.com/news/egames-launches-global-schools-esports-competition-with-dubai-finals-in-2027/",
+       "published": "2026-11-03",
+       "coverage": 3,
+       "also_covered_by": [
+        "EdTech Innovation Hub",
+        "Tbreak UAE"
+       ],
+       "image": "https://www.tahawultech.com/wp-content/uploads/2026/11/Dubai-WEB-copy.jpg"
+      },
+      {
+       "id": "aiineducation2026bettresearchonteacherwo",
+       "category": "work_edu",
+       "type": "trend",
+       "region": "Global",
+       "company": "Bett",
+       "amount_usd_m": null,
+       "headline": "Bett research examines AI's effect on teacher workload",
+       "summary": "New Bett research looks at how AI in education is affecting teacher workload in 2026.",
+       "why_it_matters": "Evidence base for targeting AI pilots at teacher admin tasks to support retention across 27 schools.",
+       "source": "EdTech Innovation Hub",
+       "url": "https://www.edtechinnovationhub.com/news/the-state-of-ai-in-education-2026-rising-teacher-use-is-not-always-translating-into-shorter-working-hours",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://static1.squarespace.com/static/65a69e0c110a6977ead9741c/t/6ae8641070e1254863868f60/1793614864302/Copy+of+ETIHRTIH+Image+template+-+2026-10-16T101153.663.png?format=1500w"
+      },
+      {
+       "id": "australianclassroomsaregettingadigitalde",
+       "category": "work_edu",
+       "type": "trend",
+       "region": "Asia-Pacific",
+       "company": "Australian schools",
+       "amount_usd_m": null,
+       "headline": "Australian classrooms move to a 'digital detox'",
+       "summary": "Australian schools are adopting a digital detox approach in classrooms, with implications for students and teaching.",
+       "why_it_matters": "Parents increasingly expect balanced screen policies; Aldar should pair AI adoption with clear device limits.",
+       "source": "The Conversation",
+       "url": "https://theconversation.com/australian-classrooms-are-getting-a-digital-detox-what-does-this-mean-for-schools-and-students-295951",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://images.theconversation.com/files/770196/original/file-20261105-64-olhon2.jpg?ixlib=rb-4.1.1&rect=0%2C190%2C5520%2C2760&q=45&auto=format&w=1356&h=668&fit=crop"
+      },
+      {
+       "id": "minzatupresentstheeuseducationstrategyba",
+       "category": "work_edu",
+       "type": "trend",
+       "region": "Europe",
+       "company": "European Commission",
+       "amount_usd_m": null,
+       "headline": "EU presents education strategy centred on basic skills and AI",
+       "summary": "Commissioner Minzatu presented the EU's education strategy focused on basic skills and AI.",
+       "why_it_matters": "European curricula used in Aldar schools may shift toward AI literacy alongside core skills.",
+       "source": "Eunews",
+       "url": "https://www.eunews.it/en/2026/11/05/europe-puts-education-first-basic-skills-and-ai-at-the-heart-of-the-new-eu-strategy/",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://www.eunews.it/wp-content/uploads/2026/11/P-069879_00-04_01-ORIGINAL-319870-1024x683.jpg"
+      }
+     ],
+     "viral": [
+      {
+       "platform": "Google blog / EdWeek",
+       "date": "2026-11-03",
+       "title": "Google launches Guided Learning in Google Classroom worldwide",
+       "category": "work_edu",
+       "views_reported": "Not verified",
+       "views_source": "No dated reach figure found",
+       "what_shows": "Guided Learning is rolling out in Google Classroom in every country, with step-by-step features coming to Search for student accounts. Google also changed K-12 Gemini controls and added teacher AI training.",
+       "what_behind": "EdWeek confirms the rollout began 3 Nov for schools with Gemini on. Common Sense Media found AI Mode gave full answers to all 180 homework tasks tested; no independent test of the fix exists. The teacher time-saving claim is Google's own.",
+       "checks": {
+        "available": "yes",
+        "corroborated": "no",
+        "deployed": "unknown",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "real",
+       "fit": "High",
+       "aldar_fit_area": "Teaching and learning leads, digital learning coordinators, Google Workspace IT team, parent AI communications",
+       "action": "Act",
+       "leadership_line": "Google's step-by-step tutor is now live inside Classroom; we're testing it in a few schools under our AI policy before wider use, because learning benefits aren't proven.",
+       "assessed_from": "Google blog (3 Nov) and EdWeek (3 Nov)",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "Google, AI in the learning era",
+         "url": "https://blog.google/products-and-platforms/products/education/ai-learning-era-2026/"
+        },
+        {
+         "label": "Google, AI Educator Series expansion",
+         "url": "https://blog.google/products-and-platforms/products/education/google-ai-educator-series-global-expansion-november-2026/"
+        },
+        {
+         "label": "EdWeek, 3 Nov 2026",
+         "url": "https://edweek.org/technology/googles-new-rules-hand-schools-hard-choices-about-ai-and-search/2026/11"
+        }
+       ]
+      },
+      {
+       "platform": "X",
+       "date": "2026-11-03",
+       "title": "Xiaomi's humanoids complete an 8-hour shift at its EV factory",
+       "category": "robotics",
+       "views_reported": "Not verified",
+       "views_source": "No view count reported",
+       "what_shows": "CyberOne 02 humanoids sorted car dashboard side panels for a full shift, linked to the line's control system, running Xiaomi's own AI model trained on 100,000 hours of robot data. A 50-task home trial was also reported.",
+       "what_behind": "Xiaomi's own demo. Parts count, success rate, human interventions and power were not disclosed. The Gadgeteer reports two charging breaks and one dropped part. Robots are not for sale and used only at Xiaomi sites.",
+       "checks": {
+        "available": "no",
+        "corroborated": "no",
+        "deployed": "no",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "watch",
+       "fit": "Low",
+       "aldar_fit_area": "Long-term campus facilities; near-term STEM and robotics teaching material",
+       "action": "Watch",
+       "leadership_line": "It's an impressive demo, but Xiaomi hasn't published error or intervention rates, so it doesn't change anything on our campuses yet.",
+       "assessed_from": "AI Weekly, The Gadgeteer, KuCoin/PANews, NewsBytes, BotInfo",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "AI Weekly alert (cites Electrek)",
+         "url": "https://aiweekly.co/alerts/xiaomi-posts-video-of-humanoids-on-8-hour-ev-factory-shift"
+        },
+        {
+         "label": "The Gadgeteer, 4 Nov 2026",
+         "url": "https://the-gadgeteer.com/2026/11/04/xiaomi-cyberone-02-eight-hour-shift/"
+        },
+        {
+         "label": "KuCoin/PANews (cites IT Home)",
+         "url": "https://www.kucoin.com/news/flash/xiaomi-reveals-8-hour-factory-operations-and-long-term-home-tasks-for-humanoid-robots"
+        },
+        {
+         "label": "NewsBytes",
+         "url": "https://www.newsbytesapp.com/news/science/xiaomi-humanoid-robots-complete-8-hour-shift-at-ev-factory/story"
+        }
+       ]
+      },
+      {
+       "platform": "AI newsletter (The Neuron)",
+       "date": "2026-11-05",
+       "title": "OpenAI's AI agents found 948 ways to gain root access to Linux",
+       "category": "ai",
+       "views_reported": "Not verified",
+       "views_source": "No dated reach figure found",
+       "what_shows": "According to The Neuron, OpenAI showed how quickly an autonomous AI system can find security weaknesses, amid fresh scrutiny over years of security warnings.",
+       "what_behind": "Evidence is thin: headline only, OpenAI's material not opened. Unknown whether flaws are new or known misconfigurations, which systems were tested, or whether they were reported to maintainers.",
+       "checks": {
+        "available": "unknown",
+        "corroborated": "no",
+        "deployed": "unknown",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "watch",
+       "fit": "Medium",
+       "aldar_fit_area": "Group IT and cybersecurity, school servers and student data systems",
+       "action": "Watch",
+       "leadership_line": "AI is making it faster to find weaknesses in common systems, so we're checking our schools' patching and access controls rather than reacting to the headline.",
+       "assessed_from": "One newsletter headline (The Neuron, 5 Nov); low confidence",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "The Neuron, 5 Nov 2026",
+         "url": "https://theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026"
+        }
+       ]
+      }
+     ],
+     "challengers": [
+      {
+       "name": "Tractian",
+       "category": "proptech",
+       "what": "Sensors and software that monitor equipment condition and predict faults.",
+       "scores": {
+        "funding": 4,
+        "customers": 0,
+        "scale": 2,
+        "partners": 3,
+        "gcc": 0
+       },
+       "why": "Built for industry, but could apply to campus chillers and pumps, where cooling failures disrupt schools.",
+       "source": {
+        "label": "FundingWatcher, recently funded",
+        "url": "https://fundingwatcher.com/startups/recently-funded/"
+       },
+       "total": 9,
+       "verdict": "watch"
+      },
+      {
+       "name": "Harmonic Security",
+       "category": "ai",
+       "what": "Software that monitors and controls how staff use AI tools at work.",
+       "scores": {
+        "funding": 3,
+        "customers": 0,
+        "scale": 1,
+        "partners": 2,
+        "gcc": 0
+       },
+       "why": "As teachers adopt ChatGPT and Gemini under tighter ADEK cyber rules, controlling what staff paste into AI tools is worth testing.",
+       "source": {
+        "label": "FundingWatcher, recently funded",
+        "url": "https://fundingwatcher.com/startups/recently-funded/"
+       },
+       "total": 6,
+       "verdict": "ignore"
+      },
+      {
+       "name": "DrizzleX",
+       "category": "sustainability",
+       "what": "Tackles water waste in apartment buildings.",
+       "scores": {
+        "funding": 2,
+        "customers": 0,
+        "scale": 1,
+        "partners": 1,
+        "gcc": 0
+       },
+       "why": "Leak and water-waste monitoring could carry over to school washrooms, kitchens and irrigation, where water bills are high.",
+       "source": {
+        "label": "FundingWatcher, recently funded",
+        "url": "https://fundingwatcher.com/startups/recently-funded/"
+       },
+       "total": 4,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Concretene",
+       "category": "construction",
+       "what": "A concrete alternative that cuts CO2 emissions in construction.",
+       "scores": {
+        "funding": 1,
+        "customers": 0,
+        "scale": 1,
+        "partners": 2,
+        "gcc": 0
+       },
+       "why": "Worth knowing for new campus builds and extensions if lower-carbon materials join the brief.",
+       "source": {
+        "label": "FundingWatcher, recently funded",
+        "url": "https://fundingwatcher.com/startups/recently-funded/"
+       },
+       "total": 4,
+       "verdict": "ignore"
+      }
+     ],
+     "matrix": [
+      {
+       "category": "work_edu",
+       "readiness": 65,
+       "relevance": 95,
+       "hype": 70,
+       "substance": 55,
+       "reason": "UAE AI mandate makes it unavoidable; learning evidence thin."
+      },
+      {
+       "category": "ai",
+       "readiness": 70,
+       "relevance": 90,
+       "hype": 90,
+       "substance": 60,
+       "reason": "Widely used, but attention outruns classroom proof; security risk rising."
+      },
+      {
+       "category": "proptech",
+       "readiness": 60,
+       "relevance": 70,
+       "hype": 45,
+       "substance": 55,
+       "reason": "Energy and IoT tools sold in UAE; cooling is key cost lever."
+      },
+      {
+       "category": "sustainability",
+       "readiness": 65,
+       "relevance": 65,
+       "hype": 40,
+       "substance": 60,
+       "reason": "Mature energy and water tools; rooftop solar cuts grid dependence."
+      },
+      {
+       "category": "construction",
+       "readiness": 45,
+       "relevance": 40,
+       "hype": 35,
+       "substance": 45,
+       "reason": "Low-carbon materials raising money; matters mainly for new builds."
+      },
+      {
+       "category": "mobility",
+       "readiness": 40,
+       "relevance": 50,
+       "hype": 55,
+       "substance": 35,
+       "reason": "School transport matters; not researched this week."
+      },
+      {
+       "category": "robotics",
+       "readiness": 20,
+       "relevance": 35,
+       "hype": 80,
+       "substance": 30,
+       "reason": "Humanoid demos lack numbers; classroom robotics kits are mature."
+      },
+      {
+       "category": "retail",
+       "readiness": 65,
+       "relevance": 60,
+       "hype": 35,
+       "substance": 55,
+       "reason": "Parent apps and admissions CRM proven; not researched this week."
+      },
+      {
+       "category": "fintech",
+       "readiness": 60,
+       "relevance": 45,
+       "hype": 30,
+       "substance": 50,
+       "reason": "Tuition payment plans relevant; not researched this week."
+      },
+      {
+       "category": "frontier",
+       "readiness": 10,
+       "relevance": 15,
+       "hype": 60,
+       "substance": 20,
+       "reason": "Quantum startups raising money; no school relevance yet."
+      }
+     ],
+     "research_meta": {
+      "searches": 10,
+      "sources": 76
+     }
+    },
+    "investments": {
+     "label": "Investments",
+     "relevant_stories": 321,
+     "signals": {
+      "volume": {
+       "proptech": 82,
+       "ai": 65,
+       "sustainability": 12,
+       "construction": 6,
+       "mobility": 6,
+       "robotics": 15,
+       "retail": 81,
+       "fintech": 17,
+       "frontier": 9,
+       "work_edu": 28
+      },
+      "deals": {
+       "proptech": 8,
+       "ai": 3,
+       "sustainability": 1,
+       "construction": 0,
+       "mobility": 1,
+       "robotics": 2,
+       "retail": 2,
+       "fintech": 2,
+       "frontier": 0,
+       "work_edu": 0
+      }
+     },
+     "momentum": [
+      {
+       "category": "proptech",
+       "volume": 82,
+       "deals": 8,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "ai",
+       "volume": 65,
+       "deals": 3,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "sustainability",
+       "volume": 12,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "construction",
+       "volume": 6,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "mobility",
+       "volume": 6,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "robotics",
+       "volume": 15,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "retail",
+       "volume": 81,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "fintech",
+       "volume": 17,
+       "deals": 2,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "frontier",
+       "volume": 9,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "work_edu",
+       "volume": 28,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      }
+     ],
+     "generated_by": "claude",
+     "headline": "ADNOC and G42 sign OpenAI deal as UAE ties capital to AI compute",
+     "takeaways": [
+      "Gulf AI is moving from strategy to large deals: ADNOC and G42 with OpenAI, Aramco's 49% AI stake and EQT's sovereign data-centre push all landed this week.",
+      "Capital is flowing into GCC logistics and cold chain (Arcapita's $1.5B plan, GDI-Transcorp) while Abu Dhabi offices and apartments outperform Dubai on scarcity.",
+      "Retail is splitting between in-store tech (RFID at scale, smart stores) and app-led social commerce, and PropTech volume is consolidating through acquisitions; this first week sets the baseline for tracking."
+     ],
+     "trend_watch": [
+      {
+       "trend": "Gulf sovereign AI and data-centre build-out",
+       "status": "new",
+       "evidence": "ADNOC/G42-OpenAI deal [1], Aramco 49% AI stake [150], EQT seeking UAE/Saudi data-centre partners [16]; AI had 65 stories this week."
+      },
+      {
+       "trend": "Institutional capital into GCC industrial, logistics and cold chain",
+       "status": "new",
+       "evidence": "Arcapita plans $1.5B in GCC industrial/logistics [5]; GDI acquires Transcorp for cold-chain expansion [32]."
+      },
+      {
+       "trend": "Abu Dhabi scarcity premium versus Dubai softening",
+       "status": "new",
+       "evidence": "Abu Dhabi office yield premium on scarcity [21]; Abu Dhabi apartment prices up 13% while Dubai rents fall 7% [28]."
+      },
+      {
+       "trend": "PropTech platform consolidation",
+       "status": "new",
+       "evidence": "HappyCo buys Banner [54], Supa raises £21m after acquisitions [92]; PropTech had 82 stories and 8 funding deals."
+      },
+      {
+       "trend": "Physical retail tech versus social commerce",
+       "status": "new",
+       "evidence": "JD Sports RFID in 414 stores [96], TikTok Shop standalone app [121]; retail had 81 stories this week."
+      }
+     ],
+     "posts": [
+      {
+       "id": "abudhabisadnocg42signdealwithopenaiassam",
+       "category": "ai",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "ADNOC, G42, OpenAI",
+       "amount_usd_m": null,
+       "headline": "ADNOC and G42 sign deal with OpenAI during Sam Altman's UAE visit",
+       "summary": "Abu Dhabi's ADNOC and G42 signed an agreement with OpenAI as Sam Altman travelled to the UAE, deepening the emirate's frontier-AI ties.",
+       "why_it_matters": "Signals local access to enterprise-grade AI that Aldar could use for leasing, tenant service and asset operations through Abu Dhabi partners.",
+       "source": "Reuters",
+       "url": "https://www.reuters.com/business/energy/abu-dhabis-adnoc-g42-sign-deal-with-openai-sam-altman-travels-uae-2026-11-02/",
+       "published": "2026-11-01",
+       "coverage": 14,
+       "also_covered_by": [
+        "Khaleej Times",
+        "CNBC",
+        "Fortune"
+       ]
+      },
+      {
+       "id": "uaesecondariesboomaddstoabudhabisprivate",
+       "category": "fintech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Abu Dhabi private markets",
+       "amount_usd_m": null,
+       "headline": "Secondaries boom strengthens Abu Dhabi's appeal as a private-markets hub",
+       "summary": "A surge in secondaries activity is adding to Abu Dhabi's draw for private-market managers, according to Bloomberg reporting widely picked up by other outlets.",
+       "why_it_matters": "More fund managers in Abu Dhabi means office demand and more potential capital partners for Aldar's recurring-income assets.",
+       "source": "Bloomberg.com",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-03/uae-secondaries-boom-adds-to-abu-dhabi-s-private-markets-appeal",
+       "published": "2026-10-30",
+       "coverage": 27,
+       "also_covered_by": [
+        "Search Engine Journal",
+        "GuruFocus",
+        "IBM"
+       ]
+      },
+      {
+       "id": "bahrainsarcapitatoinvest15bingccindustri",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Arcapita",
+       "amount_usd_m": null,
+       "headline": "Arcapita to invest $1.5B in GCC industrial and logistics real estate",
+       "summary": "Bahrain's Arcapita plans to deploy $1.5B into industrial and logistics property across the GCC.",
+       "why_it_matters": "New capital competing for logistics assets could raise valuations and pricing for Aldar's industrial portfolio, and opens co-investment options.",
+       "source": "Forbes Middle East",
+       "url": "https://www.forbesmiddleeast.com/industry/real-estate/bahrains-arcapita-to-invest-$15b-in-gcc-industrial-logistics-real-estate",
+       "published": "2026-10-30",
+       "coverage": 11,
+       "also_covered_by": [
+        "Container News",
+        "Gulf Business",
+        "GlobeNewswire"
+       ],
+       "image": "https://d1epq84pwgteub.cloudfront.net/936138c0e873436f8b3653078d21a0fd.jpg"
+      },
+      {
+       "id": "siscobackedgdiacquiresuaestranscorptoanc",
+       "category": "proptech",
+       "type": "investment",
+       "region": "GCC",
+       "company": "GDI / Transcorp",
+       "amount_usd_m": null,
+       "headline": "Sisco-backed GDI acquires UAE's Transcorp to anchor regional cold-chain expansion",
+       "summary": "GDI, backed by Sisco, bought UAE logistics firm Transcorp as the base for expanding its cold-chain network across the region.",
+       "why_it_matters": "Cold-chain operators are scaling in the UAE, a tenant pool for temperature-controlled warehousing in Aldar's logistics assets.",
+       "source": "EnterpriseAM",
+       "url": "https://enterpriseam.com/infrastructure/issues/sisco-backed-gdi-acquires-uaes-transcorp-to-anchor-its-regional-cold-chain-expansion/",
+       "published": "2026-11-02",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "abudhabiofficeyieldpremiumdrivenbyscarci",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Abu Dhabi office market",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi office yields carry a premium driven by supply scarcity",
+       "summary": "Limited Grade A supply is supporting an office yield premium in Abu Dhabi, according to market analysis.",
+       "why_it_matters": "Supports rental growth and asset values in Aldar's office portfolio and the case for new office development.",
+       "source": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/business-technology-review/abu-dhabi-office-yield-premium-driven-by-scarcity",
+       "published": "2026-11-01",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-10-29/mebftumn/AD-Skyline.webp?width=1200&height=630&q=60&format=auto&ogImage=true&mode=fill&fill=blur"
+      },
+      {
+       "id": "dubaipropertypricesfall1andrentsdrop7asa",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "UAE residential market",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi apartment prices rise 13% as Dubai prices dip 1% and rents fall 7%",
+       "summary": "Latest data show Dubai prices down 1% and rents down 7%, while Abu Dhabi apartment prices climbed 13%.",
+       "why_it_matters": "Abu Dhabi's resilience supports Aldar's residential leasing income, but Dubai's softening rents may pull price-sensitive tenants.",
+       "source": "Arabian Business",
+       "url": "https://www.arabianbusiness.com/real-estate/dubai-property-prices-fall-1-and-rents-drop-7-as-abu-dhabi-apartment-prices-rise-13",
+       "published": "2026-11-03",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "oilgiantaramcotakes49percentstakeinsaudi",
+       "category": "ai",
+       "type": "investment",
+       "region": "GCC",
+       "company": "Aramco",
+       "amount_usd_m": null,
+       "headline": "Aramco takes 49% stake in a Saudi AI company",
+       "summary": "Saudi oil giant Aramco acquired a 49 per cent stake in a Saudi AI company, adding to Gulf corporate bets on AI.",
+       "why_it_matters": "Gulf conglomerates are building AI capability in-house, raising the bar for Aldar's own digital operations and AI partnerships.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/business/energy/oil-giant-aramco-takes-49-per-cent-stake-in-saudi-ai-company-1.500731592",
+       "published": "2026-11-01",
+       "coverage": 7,
+       "also_covered_by": [
+        "The Next Web",
+        "The Decoder",
+        "Wamda"
+       ],
+       "image": "https://media.assettype.com/gulfnews%2F2026-10-22%2F5r5lr7ul%2FAramco-2.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "eqtseeksjointaianddatacentredealswithsau",
+       "category": "ai",
+       "type": "trend",
+       "region": "GCC",
+       "company": "EQT",
+       "amount_usd_m": null,
+       "headline": "EQT seeks joint AI and data-centre deals with Saudi and UAE sovereign investors",
+       "summary": "EQT is pursuing joint AI and data-centre investments alongside sovereign investors in Saudi Arabia and the UAE.",
+       "why_it_matters": "Data centres are emerging as an institutional asset class in the UAE, a possible extension of Aldar's industrial and logistics platform.",
+       "source": "The National",
+       "url": "https://www.thenationalnews.com/business/markets/2026/11/03/exclusive-eqt-joint-deals-saudi-uae-sovereign-investors/",
+       "published": "2026-11-03",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://www.thenationalnews.com/resizer/v2/TYQYLOWOYRFJBJYE3JLD4HLKME.jpg?auth=f3037fec2f35f9242406dc5cb6e14946f99fc8bb80cba443c147a1faf6af987e&focal=2555%2C1605&width=1200&height=630"
+      },
+      {
+       "id": "aipoweredtrafficlightsindubaiexpectedtoc",
+       "category": "mobility",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Dubai RTA",
+       "amount_usd_m": null,
+       "headline": "Dubai RTA says AI traffic lights will cut congestion by at least 10%",
+       "summary": "Dubai's Roads and Transport Authority expects AI-powered traffic signals to reduce congestion by at least 10%.",
+       "why_it_matters": "A template for Abu Dhabi smart-mobility work that could improve access and footfall at Aldar's malls and offices.",
+       "source": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/uae/transport/rta-ai-traffic-lights-expected-to-reduce-dubai-congestion?amp=1",
+       "published": "2026-11-02",
+       "coverage": 5,
+       "also_covered_by": [
+        "Zawya",
+        "Facilities Dive",
+        "deltanews.tv"
+       ],
+       "image": "https://imgengine.khaleejtimes.com/khaleejtimes/import/images/4bc44631-7604-428b-9740-4e911c031585-org.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=fill&fill=blur"
+      },
+      {
+       "id": "happycoacquiresbannertechnologiestoexpan",
+       "category": "proptech",
+       "type": "investment",
+       "region": "North America",
+       "company": "HappyCo",
+       "amount_usd_m": null,
+       "headline": "HappyCo acquires Banner Technologies to expand its proptech platform",
+       "summary": "Property operations platform HappyCo bought Banner Technologies to broaden its offering for multifamily operators.",
+       "why_it_matters": "Residential operations software is consolidating into suites, so Aldar should evaluate platforms rather than point tools for leasing assets.",
+       "source": "Multifamily Executive",
+       "url": "https://www.multifamilyexecutive.com/technology/happyco-acquires-banner-technologies-expand-proptech-platform",
+       "published": "2026-10-30",
+       "coverage": 10,
+       "also_covered_by": [
+        "https://ascendants.in/",
+        "Pulse 2.0",
+        "CairoScene"
+       ],
+       "image": "https://qtxasset.com/quartz/qcloud1/media/image/jindou_lee.png?VersionId=agMj65RcnZwMSKHHffvmQLioiv2ty9jO"
+      },
+      {
+       "id": "proptechsuparaises21mafteracquisitionspr",
+       "category": "proptech",
+       "type": "investment",
+       "region": "Europe",
+       "company": "Supa",
+       "amount_usd_m": null,
+       "headline": "PropTech Supa raises £21m after acquisition spree",
+       "summary": "UK proptech Supa raised £21m following a string of acquisitions.",
+       "why_it_matters": "Another sign of proptech roll-ups, creating scaled vendors Aldar can partner with for property management.",
+       "source": "BusinessCloud",
+       "url": "https://businesscloud.co.uk/news/proptech-supa-raises-21m-after-acquisition-spree/",
+       "published": "2026-11-04",
+       "coverage": 3,
+       "also_covered_by": [
+        "Tech.eu",
+        "Sky News"
+       ],
+       "image": "https://businesscloud.co.uk/wp-content/uploads/2026/11/Supa-founders-Calum-Brannan-and-Alexis-Johnson.jpg"
+      },
+      {
+       "id": "ziplinetops21billionvaluationadds300walm",
+       "category": "robotics",
+       "type": "investment",
+       "region": "North America",
+       "company": "Zipline",
+       "amount_usd_m": null,
+       "headline": "Zipline tops $21 billion valuation and adds 300 Walmart drone sites",
+       "summary": "Drone delivery firm Zipline reached a valuation above $21 billion and is adding 300 Walmart drone delivery sites.",
+       "why_it_matters": "Drone delivery at retail scale points to future rooftop and car-park hub demands at Aldar malls and logistics sites.",
+       "source": "Bloomberg.com",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-05/zipline-tops-21-billion-valuation-adds-300-walmart-drone-sites",
+       "published": "2026-10-31",
+       "coverage": 24,
+       "also_covered_by": [
+        "TechCrunch",
+        "Axios",
+        "Dronelife"
+       ]
+      },
+      {
+       "id": "peppermintroboticsraisesrs100crinpreseri",
+       "category": "robotics",
+       "type": "investment",
+       "region": "Asia-Pacific",
+       "company": "Peppermint Robotics",
+       "amount_usd_m": null,
+       "headline": "Peppermint Robotics raises Rs 100 crore Pre-Series B led by pi Ventures",
+       "summary": "Commercial cleaning-robot maker Peppermint Robotics raised Rs 100 crore in a Pre-Series B round led by pi Ventures and Crane Venture Partners.",
+       "why_it_matters": "Autonomous cleaning robots are a practical pilot to cut facility costs across Aldar's malls, offices and warehouses.",
+       "source": "Entrackr",
+       "url": "https://entrackr.com/news/peppermint-robotics-raises-rs-100-cr-in-pre-series-b-led-by-pi-ventures-crane-venture-partners-12781643",
+       "published": "2026-11-03",
+       "coverage": 7,
+       "also_covered_by": [
+        "Indian Startup News",
+        "Siliconindia",
+        "Bharat Fast"
+       ],
+       "image": "https://img-cdn.publive.online/fit-in/1200x675/entrackr/media/media_files/2026/11/04/gcm7ffmgkjjvfozrxmx3-2026-11-04-09-26-22.webp"
+      },
+      {
+       "id": "jdsportsrollsoutzebratechnologiesrfidtec",
+       "category": "retail",
+       "type": "deployment",
+       "region": "Europe",
+       "company": "JD Sports, Zebra Technologies",
+       "amount_usd_m": null,
+       "headline": "JD Sports rolls out Zebra RFID across 414 UK and Ireland stores",
+       "summary": "JD Sports deployed Zebra Technologies RFID across 414 stores to improve inventory accuracy.",
+       "why_it_matters": "Store-level tech at scale shows what Aldar's mall tenants are adopting, which can inform tenant data and omnichannel partnerships.",
+       "source": "Retail Technology Innovation Hub",
+       "url": "https://www.retailtechinnovationhub.com/home/2026/11/5/jd-sports-rolls-out-zebra-technologies-rfid-tech-across-414-stores-in-uk-and-ireland",
+       "published": "2026-11-01",
+       "coverage": 3,
+       "also_covered_by": [
+        "Facilitiesnet",
+        "Topgolf"
+       ],
+       "image": "https://storage.googleapis.com/rtih-storage/32011/JD-Sports.jpeg"
+      },
+      {
+       "id": "tiktokquietlylaunchesastandalonetiktoksh",
+       "category": "retail",
+       "type": "product",
+       "region": "Global",
+       "company": "TikTok",
+       "amount_usd_m": null,
+       "headline": "TikTok launches standalone TikTok Shop app with livestream shopping",
+       "summary": "TikTok released a dedicated Shop app in some countries, offering personalised picks, livestream shopping, app-only deals and in-app checkout.",
+       "why_it_matters": "Social commerce competes for mall spend; Aldar malls may need live-commerce and experiential formats to keep tenants and footfall.",
+       "source": "TechCrunch",
+       "url": "https://techcrunch.com/2026/11/05/tiktok-quietly-launches-a-standalone-tiktok-shop-app/",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://techcrunch.com/wp-content/uploads/2026/11/tiktok-shop-app.png?resize=1200,819"
+      },
+      {
+       "id": "authoritiestightenrestrictionsondatacent",
+       "category": "ai",
+       "type": "trend",
+       "region": "Global",
+       "company": "Data centre regulators",
+       "amount_usd_m": null,
+       "headline": "Authorities tighten restrictions on data centres amid AI boom",
+       "summary": "Regulators are imposing tighter restrictions on data-centre development as AI-driven demand surges, adding to political pushback seen in recent US elections.",
+       "why_it_matters": "Western curbs could steer data-centre investment to the UAE, strengthening demand for powered industrial land Aldar could supply.",
+       "source": "Reuters",
+       "url": "https://www.reuters.com/legal/litigation/where-authorities-are-restricting-data-centres-amid-ai-boom-2026-11-05/",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": []
+      }
+     ],
+     "viral": [
+      {
+       "platform": "X",
+       "date": "2026-11-03",
+       "title": "8 hours on the production line",
+       "category": "robotics",
+       "views_reported": "Not verified",
+       "views_source": "No count found for Xiaomi's own post; a CyberRobo repost showed 44.4K views on 3 Nov.",
+       "what_shows": "Two CyberOne 02 humanoids sorted parts in final assembly at Xiaomi's car factory for a reported 8 hours 5 minutes. A separate robot system ran a 30+ minute, 50+ task trial in a Xiaomi Youth Apartment.",
+       "what_behind": "Evidence is Xiaomi's own edited video, sped up to 100x, with two charging breaks and a dropped panel. No parts count, success rate or intervention count published. A '98% success rate' repost claim has no Xiaomi source. Internal trial only.",
+       "checks": {
+        "available": "no",
+        "corroborated": "no",
+        "deployed": "no",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "watch",
+       "fit": "Medium",
+       "aldar_fit_area": "Industrial and logistics tenants; residential leasing (service robots in rental housing)",
+       "action": "Watch",
+       "leadership_line": "It's an impressive demo in Xiaomi's own factory, but they haven't shared error rates or customers yet, so we're watching it rather than piloting.",
+       "assessed_from": "Xiaomi's own video as reported by the press, plus one critical review (The Gadgeteer). No independent data.",
+       "video_url": "https://x.com/XiaomiTech_/status/2117542298238222588",
+       "corroboration": [
+        {
+         "label": "Electrek, 4 Nov",
+         "url": "https://electrek.co/2026/11/04/xiaomi-humanoid-robot-8-hour-shift-ev-factory/"
+        },
+        {
+         "label": "The Gadgeteer, 4 Nov",
+         "url": "https://the-gadgeteer.com/2026/11/04/xiaomi-cyberone-02-eight-hour-shift/"
+        },
+        {
+         "label": "KuCoin News",
+         "url": "https://www.kucoin.com/news/flash/xiaomi-reveals-8-hour-factory-operations-and-long-term-home-tasks-for-humanoid-robots"
+        },
+        {
+         "label": "BigGo Finance, 4 Nov",
+         "url": "https://finance.biggo.com/news/5e5abd29-287b-434d-9fb5-b1c16562ab59"
+        }
+       ]
+      },
+      {
+       "platform": "OpenAI research post",
+       "date": "2026-11-04",
+       "title": "A thousand fewer paths to root",
+       "category": "ai",
+       "views_reported": "Not verified",
+       "views_source": "No dated source gave a figure.",
+       "what_shows": "OpenAI's automated system flagged 2,308 possible Linux kernel flaws, reproduced 1,724, and built working root-access attacks for 948. The run cost about $1.21M, roughly $1,279 per working attack, versus 166 flaws in July.",
+       "what_behind": "Figures are OpenAI's own, read via The Neuron. Partial outside backing: Linux maintainers patched 61 flaws, 43 more fixes in preparation. Attacks need existing machine access; fixes need expert review. Related GPT-5.6 Cyber model limited to US government.",
+       "checks": {
+        "available": "no",
+        "corroborated": "no",
+        "deployed": "no",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "real",
+       "fit": "Medium",
+       "aldar_fit_area": "IT and building-systems security across malls, offices and logistics sites (embedded Linux in BMS, access control, CCTV, IoT)",
+       "action": "Act",
+       "leadership_line": "AI is making it far cheaper to find software holes, so we're checking that our building-systems vendors can patch quickly.",
+       "assessed_from": "OpenAI's own published figures via The Neuron summary, plus partial outside validation through accepted Linux patches.",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "The Neuron, 5 Nov",
+         "url": "https://theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026"
+        }
+       ]
+      }
+     ],
+     "challengers": [
+      {
+       "name": "Ultra",
+       "category": "robotics",
+       "what": "New York startup; raised $50M to put AI packing robots on warehouse floors.",
+       "scores": {
+        "funding": 3,
+        "customers": 0,
+        "scale": 0,
+        "partners": 0,
+        "gcc": 0
+       },
+       "why": "Tenant warehouse automation may reshape power, layout and floor needs in logistics buildings. Source is a blog roundup.",
+       "source": {
+        "label": "Mean CEO blog roundup, 27 Oct 2026",
+        "url": "https://blog.mean.ceo/startup-funding-announcements-news-november-2026/"
+       },
+       "total": 3,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Vessla",
+       "category": "proptech",
+       "what": "Stockholm startup building AI agents that automate property operations on landlords' existing software; $3.3M pre-seed led by Seedcamp.",
+       "scores": {
+        "funding": 1,
+        "customers": 0,
+        "scale": 0,
+        "partners": 1,
+        "gcc": 0
+       },
+       "why": "Light pilot candidate for residential-leasing and office operations, as it works with existing systems.",
+       "source": {
+        "label": "PropTech Buzz, 19 Oct 2026",
+        "url": "https://www.proptechbuzz.com/news"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      },
+      {
+       "name": "CarbonAI",
+       "category": "fintech",
+       "what": "Raised $12M to automate commercial real estate lending with AI agents; details unknown.",
+       "scores": {
+        "funding": 2,
+        "customers": 0,
+        "scale": 0,
+        "partners": 0,
+        "gcc": 0
+       },
+       "why": "Lenders' AI tools may change how fast and on what terms we can finance.",
+       "source": {
+        "label": "PropTech Buzz, 16 Oct 2026",
+        "url": "https://www.proptechbuzz.com/news"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      },
+      {
+       "name": "reebuild",
+       "category": "construction",
+       "what": "Vienna startup automating back-office work for construction and real estate firms; €3M seed with Rise PropTech.",
+       "scores": {
+        "funding": 1,
+        "customers": 0,
+        "scale": 0,
+        "partners": 1,
+        "gcc": 0
+       },
+       "why": "Relevant to fit-out and capital-works administration across the portfolio.",
+       "source": {
+        "label": "FundraiseBase, 13 Oct 2026",
+        "url": "https://fundraisebase.com/investor/rise-proptech"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      }
+     ],
+     "matrix": [
+      {
+       "category": "proptech",
+       "readiness": 70,
+       "relevance": 90,
+       "hype": 55,
+       "substance": 70,
+       "reason": "Steady funding ($1.85B H1) and consolidation."
+      },
+      {
+       "category": "ai",
+       "readiness": 60,
+       "relevance": 80,
+       "hype": 95,
+       "substance": 65,
+       "reason": "Real security results, but AI agent bookings still tiny."
+      },
+      {
+       "category": "sustainability",
+       "readiness": 75,
+       "relevance": 85,
+       "hype": 40,
+       "substance": 75,
+       "reason": "49% of smart-building investment; proven, lowers operating costs."
+      },
+      {
+       "category": "construction",
+       "readiness": 45,
+       "relevance": 35,
+       "hype": 50,
+       "substance": 50,
+       "reason": "ICON $200M raise; matters more to developers than operators."
+      },
+      {
+       "category": "mobility",
+       "readiness": 50,
+       "relevance": 50,
+       "hype": 60,
+       "substance": 50,
+       "reason": "Congestion and drone claims; results not yet shown."
+      },
+      {
+       "category": "robotics",
+       "readiness": 40,
+       "relevance": 55,
+       "hype": 90,
+       "substance": 35,
+       "reason": "Viral humanoid demos lack metrics; cleaning, warehouse robots closer."
+      },
+      {
+       "category": "retail",
+       "readiness": 70,
+       "relevance": 85,
+       "hype": 60,
+       "substance": 65,
+       "reason": "RFID at scale; AI shopping agents still small."
+      },
+      {
+       "category": "fintech",
+       "readiness": 50,
+       "relevance": 60,
+       "hype": 55,
+       "substance": 50,
+       "reason": "AI lending tools funded, little proof of results."
+      },
+      {
+       "category": "frontier",
+       "readiness": 10,
+       "relevance": 15,
+       "hype": 60,
+       "substance": 20,
+       "reason": "Fusion and space funded, no link to property operations."
+      },
+      {
+       "category": "work_edu",
+       "readiness": 55,
+       "relevance": 50,
+       "hype": 50,
+       "substance": 45,
+       "reason": "Companies watching AI-at-work costs, e.g. Apple budget cuts."
+      }
+     ],
+     "research_meta": {
+      "searches": 10,
+      "sources": 84
+     }
+    },
+    "infrastructure": {
+     "label": "Infrastructure",
+     "relevant_stories": 216,
+     "signals": {
+      "volume": {
+       "proptech": 70,
+       "ai": 46,
+       "sustainability": 14,
+       "construction": 19,
+       "mobility": 27,
+       "robotics": 10,
+       "retail": 6,
+       "fintech": 6,
+       "frontier": 7,
+       "work_edu": 11
+      },
+      "deals": {
+       "proptech": 1,
+       "ai": 5,
+       "sustainability": 0,
+       "construction": 0,
+       "mobility": 0,
+       "robotics": 1,
+       "retail": 0,
+       "fintech": 1,
+       "frontier": 0,
+       "work_edu": 0
+      }
+     },
+     "momentum": [
+      {
+       "category": "proptech",
+       "volume": 70,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "ai",
+       "volume": 46,
+       "deals": 5,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "sustainability",
+       "volume": 14,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "construction",
+       "volume": 19,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "mobility",
+       "volume": 27,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "robotics",
+       "volume": 10,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "retail",
+       "volume": 6,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "fintech",
+       "volume": 6,
+       "deals": 1,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "frontier",
+       "volume": 7,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      },
+      {
+       "category": "work_edu",
+       "volume": 11,
+       "deals": 0,
+       "avg_prev": null,
+       "change_pct": null
+      }
+     ],
+     "generated_by": "claude",
+     "headline": "Abu Dhabi lines up a $776 million road project as UAE transport networks scale",
+     "takeaways": [
+      "GCC transport infrastructure dominated: a $776 million Abu Dhabi road project, new Palm Jumeirah bridges and Etihad Rail's first month signal a deep regional pipeline.",
+      "Dubai is putting AI and mandatory monitoring into road operations, from traffic lights promising 10% less congestion to tracked delivery motorcycles.",
+      "Gulf AI capital is concentrating in energy majors and sovereign players (ADNOC, G42, Aramco), with spillover into infrastructure operations; this is our baseline week."
+     ],
+     "trend_watch": [
+      {
+       "trend": "GCC road and transit infrastructure pipeline",
+       "status": "new",
+       "evidence": "$776m Abu Dhabi road project, two Palm Jumeirah bridges and Etihad Rail's 120,000 tickets in 30 days."
+      },
+      {
+       "trend": "AI-driven traffic management and road regulation",
+       "status": "new",
+       "evidence": "Dubai RTA AI traffic lights targeting 10% less congestion; mandatory smart monitoring of delivery motorcycles from June 2027."
+      },
+      {
+       "trend": "Transport electrification and smart charging",
+       "status": "new",
+       "evidence": "Abu Dhabi taxi fleet 99% hybrid/electric; European study finds smart charging cuts EV grid costs 40%."
+      },
+      {
+       "trend": "Sovereign and energy-major AI build-out in the Gulf",
+       "status": "new",
+       "evidence": "ADNOC and G42 deal with OpenAI; Aramco takes 49% of a Saudi AI company; AI is 46 stories this week."
+      },
+      {
+       "trend": "Low-carbon road materials and connected street assets",
+       "status": "new",
+       "evidence": "Ajax tests asphalt recycling; Canberra adds 16,000 connected streetlights; construction tech totals 19 stories."
+      }
+     ],
+     "posts": [
+      {
+       "id": "776millionroadprojectforabudhabi",
+       "category": "construction",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "Abu Dhabi road project",
+       "amount_usd_m": 776,
+       "headline": "$776 million road project announced for Abu Dhabi",
+       "summary": "Global Highways reports a $776 million road project in Abu Dhabi, adding to the emirate's large road-building pipeline.",
+       "why_it_matters": "Directly in Aldar Projects' core market; signals tender volume and competition for road delivery capacity and contractors.",
+       "source": "Global Highways",
+       "url": "https://globalhighways.com/776-million-road-project-for-abu-dhabi/",
+       "published": "2026-11-02",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://globalhighways.com/wp-content/uploads/2026/10/dreamstime_s_62707580.jpg"
+      },
+      {
+       "id": "constructionstartsontwonewbridgesondubai",
+       "category": "construction",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "Palm Jumeirah bridges",
+       "amount_usd_m": null,
+       "headline": "Construction starts on two new bridges on Dubai's Palm Jumeirah",
+       "summary": "Work has begun on two new bridges on Palm Jumeirah to ease access to the island community.",
+       "why_it_matters": "Shows how UAE master communities are retrofitting access infrastructure, a model for Aldar's community road upgrades.",
+       "source": "The National",
+       "url": "https://www.thenationalnews.com/news/uae/2026/10/30/construction-starts-on-two-new-bridges-on-dubais-palm-jumeirah/",
+       "published": "2026-10-30",
+       "coverage": 6,
+       "also_covered_by": [
+        "curlytales.com",
+        "BW Auto World",
+        "ET Auto"
+       ],
+       "image": "https://www.thenationalnews.com/resizer/v2/P6LSVJIPL5HYJJFEUYTRGHCSAA.jpg?auth=55720e54dea3ecc2b131dbaca50c60cabee99339cd25277c36580b97115b73a8&smart=true&width=1200&height=630"
+      },
+      {
+       "id": "aipoweredtrafficlightsindubaiexpectedtoc",
+       "category": "mobility",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "Dubai RTA",
+       "amount_usd_m": null,
+       "headline": "Dubai RTA expects AI traffic lights to cut congestion by at least 10%",
+       "summary": "Dubai's Roads and Transport Authority says AI-powered traffic signals should reduce congestion by at least 10%.",
+       "why_it_matters": "Aldar's road designs may need provision for AI-ready signal systems and sensors as Abu Dhabi agencies follow suit.",
+       "source": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/uae/transport/rta-ai-traffic-lights-expected-to-reduce-dubai-congestion?amp=1",
+       "published": "2026-11-02",
+       "coverage": 5,
+       "also_covered_by": [
+        "Zawya",
+        "Facilities Dive",
+        "deltanews.tv"
+       ],
+       "image": "https://imgengine.khaleejtimes.com/khaleejtimes/import/images/4bc44631-7604-428b-9740-4e911c031585-org.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=fill&fill=blur"
+      },
+      {
+       "id": "etihadrailrecords120000ticketsalesin30da",
+       "category": "mobility",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Etihad Rail",
+       "amount_usd_m": null,
+       "headline": "Etihad Rail sells 120,000 tickets in 30 days after linking four UAE cities",
+       "summary": "Etihad Rail's passenger service recorded 120,000 ticket sales in its first month connecting four UAE cities.",
+       "why_it_matters": "Strong rail uptake raises demand for station access roads, cycle links and first-last-mile infrastructure Aldar can deliver.",
+       "source": "The National",
+       "url": "https://www.thenationalnews.com/news/uae/2026/10/30/etihad-rail-sells-120000-passenger-tickets-in-first-month-of-operations/",
+       "published": "2026-10-31",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://www.thenationalnews.com/resizer/v2/EKCBEJZC7ZANLDLFOEH4TVI6DE.jpg?auth=ca2110a2715f85a20bba686196a50014809da40e9649da2485c5bb11aeaa4c19&focal=1172%2C1702&width=1200&height=630"
+      },
+      {
+       "id": "abudhabitaxisgogreenashybridandelectricf",
+       "category": "mobility",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Abu Dhabi taxis",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi taxi fleet reaches 99% hybrid and electric",
+       "summary": "Hybrid and electric vehicles now make up 99% of Abu Dhabi's taxi fleet.",
+       "why_it_matters": "Community projects should plan EV charging and taxi lay-bys as standard in road and facility design.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/uae/abu-dhabi/abu-dhabi-taxis-go-green-as-hybrid-and-electric-fleet-hits-99-1.500732374",
+       "published": "2026-11-04",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://media.assettype.com/gulfnews%2F2026-11-02%2Fv787u3ju%2FIMG8026.jpeg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "dubaitomakesmartmonitoringmandatoryforde",
+       "category": "mobility",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Dubai authorities",
+       "amount_usd_m": null,
+       "headline": "Dubai to mandate smart monitoring for delivery motorcycles after June 2027",
+       "summary": "Delivery motorcycles in Dubai will require smart monitoring systems after June 2027 to improve road safety.",
+       "why_it_matters": "Signals tighter data-driven road safety rules; community road layouts may need delivery bays and safer cycle-track separation.",
+       "source": "Gulf Business",
+       "url": "https://gulfbusiness.com/en/2026/transport/dubai-to-make-smart-monitoring-mandatory-for-delivery-motorcycles-after-june-2027/",
+       "published": "2026-11-03",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "uaetooverhaulenergyinfrastructurebuildsp",
+       "category": "sustainability",
+       "type": "trend",
+       "region": "GCC",
+       "company": "UAE Ministry of Energy",
+       "amount_usd_m": null,
+       "headline": "UAE to overhaul energy infrastructure and build spare capacity",
+       "summary": "The UAE energy minister says the country will overhaul energy infrastructure and add spare capacity following the regional conflict.",
+       "why_it_matters": "Resilience requirements may flow into utility connections, backup power and on-site renewables for schools, mosques and villas.",
+       "source": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/business/energy/uae-overhaul-infrastructure-build-spare-capacity-us-iran-conflict",
+       "published": "2026-11-02",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-11-02/9ysa4z69/http___doc_afp_com_D64Y2FG.jpeg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=0,0,8256,5504"
+      },
+      {
+       "id": "abudhabisadnocg42signdealwithopenaiassam",
+       "category": "ai",
+       "type": "deployment",
+       "region": "GCC",
+       "company": "ADNOC, G42, OpenAI",
+       "amount_usd_m": null,
+       "headline": "ADNOC and G42 sign deal with OpenAI during Sam Altman's UAE visit",
+       "summary": "Abu Dhabi's ADNOC and G42 signed an agreement with OpenAI, deepening the emirate's frontier AI partnerships.",
+       "why_it_matters": "Puts enterprise-grade AI access within reach in Abu Dhabi for project planning, design review and asset management partnerships.",
+       "source": "Reuters",
+       "url": "https://www.reuters.com/business/energy/abu-dhabis-adnoc-g42-sign-deal-with-openai-sam-altman-travels-uae-2026-11-02/",
+       "published": "2026-11-01",
+       "coverage": 14,
+       "also_covered_by": [
+        "Khaleej Times",
+        "CNBC",
+        "Fortune"
+       ]
+      },
+      {
+       "id": "oilgiantaramcotakes49percentstakeinsaudi",
+       "category": "ai",
+       "type": "investment",
+       "region": "GCC",
+       "company": "Aramco",
+       "amount_usd_m": null,
+       "headline": "Aramco takes 49% stake in a Saudi AI company",
+       "summary": "Saudi oil giant Aramco has acquired a 49% stake in a Saudi AI company as the kingdom pushes its AI ambitions.",
+       "why_it_matters": "Gulf energy majors are becoming AI anchors, shaping the regional vendor landscape Aldar will buy construction AI from.",
+       "source": "Gulf News",
+       "url": "https://gulfnews.com/business/energy/oil-giant-aramco-takes-49-per-cent-stake-in-saudi-ai-company-1.500731592",
+       "published": "2026-11-01",
+       "coverage": 7,
+       "also_covered_by": [
+        "The Next Web",
+        "The Decoder",
+        "Wamda"
+       ],
+       "image": "https://media.assettype.com/gulfnews%2F2026-10-22%2F5r5lr7ul%2FAramco-2.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+       "id": "abudhabiresidentialunitsalesrise3006toae",
+       "category": "proptech",
+       "type": "trend",
+       "region": "GCC",
+       "company": "Abu Dhabi residential market",
+       "amount_usd_m": null,
+       "headline": "Abu Dhabi residential sales rise 30% to AED 12.97bn in October",
+       "summary": "Abu Dhabi residential unit sales rose 30.06% to AED 12.97 billion in October 2026.",
+       "why_it_matters": "Rising housing demand sustains the pipeline of villa communities and supporting roads, schools and parks Aldar Projects delivers.",
+       "source": "Zawya",
+       "url": "https://www.zawya.com/en/press-release/research-studies/abu-dhabi-residential-unit-sales-rise-30.06-to-aed-12.97bln-in-october-2026-2000628",
+       "published": "2026-10-29",
+       "coverage": 8,
+       "also_covered_by": [
+        "The Robot Report",
+        "Business Wire",
+        "blog.google"
+       ],
+       "image": "https://media.zawya.com/prod/images/gm_preview/88cc989d4fea-untitled-1.gif"
+      },
+      {
+       "id": "thefutureofflexibleworkingdubaiunveilsit",
+       "category": "work_edu",
+       "type": "product",
+       "region": "GCC",
+       "company": "Dubai",
+       "amount_usd_m": null,
+       "headline": "Dubai unveils its first park-based workspace",
+       "summary": "Dubai has opened its first workspace located inside a public park, testing flexible work in community green space.",
+       "why_it_matters": "Offers a new programme idea for parks Aldar builds, adding usage and amenity value to community facilities.",
+       "source": "Gulf Business",
+       "url": "https://gulfbusiness.com/en/2026/innovation/the-future-of-flexible-working-dubai-unveils-its-first-park-based-workspace/",
+       "published": "2026-11-04",
+       "coverage": 1,
+       "also_covered_by": []
+      },
+      {
+       "id": "ajaxtestsasphaltrecyclingtechnologyonros",
+       "category": "sustainability",
+       "type": "deployment",
+       "region": "North America",
+       "company": "Town of Ajax",
+       "amount_usd_m": null,
+       "headline": "Ajax tests asphalt recycling technology on Rossland Road",
+       "summary": "The Ontario town of Ajax is trialling asphalt recycling technology on a live road resurfacing project.",
+       "why_it_matters": "In-place asphalt recycling could cut cost and carbon on Aldar road and cycle-track works; worth a supplier pilot.",
+       "source": "Ontario Construction News",
+       "url": "https://ontarioconstructionnews.com/ajax-tests-asphalt-recycling-technology-on-rossland-road",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://ontarioconstructionnews.com/wp-content/uploads/2026/11/ajax-2.png"
+      },
+      {
+       "id": "canberratoadd16000connectedstreetlightst",
+       "category": "mobility",
+       "type": "deployment",
+       "region": "Asia-Pacific",
+       "company": "Canberra (ACT Government)",
+       "amount_usd_m": null,
+       "headline": "Canberra to add 16,000 connected streetlights to its smart city network",
+       "summary": "Canberra will connect 16,000 more streetlights to its smart city network for remote monitoring and control.",
+       "why_it_matters": "Connected streetlighting is a ready template for Aldar community roads, cutting maintenance and enabling sensors.",
+       "source": "IOT Insider",
+       "url": "https://www.iotinsider.com/industries/smart-cities/canberra-to-add-16000-connected-streetlights-to-smart-city-network/",
+       "published": "2026-11-05",
+       "coverage": 1,
+       "also_covered_by": [],
+       "image": "https://www.iotinsider.com/wp-content/uploads/2026/11/Smart-light.jpg"
+      },
+      {
+       "id": "europeancitiescouldcutevgridbillby40with",
+       "category": "mobility",
+       "type": "trend",
+       "region": "Europe",
+       "company": "European cities study",
+       "amount_usd_m": null,
+       "headline": "Smart charging could cut European cities' EV grid bill by 40%, study says",
+       "summary": "A study finds European cities could reduce EV-related grid upgrade costs by 40% through smart charging.",
+       "why_it_matters": "Specifying smart charging in community car parks can reduce costly substation and grid upgrades on Aldar projects.",
+       "source": "Reuters",
+       "url": "https://www.reuters.com/business/european-cities-could-cut-ev-grid-bill-by-40-with-smart-charging-study-says-2026-11-03/",
+       "published": "2026-11-03",
+       "coverage": 5,
+       "also_covered_by": [
+        "driveteslacanada.ca",
+        "Fleet Europe",
+        "electrive.com"
+       ]
+      },
+      {
+       "id": "ziplinetops21billionvaluationadds300walm",
+       "category": "robotics",
+       "type": "investment",
+       "region": "North America",
+       "company": "Zipline",
+       "amount_usd_m": null,
+       "headline": "Zipline tops $21 billion valuation and adds 300 Walmart drone sites",
+       "summary": "Drone delivery firm Zipline is valued above $21 billion and is adding 300 Walmart drone delivery sites.",
+       "why_it_matters": "Drone delivery at scale may require landing zones and airspace planning in future community facility designs.",
+       "source": "Bloomberg.com",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-05/zipline-tops-21-billion-valuation-adds-300-walmart-drone-sites",
+       "published": "2026-10-31",
+       "coverage": 24,
+       "also_covered_by": [
+        "TechCrunch",
+        "Axios",
+        "Dronelife"
+       ]
+      },
+      {
+       "id": "peppermintroboticsraisesrs100crinpreseri",
+       "category": "robotics",
+       "type": "investment",
+       "region": "Asia-Pacific",
+       "company": "Peppermint Robotics",
+       "amount_usd_m": null,
+       "headline": "Peppermint Robotics raises Rs 100 crore Pre-Series B for cleaning robots",
+       "summary": "Indian cleaning-robot maker Peppermint Robotics raised Rs 100 crore led by pi Ventures and Crane Venture Partners.",
+       "why_it_matters": "Autonomous cleaning robots could lower operating costs at schools, mosques and community centres Aldar hands over.",
+       "source": "Entrackr",
+       "url": "https://entrackr.com/news/peppermint-robotics-raises-rs-100-cr-in-pre-series-b-led-by-pi-ventures-crane-venture-partners-12781643",
+       "published": "2026-11-03",
+       "coverage": 7,
+       "also_covered_by": [
+        "Indian Startup News",
+        "Siliconindia",
+        "Bharat Fast"
+       ],
+       "image": "https://img-cdn.publive.online/fit-in/1200x675/entrackr/media/media_files/2026/11/04/gcm7ffmgkjjvfozrxmx3-2026-11-04-09-26-22.webp"
+      }
+     ],
+     "viral": [
+      {
+       "platform": "Press (Politico via Yahoo; tech news sites)",
+       "date": "2026-11-05",
+       "title": "OpenAI Pledges To Cover Data Centre Power Costs And End Secret Deals",
+       "category": "sustainability",
+       "views_reported": "Not verified",
+       "views_source": "No reach figures checked",
+       "what_shows": "OpenAI pledges that its future US data centres will pay their own electricity costs, limit broad confidentiality deals with officials, disclose environmental impact, and offer local jobs and community benefits.",
+       "what_behind": "Announced by OpenAI the day after voters in dozens of US communities approved restrictions on AI data centres. It is a promise about future sites; nothing has been delivered yet.",
+       "checks": {
+        "available": "no",
+        "corroborated": "yes",
+        "deployed": "no",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "watch",
+       "fit": "Low",
+       "aldar_fit_area": "Scoping roads, utilities and community facilities near AI campuses (Abu Dhabi link is analyst background knowledge)",
+       "action": "Watch",
+       "leadership_line": "A US response to local pushback, but it signals big computing sites will be expected to pay for their own power and leave visible community benefits.",
+       "assessed_from": "Search-result text of press pages; announcement confirmed, delivery not",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "The420.in",
+         "url": "https://the420.in/openai-pledges-to-cover-data-centre-power-costs-and-end-secret-deals/"
+        },
+        {
+         "label": "Yahoo News (Politico)",
+         "url": "https://www.yahoo.com/news/politics/articles/openai-unveils-plan-ease-data-171336225.html"
+        },
+        {
+         "label": "TechStartups roundup, 4 Nov",
+         "url": "https://techstartups.com/2026/11/04/top-tech-news-roundup-for-today-november-4-2026-googles-15b-ai-bet-metas-e53b-bond-demand-canvas-restructuring-and-spacexs-5g-push/"
+        }
+       ]
+      },
+      {
+       "platform": "ADIPEC 2026 / newswire",
+       "date": "2026-11-03",
+       "title": "Applied Computing unveils the next generation of Orbital at ADIPEC, the first-ever world model for energy",
+       "category": "ai",
+       "views_reported": "Not verified",
+       "views_source": "No reach figures checked",
+       "what_shows": "Company says its AI learns cause and effect across a whole plant, not just data patterns. Each customer gets its own model running inside its own systems, so data never leaves.",
+       "what_behind": "British start-up; $20M Series A in July 2026 led by KBR with Databricks Ventures. 'First-ever' and performance claims are the company's own. Oil & Gas Middle East confirms launch only, not performance.",
+       "checks": {
+        "available": "yes",
+        "corroborated": "no",
+        "deployed": "unknown",
+        "scaled": "no",
+        "gcc": "unknown"
+       },
+       "verdict": "watch",
+       "fit": "Low",
+       "aldar_fit_area": "At most, a reference for utility plants such as district cooling in delivered communities",
+       "action": "Ignore",
+       "leadership_line": "An AI launch for oil and gas plants with big claims and no independent results yet; nothing for our project sites today.",
+       "assessed_from": "Company press release and trade-press summary (search-result text)",
+       "video_url": "",
+       "corroboration": [
+        {
+         "label": "PR Newswire (company release)",
+         "url": "https://www.prnewswire.co.uk/news-releases/applied-computing-unveils-the-next-generation-of-orbital-at-adipec-the-first-ever-world-model-for-energy-302928080.html"
+        },
+        {
+         "label": "Oil & Gas Middle East, ADIPEC trends",
+         "url": "https://www.oilandgasmiddleeast.com/news/adipec-2026-trends"
+        }
+       ]
+      }
+     ],
+     "challengers": [
+      {
+       "name": "Bedrock Robotics",
+       "category": "robotics",
+       "what": "Self-driving kit for existing excavators, working commercially for Zachry, Champion Site Prep and a Nevada water-treatment plant.",
+       "scores": {
+        "funding": 4,
+        "customers": 3,
+        "scale": 2,
+        "partners": 4,
+        "gcc": 0
+       },
+       "why": "Earthworks for roads and villa plots are core work; operator shortage. Candidate for supervised pilot via a contractor.",
+       "source": {
+        "label": "TechCrunch, 26 Oct 2026",
+        "url": "https://techcrunch.com/2026/10/26/this-startups-self-driving-excavators-help-dig-up-600m-in-new-funding/"
+       },
+       "total": 13,
+       "verdict": "watch"
+      },
+      {
+       "name": "Mach9",
+       "category": "construction",
+       "what": "Software that turns 3D scans into engineering drawings; raised $34M Series A.",
+       "scores": {
+        "funding": 3,
+        "customers": 0,
+        "scale": 0,
+        "partners": 0,
+        "gcc": 0
+       },
+       "why": "Roads and cycle tracks need as-built drawings at handover; could cut survey and drafting time.",
+       "source": {
+        "label": "Bricks & Bytes, week to 26 Oct",
+        "url": "https://bricks-bytes.com/funding-ma/latest-construction-technology-funding-rounds-26th-oct-2026/"
+       },
+       "total": 3,
+       "verdict": "ignore"
+      },
+      {
+       "name": "Pascal",
+       "category": "sustainability",
+       "what": "Solid-refrigerant cooling technology for more efficient cooling; raised $8.5M.",
+       "scores": {
+        "funding": 2,
+        "customers": 0,
+        "scale": 0,
+        "partners": 0,
+        "gcc": 0
+       },
+       "why": "Cooling drives energy use in schools, mosques and villas. Early stage: learn, don't pilot yet.",
+       "source": {
+        "label": "Axios Pro, 24 Oct",
+        "url": "https://www.axios.com/pro/climate-deals/2026/10/24/energy-climate-deals-rundown-october-24"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      },
+      {
+       "name": "DrizzleX",
+       "category": "proptech",
+       "what": "Fixture-level water-use metering; raised $6.8M in October 2026.",
+       "scores": {
+        "funding": 2,
+        "customers": 0,
+        "scale": 0,
+        "partners": 0,
+        "gcc": 0
+       },
+       "why": "Could be built into high-water-use facilities such as mosques and schools before handover.",
+       "source": {
+        "label": "Growth Strategy proptech briefing, Oct 2026",
+        "url": "https://growth-strategy.com/perspectives/proptech-briefing-october-2026"
+       },
+       "total": 2,
+       "verdict": "ignore"
+      }
+     ],
+     "matrix": [
+      {
+       "category": "construction",
+       "readiness": 55,
+       "relevance": 95,
+       "hype": 50,
+       "substance": 60,
+       "reason": "Steady deal flow; scan-to-drawing and estimating tools fundable now"
+      },
+      {
+       "category": "mobility",
+       "readiness": 60,
+       "relevance": 85,
+       "hype": 65,
+       "substance": 60,
+       "reason": "Roads and cycle tracks are core; AI traffic tools deployed regionally"
+      },
+      {
+       "category": "sustainability",
+       "readiness": 70,
+       "relevance": 80,
+       "hype": 55,
+       "substance": 70,
+       "reason": "Cooling, water and low-carbon materials relate directly to builds"
+      },
+      {
+       "category": "robotics",
+       "readiness": 35,
+       "relevance": 70,
+       "hype": 80,
+       "substance": 40,
+       "reason": "Bedrock on few sites; ADIPEC robots have no scale date"
+      },
+      {
+       "category": "ai",
+       "readiness": 60,
+       "relevance": 65,
+       "hype": 95,
+       "substance": 60,
+       "reason": "Most attention; real document gains; much still agreements, not results"
+      },
+      {
+       "category": "work_edu",
+       "readiness": 55,
+       "relevance": 50,
+       "hype": 45,
+       "substance": 50,
+       "reason": "Operator shortages drive automation; we also build schools"
+      },
+      {
+       "category": "proptech",
+       "readiness": 70,
+       "relevance": 45,
+       "hype": 50,
+       "substance": 60,
+       "reason": "Mature, but facilities usually pass to government operators"
+      },
+      {
+       "category": "fintech",
+       "readiness": 60,
+       "relevance": 35,
+       "hype": 45,
+       "substance": 55,
+       "reason": "Relevant via PPP pipeline and green-financing agreements"
+      },
+      {
+       "category": "frontier",
+       "readiness": 15,
+       "relevance": 20,
+       "hype": 70,
+       "substance": 20,
+       "reason": "'World model' claims are not proven"
+      },
+      {
+       "category": "retail",
+       "readiness": 75,
+       "relevance": 15,
+       "hype": 40,
+       "substance": 60,
+       "reason": "Mature, but little to do with infrastructure delivery"
+      }
+     ],
+     "research_meta": {
+      "searches": 10,
+      "sources": 91
+     }
+    }
    }
   }
  ]
