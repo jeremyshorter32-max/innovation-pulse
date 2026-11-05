@@ -1,0 +1,188 @@
+{
+  "_readme": "Settings for pulse/innovation_pulse.py. Edit categories here: label, colours and search terms. 'queries' are Google News searches (global, last 7 days). 'keywords' decide which category a story belongs to. 'gcc_queries' are extra Gulf-focused searches; 'gcc_min_posts' is how many GCC stories each edition tries to include. 'research' controls the weekly web research by Claude (big moves, startups to watch, category map); it only runs when ANTHROPIC_API_KEY is set.",
+  "timezone": "Asia/Dubai",
+  "lookback_days": 7,
+  "max_posts": 30,
+  "max_per_category": 4,
+  "gcc_min_posts": 8,
+  "max_editions_kept": 12,
+  "max_candidates_for_ai": 180,
+  "model": "claude-opus-5-5",
+  "research": {
+    "enabled": true,
+    "max_searches": 18,
+    "max_fetches": 8,
+    "effort": "high"
+  },
+  "audience": "the executive management team of Aldar Properties, a real estate developer and asset manager in Abu Dhabi with residential communities, malls, offices, hotels, schools and construction projects across the UAE",
+  "categories": [
+    {
+      "id": "proptech",
+      "label": "PropTech & smart buildings",
+      "color": "#769CD2",
+      "ink": "#3F6FAE",
+      "queries": [
+        "proptech",
+        "proptech startup funding",
+        "smart building technology",
+        "building management system AI OR IoT",
+        "digital twin building OR real estate"
+      ],
+      "keywords": ["proptech", "prop tech", "smart building", "smart home", "building management", "facility management", "facilities management", "digital twin", "iot", "property management", "tenant experience", "access control", "hvac", "real estate tech", "home automation"]
+    },
+    {
+      "id": "ai",
+      "label": "AI & software",
+      "color": "#D684A8",
+      "ink": "#A04C74",
+      "queries": [
+        "generative AI enterprise launch",
+        "AI agents enterprise",
+        "OpenAI OR Anthropic OR Google Gemini announcement",
+        "AI startup raises",
+        "AI regulation"
+      ],
+      "keywords": [" ai ", "artificial intelligence", "generative", "genai", "llm", "language model", "chatbot", "ai agent", "agentic", "machine learning", "openai", "anthropic", "gemini", "copilot", "software", "saas", "cybersecurity", "data centre", "data center"]
+    },
+    {
+      "id": "sustainability",
+      "label": "Sustainability & energy",
+      "color": "#6FAF7E",
+      "ink": "#3B7A4B",
+      "queries": [
+        "net zero buildings",
+        "building decarbonisation OR decarbonization technology",
+        "solar OR battery storage breakthrough",
+        "district cooling OR green hydrogen",
+        "climate tech startup funding",
+        "water technology desalination innovation"
+      ],
+      "keywords": ["sustainab", "net zero", "net-zero", "carbon", "decarbon", "emission", "solar", "battery", "energy storage", "renewable", "hydrogen", "climate", "green building", "leed", "esg", "cooling", "water", "desalination", "circular", "recycl", "waste"]
+    },
+    {
+      "id": "construction",
+      "label": "Construction tech",
+      "color": "#4FA3A5",
+      "ink": "#2C6E70",
+      "queries": [
+        "construction technology",
+        "contech startup funding",
+        "modular construction OR prefab housing",
+        "3D printed building",
+        "low carbon concrete OR mass timber",
+        "BIM construction AI"
+      ],
+      "keywords": ["construction", "contech", "jobsite", "job site", "modular", "prefab", "3d print", "concrete", "cement", "mass timber", "steel", "bim", "building materials", "homebuild", "contractor", "infrastructure project"]
+    },
+    {
+      "id": "mobility",
+      "label": "Mobility & smart cities",
+      "color": "#D9A441",
+      "ink": "#94681A",
+      "queries": [
+        "smart city technology",
+        "robotaxi OR autonomous shuttle launch",
+        "electric vehicle charging infrastructure",
+        "eVTOL OR air taxi",
+        "urban mobility startup"
+      ],
+      "keywords": ["smart city", "smart cities", "mobility", "robotaxi", "autonomous vehicle", "self-driving", "electric vehicle", " ev ", "charging", "evtol", "air taxi", "flying taxi", "micromobility", "scooter", "public transport", "transit", "parking", "urban"]
+    },
+    {
+      "id": "robotics",
+      "label": "Robotics & automation",
+      "color": "#A99BE0",
+      "ink": "#5B4A9E",
+      "queries": [
+        "humanoid robot",
+        "service robot deployment",
+        "robotics startup raises",
+        "drone delivery OR inspection drone"
+      ],
+      "keywords": ["robot", "robotic", "humanoid", "drone", "automation", "autonomous", "cobot", "physical ai", "warehouse automation"]
+    },
+    {
+      "id": "retail",
+      "label": "Retail & customer experience",
+      "color": "#E0703C",
+      "ink": "#B0501E",
+      "queries": [
+        "retail technology innovation",
+        "shopping mall technology OR experience",
+        "hospitality technology hotel",
+        "customer experience AI retail",
+        "retail media OR cashierless store"
+      ],
+      "keywords": ["retail", "retailer", "shopping", "mall", "store", "e-commerce", "ecommerce", "shopper", "consumer", "customer experience", "loyalty", "hospitality", "hotel", "guest", "restaurant", "checkout", "cashierless", "omnichannel", "entertainment"]
+    },
+    {
+      "id": "fintech",
+      "label": "Real estate finance & fintech",
+      "color": "#C9A27A",
+      "ink": "#8A6236",
+      "queries": [
+        "real estate tokenization",
+        "fintech startup raises",
+        "mortgage technology",
+        "real estate investment technology platform",
+        "digital payments innovation"
+      ],
+      "keywords": ["fintech", "tokeniz", "tokenis", "blockchain", "crypto", "stablecoin", "mortgage", "lending", "payment", "banking", "digital bank", "insurtech", "fractional", "reit", "real estate investment", "wealth", "neobank"]
+    },
+    {
+      "id": "frontier",
+      "label": "Frontier tech",
+      "color": "#8C93A8",
+      "ink": "#4E5468",
+      "queries": [
+        "quantum computing breakthrough",
+        "space technology startup OR satellite launch",
+        "biotech breakthrough",
+        "advanced materials breakthrough",
+        "fusion energy OR nuclear SMR"
+      ],
+      "keywords": ["quantum", "qubit", "space", "satellite", "orbit", "rocket", "biotech", "gene", "crispr", "synthetic biology", "materials", "graphene", "superconduct", "semiconductor", "chip", "fusion", "nuclear", "smr"]
+    },
+    {
+      "id": "work_edu",
+      "label": "Future of work & education",
+      "color": "#A9BC6E",
+      "ink": "#5E6E32",
+      "queries": [
+        "future of work technology",
+        "workplace experience technology office",
+        "edtech startup funding",
+        "AI in education schools",
+        "hybrid work office occupancy"
+      ],
+      "keywords": ["workplace", "future of work", "hybrid work", "remote work", "office", "coworking", "co-working", "employee", "workforce", "hiring", "skills", "upskill", "edtech", "education", "school", "student", "teacher", "university", "learning", "classroom"]
+    }
+  ],
+  "general_queries": [
+    "innovation startup raises Series",
+    "technology acquisition announced",
+    "venture capital funding round technology"
+  ],
+  "gcc_queries": [
+    "proptech UAE OR Saudi OR Dubai",
+    "innovation \"Abu Dhabi\"",
+    "technology startup UAE raises",
+    "AI UAE OR \"Abu Dhabi\" OR Saudi",
+    "smart city Dubai OR \"Abu Dhabi\" OR NEOM OR Riyadh",
+    "sustainability OR net zero UAE OR Saudi real estate",
+    "fintech UAE OR Saudi OR Bahrain",
+    "edtech OR schools technology UAE OR Saudi",
+    "construction technology UAE OR Saudi OR Qatar",
+    "real estate technology Gulf OR Qatar OR Kuwait OR Oman"
+  ],
+  "feeds": [
+    { "name": "TechCrunch", "url": "https://techcrunch.com/feed/" },
+    { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/" },
+    { "name": "The Verge", "url": "https://www.theverge.com/rss/index.xml" },
+    { "name": "Wired", "url": "https://www.wired.com/feed/rss" },
+    { "name": "Construction Dive", "url": "https://www.constructiondive.com/feeds/news/" },
+    { "name": "Canary Media", "url": "https://www.canarymedia.com/rss.rss" },
+    { "name": "Retail Dive", "url": "https://www.retaildive.com/feeds/news/" },
+    { "name": "The Robot Report", "url": "https://www.therobotreport.com/feed/" }
+  ]
+}
